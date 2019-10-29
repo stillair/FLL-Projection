@@ -1,0 +1,1642 @@
+<!DOCTYPE NODELIST ><NODELIST version="50beta38.1"><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditor (2d)" name="BezierEditor" category="2d" version="" filename="modules\BezierEditor (2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>curve, spline
+</TAGS><HELP>Editor for 2D bézier points in the Renderer
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Knots To Add" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Add" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="DoubleClick To Add" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Add and Smooth" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Knots To Add Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Step Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="BezierSpline" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditor (3d)" name="BezierEditor" category="3d" version="" filename="modules\BezierEditor (3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>curve, spline
+</TAGS><HELP>Editor for 3D bézier points in the Renderer
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Knots To Add" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Add" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Add and Smooth" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Knots To Add Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="BezierSpline" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditorState (EditingFramework 2d Boygroup)" name="BezierEditorState" category="EditingFramework" version="2d Boygroup" filename="modules\BezierEditorState (EditingFramework 2d Boygroup).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "BezierEditorState (EditingFramework 2d Boygroup) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditorState (EditingFramework 3d Boygroup)" name="BezierEditorState" category="EditingFramework" version="3d Boygroup" filename="modules\BezierEditorState (EditingFramework 3d Boygroup).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "BezierEditorState (EditingFramework 3d Boygroup) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierPatchEditor (2d)" name="BezierPatchEditor" category="2d" version="" filename="modules\BezierPatchEditor (2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><HELP>Editor for modifying a 2D bézier patch in the Renderer
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Initialize" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control Point ResolutionXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control PointsXY" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control Point ResolutionXY" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierPatchEditor (3d)" name="BezierPatchEditor" category="3d" version="" filename="modules\BezierPatchEditor (3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><HELP>Editor for modifying a 3D bézier patch in the Renderer
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Initialize" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control Point ResolutionXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control PointsXYZ" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control Point ResolutionXY" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Camera (Transform 2d)" name="Camera" category="Transform" version="2d" filename="modules\Camera (Transform 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><HELP>Interactive camera for 2D scenes
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Maximum Zoom" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial Zoom" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial InterestXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Zoom Speed" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Minimum Zoom" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera Controls" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Window Handle" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="View" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Inverse View" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Zoom" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Camera (Transform Orbit)" name="Camera" category="Transform" version="Orbit" filename="modules\Camera (Transform Orbit).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><HELP>Interactive camera for 3D scenes controlled mostly without keyboard
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Initial Distance" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial FOV" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Near Plane" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Far Plane" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial InterestXYZ" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial Longitude" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial Latitude" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera Controls" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Window Handle" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Filter Time" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Projection" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="View" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Inverse View" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="View Projection" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="InterestXYZ" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="FOV" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Distance" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Camera (Transform Softimage)" name="Camera" category="Transform" version="Softimage" filename="modules\Camera (Transform Softimage).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><HELP>Interactive camera for 3D scenes with controls similar to those in Autodesk&amp;apos;s Softimage
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Initial Distance" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial FOV" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Near Plane" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Far Plane" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial InterestXYZ" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial Longitude" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Initial Latitude" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera Controls" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Window Handle" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Projection" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="View" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Inverse View" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="View Projection" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="InterestXYZ" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="FOV" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Distance" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditor (2d)" name="PointEditor" category="2d" version="" filename="modules\PointEditor (2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><HELP>Editor for transforming 2D point clouds in the Renderer
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Pick Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Add" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Points To AddXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="DoubleClick To Add" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Points To Add Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Step Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointsXY" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Ids" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditor (3d)" name="PointEditor" category="3d" version="" filename="modules\PointEditor (3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><HELP>Editor for transforming 3D point clouds in the Renderer
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Pick Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Points To AddXYZ" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Add" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Points To Add Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointsXYZ" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Ids" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditorState (EditingFramework 2d Boygroup)" name="PointEditorState" category="EditingFramework" version="2d Boygroup" filename="modules\PointEditorState (EditingFramework 2d Boygroup).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "PointEditorState (EditingFramework 2d Boygroup) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditorState (EditingFramework 3d Boygroup)" name="PointEditorState" category="EditingFramework" version="3d Boygroup" filename="modules\PointEditorState (EditingFramework 3d Boygroup).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "PointEditorState (EditingFramework 3d Boygroup) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="WindowHandler (EditingFramework)" name="WindowHandler" category="EditingFramework" version="" filename="modules\WindowHandler (EditingFramework).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Handle" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Is Hovered" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Is Active" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "WindowHandler (EditingFramework) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditorView (DX11 2d)" name="BezierEditorView" category="DX11" version="2d" filename="modules\DX11\BezierEditorView (DX11 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Control Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Curve" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer Out" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditorView (DX11 3d)" name="BezierEditorView" category="DX11" version="3d" filename="modules\DX11\BezierEditorView (DX11 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Control Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Curve" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer Out" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditorView (DX11 Internal)" name="BezierEditorView" category="DX11" version="Internal" filename="modules\DX11\BezierEditorView (DX11 Internal).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Curve Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Curve" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Control Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Mode" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer Out" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Looking for Point" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point On CurveXYZ" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Translating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Offset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Editing" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control1" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control2" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Projection Space" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Input Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Looking for Point" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Projection Space" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "BezierEditorView (DX11 Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierSplineView (DX11 2d)" name="BezierSplineView" category="DX11" version="2d" filename="modules\DX11\BezierSplineView (DX11 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Color" direction="Input" subtype="" slicemode="Spread" visibility="True">
+</PIN><PIN name="Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="BinSize" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Width" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="BezierSpline" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Render State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Transform" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Antialias" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Color" direction="Output" subtype="" slicemode="Spread" visibility="True">
+</PIN><PIN name="BinSize" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Width" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Render State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Transform" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Antialias" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "BezierSplineView (DX11 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierSplineView (DX11 3d)" name="BezierSplineView" category="DX11" version="3d" filename="modules\DX11\BezierSplineView (DX11 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Width" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Render State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Transform" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Antialias" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="BezierSpline" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Width" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Render State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Transform" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Antialias" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "BezierSplineView (DX11 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Cursor (DX11 EditingFramework)" name="Cursor" category="DX11" version="EditingFramework" filename="modules\DX11\Cursor (DX11 EditingFramework).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>GUI, editor, modelling
+</TAGS><HELP>Draws a cursor into the DX11 Renderer. It also can draw a selection rectangle.
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Selection" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Cursor Type" direction="Input" subtype="Empty" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Input" subtype="" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Output" subtype="" slicemode="Spread" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="GizmoView (DX11 3d)" name="GizmoView" category="DX11" version="3d" filename="modules\DX11\GizmoView (DX11 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Gizmo State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "GizmoView (DX11 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="OSD (EditingFramework DX11)" name="OSD" category="EditingFramework" version="DX11" filename="modules\DX11\OSD (EditingFramework DX11).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Translating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Offset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "OSD (EditingFramework DX11) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Point (DX11 2d ProjectionSpace)" name="Point" category="DX11" version="2d ProjectionSpace" filename="modules\DX11\Point (DX11 2d ProjectionSpace).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>rectangle, circle, triangle
+</TAGS><HELP>Draws 2d points within projection space.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotation" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Inner Radius" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Type" direction="Input" subtype="Empty" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="XY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Point (DX11 2d)" name="Point" category="DX11" version="2d" filename="modules\DX11\Point (DX11 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>rectangle, circle, triangle
+</TAGS><HELP>Draws 2d points in 2d world space.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotation" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Inner Radius" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Type" direction="Input" subtype="Empty" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="XY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Point (DX11 3d)" name="Point" category="DX11" version="3d" filename="modules\DX11\Point (DX11 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>rectangle, circle, triangle, sprite, billboard
+</TAGS><HELP>Draws points in space facing the camera.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Circle Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Inner Radius" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Input" subtype="" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="XYZ" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Type" direction="Input" subtype="Empty" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotation" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Projection Space" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Circle Resolution" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Inner Radius" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Output" subtype="" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Projection Space" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditorView (DX11 2d)" name="PointEditorView" category="DX11" version="2d" filename="modules\DX11\PointEditorView (DX11 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Point Highlight Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Hover Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Line" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Line Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditorView (DX11 3d)" name="PointEditorView" category="DX11" version="3d" filename="modules\DX11\PointEditorView (DX11 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Point Highlight Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Hover Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Line" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Line Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditorView (DX11 Internal)" name="PointEditorView" category="DX11" version="Internal" filename="modules\DX11\PointEditorView (DX11 Internal).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer Out" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="BinSize" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Line Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Line" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Hover Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Highlight Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Translating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Offset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Editing" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Projection Space" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="EditablePoint" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Line" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Projection Space" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "PointEditorView (DX11 Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="AxisAndGrid (DX9 2d)" name="AxisAndGrid" category="DX9" version="2d" filename="modules\DX9\AxisAndGrid (DX9 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>helper, space, coordinate system
+</TAGS><HELP>Draws the XY-plane and the two axis to help your sense of orientation within the 2d space.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Transform" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Labels" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Axis" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Grid" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Unit" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="AxisAndGrid (DX9)" name="AxisAndGrid" category="DX9" version="" filename="modules\DX9\AxisAndGrid (DX9).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>helper, space, coordinate system, virtual world
+</TAGS><HELP>Draws the XZ-plane and the three axis to help your sense of orientation within the virtual world.
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Transform" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Labels" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Axis" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Grid" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Unit" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditorView (DX9 2d)" name="BezierEditorView" category="DX9" version="2d" filename="modules\DX9\BezierEditorView (DX9 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Control Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Curve" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "BezierEditorView (DX9 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditorView (DX9 3d)" name="BezierEditorView" category="DX9" version="3d" filename="modules\DX9\BezierEditorView (DX9 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Control Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Curve" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "BezierEditorView (DX9 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierEditorView (DX9 Internal)" name="BezierEditorView" category="DX9" version="Internal" filename="modules\DX9\BezierEditorView (DX9 Internal).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Curve Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Curve Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Curve" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Control Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Points" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Mode" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control1" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Control2" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Looking for Point" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point On CurveXYZ" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Translating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Offset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Editing" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Projection Space" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="BinSize" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "BezierEditorView (DX9 Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierSplineView (DX9 2d)" name="BezierSplineView" category="DX9" version="2d" filename="modules\DX9\BezierSplineView (DX9 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="BinSize" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Width" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="BezierSpline" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Render State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Transform" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Antialias" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "BezierSplineView (DX9 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="BezierSplineView (DX9 3d)" name="BezierSplineView" category="DX9" version="3d" filename="modules\DX9\BezierSplineView (DX9 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Resolution" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Width" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Render State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Transform" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Antialias" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="BezierSpline" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Projection Space" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "BezierSplineView (DX9 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Cursor (DX9)" name="Cursor" category="DX9" version="" filename="modules\DX9\Cursor (DX9).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Selection" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Cursor Type" direction="Input" subtype="Empty" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="GizmoView (DX9 3d)" name="GizmoView" category="DX9" version="3d" filename="modules\DX9\GizmoView (DX9 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Gizmo State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "GizmoView (DX9 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="MeshEditor (EX9)" name="MeshEditor" category="EX9" version="" filename="modules\DX9\MeshEditor (EX9).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>vertex
+</TAGS><HELP>Editor for transforming the vertices of a mesh in the Renderer
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Initialize" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Edit Front Only" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Mesh" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Camera State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Mesh Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="OSD (EditingFramework DX9)" name="OSD" category="EditingFramework" version="DX9" filename="modules\DX9\OSD (EditingFramework DX9).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Translating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotating" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Offset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "OSD (EditingFramework DX9) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditorView (DX9 2d)" name="PointEditorView" category="DX9" version="2d" filename="modules\DX9\PointEditorView (DX9 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Line" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Highlight Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Point Hover Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Line Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "PointEditorView (DX9 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditorView (DX9 3d)" name="PointEditorView" category="DX9" version="3d" filename="modules\DX9\PointEditorView (DX9 3d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Line" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Highlight Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Point Hover Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Line Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "PointEditorView (DX9 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PointEditorView (DX9 Internal)" name="PointEditorView" category="DX9" version="Internal" filename="modules\DX9\PointEditorView (DX9 Internal).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Projection Space" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Hover Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Highlight Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Point Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="BinSize" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Line Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Line" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Scale" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Rotate" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Translate" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Offset" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Editing" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show OSD" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="EditablePoint" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Show Gizmo" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "PointEditorView (DX9 Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Gizmo (EditingFramework 3d Internal)" name="Gizmo" category="EditingFramework" version="3d Internal" filename="vl\VVVV.3DGizmo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="PositionXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Controls" direction="Input" subtype="GizmoControlsState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="View Projection" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Camera Idle" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Active Plane" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="GizmoState" direction="Output" subtype="GizmoState" slicemode="Manual" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translate OffsetXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotate OffsetXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scale OffsetXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Active AxisXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Gizmo (EditingFramework 3d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="GizmoState (EditingFramework Split Internal)" name="GizmoState" category="EditingFramework" version="Split Internal" filename="vl\VVVV.3DGizmo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="GizmoState" direction="Input" subtype="GizmoState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Gizmo Model" direction="Output" subtype="GizmoModel" slicemode="Manual" visibility="True">
+</PIN><PIN name="Active AxisXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translation OffsetXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotation OffsetXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scale OffsetXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Visible" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "GizmoState (EditingFramework Split Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="GizmoModel (EditingFramework Split Internal)" name="GizmoModel" category="EditingFramework" version="Split Internal" filename="vl\VVVV.3DGizmo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="GizmoModel" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pick Size" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Gizmo Size" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translation Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scale Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotation Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Active AxisXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translation Active" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scale Active" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotation Active" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Center Active" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Center Enabled" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translation Enabled" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scale Enabled" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotation Enabled" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Active PlaneXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "GizmoModel (EditingFramework Split Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="GizmoControls (EditingFramework Internal)" name="GizmoControls" category="EditingFramework" version="Internal" filename="vl\VVVV.3DGizmo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Mouse" direction="Input" subtype="IMouse" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Keyboard" direction="Input" subtype="IKeyboard" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enable" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Gizmo Controls" direction="Output" subtype="GizmoControlsState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "GizmoControls (EditingFramework Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Camera (EditingFramework 3d Internal)" name="Camera" category="EditingFramework" version="3d Internal" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Initial InterestXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Initial Longitude" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Initial Latitude" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Initial Distance" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Initial FOV" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Near Plane" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Far Plane" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="CameraControls3d" direction="Input" subtype="CameraControls_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Camera State" direction="Output" subtype="CameraState_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Camera (EditingFramework 3d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Camera (EditingFramework 2d Internal)" name="Camera" category="EditingFramework" version="2d Internal" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Initial InterestXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Initial Zoom" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Minimum Zoom" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Maximum Zoom" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Camera Controls" direction="Input" subtype="CameraControls" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Camera State" direction="Output" subtype="CameraState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Camera (EditingFramework 2d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="CameraState (EditingFramework Split 2d)" name="CameraState" category="EditingFramework" version="Split 2d" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Camera State" direction="Input" subtype="CameraState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Zoom" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "CameraState (EditingFramework Split 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="CameraState (EditingFramework Join 2d Internal)" name="CameraState" category="EditingFramework" version="Join 2d Internal" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="View" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Inverse View" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Zoom" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Idle" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Camera State" direction="Output" subtype="CameraState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "CameraState (EditingFramework Join 2d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="CameraState (EditingFramework Join 3d Internal)" name="CameraState" category="EditingFramework" version="Join 3d Internal" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="View Projection" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="View" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Projection" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Inverse View" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="PositionXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="InterestXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="FOV" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Distance" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Four Rooms" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Active Viewport" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Idle" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Camera State" direction="Output" subtype="CameraState_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "CameraState (EditingFramework Join 3d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="CameraState (EditingFramework Split 3d)" name="CameraState" category="EditingFramework" version="Split 3d" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Camera State" direction="Input" subtype="CameraState_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="InterestXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="FOV" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Distance" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Four Rooms" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Active Viewport" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Renderer Hovered" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "CameraState (EditingFramework Split 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="FlatCameraControls (EditingFramework)" name="FlatCameraControls" category="EditingFramework" version="" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Camera Controls" direction="Input" subtype="CameraControls" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mouse Device" direction="Input" subtype="IMouse" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Keyboard Device" direction="Input" subtype="IKeyboard" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Zoom Speed" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Camera Controls" direction="Output" subtype="CameraControls" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "FlatCameraControls (EditingFramework) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="OrbitCameraControls (EditingFramework)" name="OrbitCameraControls" category="EditingFramework" version="" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Camera Controls" direction="Input" subtype="CameraControls_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mouse Device" direction="Input" subtype="IMouse" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Keyboard Device" direction="Input" subtype="IKeyboard" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Filter Time" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Camera Controls" direction="Output" subtype="CameraControls_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "OrbitCameraControls (EditingFramework) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SoftimageCameraControls (EditingFramework)" name="SoftimageCameraControls" category="EditingFramework" version="" filename="vl\VVVV.Cameras.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Camera Controls" direction="Input" subtype="CameraControls_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mouse Device" direction="Input" subtype="IMouse" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Keyboard Device" direction="Input" subtype="IKeyboard" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Camera Controls" direction="Output" subtype="CameraControls_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "SoftimageCameraControls (EditingFramework) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierEditor (EditingFramework 2d Internal)" name="BezierEditor" category="EditingFramework" version="2d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Knots To Add" direction="Input" subtype="BezierKnot" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Knots To Add Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Add Knot" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Smooth Added Knots" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Insert Knot" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="BezierEditorControls" direction="Input" subtype="BezierEditorControlsData" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Controls" direction="Input" subtype="GizmoControlsState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="View" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Camera Idle" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Camera Zoom" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="File Path" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierEditorState" direction="Output" subtype="BezierEditorState" slicemode="Manual" visibility="True">
+</PIN><PIN name="BezierSpline" direction="Output" subtype="BezierSpline" slicemode="Manual" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierEditor (EditingFramework 2d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierEditor (EditingFramework 3d Internal)" name="BezierEditor" category="EditingFramework" version="3d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Knots To Add" direction="Input" subtype="BezierKnot_3" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Knots To Add Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Add Knot" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Add and Smooth" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Insert Knot" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="BezierEditorControls" direction="Input" subtype="BezierEditorControlsData" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Controls" direction="Input" subtype="GizmoControlsState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="View Projection" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="File Path" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierEditorState" direction="Output" subtype="BezierEditorState_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="BezierSpline" direction="Output" subtype="BezierSpline_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierEditor (EditingFramework 3d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierEditorControls (EditingFramework Internal)" name="BezierEditorControls" category="EditingFramework" version="Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Mouse" direction="Input" subtype="IMouse" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Keyboard" direction="Input" subtype="IKeyboard" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierEditorControls" direction="Output" subtype="BezierEditorControlsData" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierEditorControls (EditingFramework Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierEditorState (EditingFramework Split 3d)" name="BezierEditorState" category="EditingFramework" version="Split 3d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierPointEditorState" direction="Input" subtype="BezierEditorState_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="EditableBezierKnots" direction="Output" subtype="EditableBezierKnot_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="EditableBezierKnots Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pick Size" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translation" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotation" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scaling" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="OffsetXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Point on CurveXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Looking for Point" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Editing" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Projection Space" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="GizmoState" direction="Output" subtype="GizmoState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierEditorState (EditingFramework Split 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierEditorState (EditingFramework Split 2d)" name="BezierEditorState" category="EditingFramework" version="Split 2d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierEditorState" direction="Input" subtype="BezierEditorState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="EditableBezierKnots" direction="Output" subtype="EditableBezierKnot" slicemode="Manual" visibility="True">
+</PIN><PIN name="EditableBezierKnots Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pick Size" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translation" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotation" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scaling" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="OffsetXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Point on CurveXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Looking for Point" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Editing" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Projection Space" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="GizmoState" direction="Output" subtype="GizmoState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierEditorState (EditingFramework Split 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierEditorState (EditingFramework Join 2d Internal)" name="BezierEditorState" category="EditingFramework" version="Join 2d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="EditableBezierKnots" direction="Input" subtype="EditableBezierKnot" slicemode="UpStream" visibility="True">
+</PIN><PIN name="EditableBezierKnots Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Translation" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Rotation" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="OffsetXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Point on CurveXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Looking for Point" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Editing" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Is Projection Space" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="GizmoState" direction="Input" subtype="GizmoState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierEditorState" direction="Output" subtype="BezierEditorState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierEditorState (EditingFramework Join 2d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierEditorState (EditingFramework Join 3d Internal)" name="BezierEditorState" category="EditingFramework" version="Join 3d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="EditableBezierKnots" direction="Input" subtype="EditableBezierKnot_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="EditableBezierKnots Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Translation" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Rotation" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="OffsetXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Point on CurveXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Looking for Point" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Editing" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Is Projection Space" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="GizmoState" direction="Input" subtype="GizmoState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierEditorState" direction="Output" subtype="BezierEditorState_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierEditorState (EditingFramework Join 3d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierKnot (2d Join Controls)" name="BezierKnot" category="2d" version="Join Controls" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Contol1XY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control2XY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mode" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierKnot" direction="Output" subtype="BezierKnot" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierKnot (2d Join Controls) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierKnot (2d Join)" name="BezierKnot" category="2d" version="Join" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mode" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierKnot" direction="Output" subtype="BezierKnot" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierKnot (2d Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierKnot (2d Split)" name="BezierKnot" category="2d" version="Split" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierKnot" direction="Input" subtype="BezierKnot" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control1XY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control2XY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Mode" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierKnot (2d Split) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierKnot (3d Join)" name="BezierKnot" category="3d" version="Join" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mode" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierKnot" direction="Output" subtype="BezierKnot_3" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierKnot (3d Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierKnot (3d Join Controls)" name="BezierKnot" category="3d" version="Join Controls" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Contol1XYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control2XYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mode" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierKnot" direction="Output" subtype="BezierKnot_3" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierKnot (3d Join Controls) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierKnot (3d Split)" name="BezierKnot" category="3d" version="Split" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierKnot" direction="Input" subtype="BezierKnot_3" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control1XYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control2XYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Mode" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierKnot (3d Split) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditableBezierKnot (EditingFramework Split 2d)" name="EditableBezierKnot" category="EditingFramework" version="Split 2d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierKnot" direction="Input" subtype="EditableBezierKnot" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Point" direction="Output" subtype="EditablePoint" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control1" direction="Output" subtype="EditablePoint" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control2" direction="Output" subtype="EditablePoint" slicemode="Manual" visibility="True">
+</PIN><PIN name="Mode" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditableBezierKnot (EditingFramework Split 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditableBezierKnot (EditingFramework Split 3d)" name="EditableBezierKnot" category="EditingFramework" version="Split 3d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierKnot" direction="Input" subtype="EditableBezierKnot_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Point" direction="Output" subtype="EditablePoint_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control1" direction="Output" subtype="EditablePoint_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control2" direction="Output" subtype="EditablePoint_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="Mode" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditableBezierKnot (EditingFramework Split 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditableBezierKnot (EditingFramework Join 2d Controls)" name="EditableBezierKnot" category="EditingFramework" version="Join 2d Controls" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Point" direction="Input" subtype="EditablePoint" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Contol1" direction="Input" subtype="EditablePoint" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control2" direction="Input" subtype="EditablePoint" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mode" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierKnot" direction="Output" subtype="EditableBezierKnot" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditableBezierKnot (EditingFramework Join 2d Controls) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditableBezierKnot (EditingFramework Join 2d)" name="EditableBezierKnot" category="EditingFramework" version="Join 2d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Point" direction="Input" subtype="EditablePoint" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mode" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierKnot" direction="Output" subtype="EditableBezierKnot" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditableBezierKnot (EditingFramework Join 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditableBezierKnot (EditingFramework Join 3d Controls)" name="EditableBezierKnot" category="EditingFramework" version="Join 3d Controls" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Point" direction="Input" subtype="EditablePoint_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Contol1" direction="Input" subtype="EditablePoint_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control2" direction="Input" subtype="EditablePoint_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mode" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierKnot" direction="Output" subtype="EditableBezierKnot_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditableBezierKnot (EditingFramework Join 3d Controls) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditableBezierKnot (EditingFramework Join 3d)" name="EditableBezierKnot" category="EditingFramework" version="Join 3d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Point" direction="Input" subtype="EditablePoint_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Mode" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierKnot" direction="Output" subtype="EditableBezierKnot_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditableBezierKnot (EditingFramework Join 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditablePoint (EditingFramework Split 3d)" name="EditablePoint" category="EditingFramework" version="Split 3d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="EditablePoint" direction="Input" subtype="EditablePoint_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Locked" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Selected" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Hovered" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="KeyHovered" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="SelectionModifier" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditablePoint (EditingFramework Split 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditablePoint (EditingFramework Split 2d)" name="EditablePoint" category="EditingFramework" version="Split 2d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="EditablePoint" direction="Input" subtype="EditablePoint" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Locked" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Selected" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Hovered" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="KeyHovered" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="SelectionModifier" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditablePoint (EditingFramework Split 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditablePoint (EditingFramework Join 2d)" name="EditablePoint" category="EditingFramework" version="Join 2d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PositionXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Locked" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Selected" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Hovered" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="KeyHovered" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="SelectionModifier" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Id" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="EditablePoint" direction="Output" subtype="EditablePoint" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditablePoint (EditingFramework Join 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditablePoint (EditingFramework Join 3d)" name="EditablePoint" category="EditingFramework" version="Join 3d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PositionXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Locked" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Selected" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Hovered" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="KeyHovered" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="SelectionModifier" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Id" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="EditablePoint" direction="Output" subtype="EditablePoint_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditablePoint (EditingFramework Join 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="EditablePoint (EditingFramework 3dFrom2d Internal)" name="EditablePoint" category="EditingFramework" version="3dFrom2d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="EditablePoint" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Output" direction="Output" subtype="EditablePoint_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "EditablePoint (EditingFramework 3dFrom2d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PointEditor (EditingFramework 3d Internal)" name="PointEditor" category="EditingFramework" version="3d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Points To AddXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Points To Add Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Add" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Locked" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Locked Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="PointEditor Controls" direction="Input" subtype="PointEditorControlsData" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Controls" direction="Input" subtype="GizmoControlsState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="View Projection" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="File Path" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Camera Idle" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointEditor State" direction="Output" subtype="PointEditorState_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="PointsXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Ids" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Ids Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "PointEditor (EditingFramework 3d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PointEditor (EditingFramework 2d Internal)" name="PointEditor" category="EditingFramework" version="2d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Points To AddXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Points To Add Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Add" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Locked" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Locked Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="PointEditor Controls" direction="Input" subtype="PointEditorControlsData" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Controls" direction="Input" subtype="GizmoControlsState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="View" direction="Input" subtype="-&gt; Transform" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Camera Zoom" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Camera Idle" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Step Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gizmo Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="File Path" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Save" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Load" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointEditor State" direction="Output" subtype="PointEditorState" slicemode="Manual" visibility="True">
+</PIN><PIN name="PointsXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Ids" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Ids Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Idle" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "PointEditor (EditingFramework 2d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PointEditorControls (EditingFramework Internal)" name="PointEditorControls" category="EditingFramework" version="Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Mouse Device" direction="Input" subtype="IMouse" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Keyboard Device" direction="Input" subtype="IKeyboard" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointEditor Controls" direction="Output" subtype="PointEditorControlsData" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "PointEditorControls (EditingFramework Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PointEditorState (EditingFramework Split 3d)" name="PointEditorState" category="EditingFramework" version="Split 3d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointEditor State" direction="Input" subtype="PointEditorState_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="EditablePoints" direction="Output" subtype="EditablePoint_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="EditablePoints Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pick Size" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Editing" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="OffsetXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scale" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotate" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translate" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Projection Space" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="GizmoState" direction="Output" subtype="GizmoState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "PointEditorState (EditingFramework Split 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PointEditorState (EditingFramework Split 2d)" name="PointEditorState" category="EditingFramework" version="Split 2d" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointEditor State" direction="Input" subtype="PointEditorState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="EditablePoints" direction="Output" subtype="EditablePoint" slicemode="Manual" visibility="True">
+</PIN><PIN name="EditablePoints Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pick Size" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Editing" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="OffsetXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Scale" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Rotate" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Translate" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Projection Space" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="GizmoState" direction="Output" subtype="GizmoState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "PointEditorState (EditingFramework Split 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PointEditorState (EditingFramework Join 3d Internal)" name="PointEditorState" category="EditingFramework" version="Join 3d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="EditablePoints" direction="Input" subtype="EditablePoint_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="EditablePoints Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Editing" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="OffsetXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Rotation" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Translation" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Projection Space" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="GizmoState" direction="Input" subtype="GizmoState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointEditorState" direction="Output" subtype="PointEditorState_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "PointEditorState (EditingFramework Join 3d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PointEditorState (EditingFramework Join 2d Internal)" name="PointEditorState" category="EditingFramework" version="Join 2d Internal" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="EditablePoints" direction="Input" subtype="EditablePoint" slicemode="UpStream" visibility="True">
+</PIN><PIN name="EditablePoints Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Pick Size" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Editing" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="OffsetXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Scaling" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Rotation" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Translation" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Projection Space" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="GizmoState" direction="Input" subtype="GizmoState" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointEditorState" direction="Output" subtype="PointEditorState" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "PointEditorState (EditingFramework Join 2d Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Reader (2d BezierSpline)" name="Reader" category="2d" version="BezierSpline" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Filename" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Read" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="BezierSpline" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Reader (3d BezierSpline)" name="Reader" category="3d" version="BezierSpline" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Filename" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Read" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="BezierSpline_0" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Writer (3d BezierSpline)" name="Writer" category="3d" version="BezierSpline" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bezier Spline" direction="Input" subtype="BezierSpline_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Write" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><TODO>Help patch "Writer (3d BezierSpline) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Writer (2d BezierSpline)" name="Writer" category="2d" version="BezierSpline" filename="vl\VVVV.Editors.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bezier Spline" direction="Input" subtype="BezierSpline" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Filename" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Write" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><TODO>Help patch "Writer (2d BezierSpline) help.v4p" not found
+</TODO>
+</NODE>
+</NODELIST>

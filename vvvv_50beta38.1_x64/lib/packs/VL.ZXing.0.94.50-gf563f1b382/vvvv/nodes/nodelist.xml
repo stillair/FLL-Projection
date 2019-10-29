@@ -1,0 +1,18 @@
+<!DOCTYPE NODELIST ><NODELIST version="50beta38.1"><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BarcodeReader (String)" name="BarcodeReader" category="String" version="" filename="vl\VVVV.BarcodeReader.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>qrcode, pdf-417f, aztec, data-matrix, itf, codebar, msi, rss-14
+</TAGS><HELP>Reads various 1d and 2d barcodes
+</HELP><AUTHOR>vvvv group
+</AUTHOR><CREDITS>https://github.com/micjahn/ZXing.Net
+</CREDITS><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bitmap" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Decode" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Text" direction="Output" subtype="Object" slicemode="Manual" visibility="True">
+</PIN><PIN name="Format" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="PointsXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE>
+</NODELIST>

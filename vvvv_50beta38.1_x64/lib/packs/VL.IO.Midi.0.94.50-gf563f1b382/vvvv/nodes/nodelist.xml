@@ -1,0 +1,43 @@
+<!DOCTYPE NODELIST ><NODELIST version="50beta38.1"><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="MidiFile (Midi)" name="MidiFile" category="Midi" version="" filename="vl\VVVV.Value.MidiFile.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Basic stateful template with one in/out
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Filename" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Read" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Tracks" direction="Output" subtype="Tracks" slicemode="Manual" visibility="True">
+</PIN><PIN name="Track Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Metrical Timing" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pulses Per Quarter Note" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Format" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="MidiTrack (Midi)" name="MidiTrack" category="Midi" version="" filename="vl\VVVV.Value.MidiFile.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tracks" direction="Input" subtype="Tracks" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Track Index" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Channels" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Channels Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Notes" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Notes Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Velocities" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Velocities Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Start Times" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Start Times Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="End Times" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="End Times Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Texts" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Texts Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Text Types" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Text Types Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Text Times" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Text Times Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "MidiTrack (Midi) help.v4p" not found
+</TODO>
+</NODE>
+</NODELIST>

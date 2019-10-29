@@ -1,0 +1,971 @@
+<!DOCTYPE NODELIST ><NODELIST version="50beta38.1"><NODE factory="VVVV.Hosting.Factories.DotNetPluginFactory" systemname="UploadImage (EX9.Texture)" name="UploadImage" category="EX9.Texture" version="" filename="plugins\VL.CoreLib.VVVV.dll" ignore="0" autoevaluate="0" type="Plugin" arguments="VVVV.Nodes.ImageToDX9TextureNode" ibs="200,200" iws="0,0" icm="0"><HELP>Copies the data from an image to a texture
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Data" direction="Input" subtype="IImage" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Do Upload" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Texture Out" direction="Output" subtype="Texture -&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="Status" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "UploadImage (EX9.Texture) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.DotNetPluginFactory" systemname="UploadImage (EX9.Texture Async)" name="UploadImage" category="EX9.Texture" version="Async" filename="plugins\VL.CoreLib.VVVV.dll" ignore="0" autoevaluate="0" type="Plugin" arguments="VVVV.Nodes.ImageStreamToDX9TextureNode" ibs="200,200" iws="0,0" icm="0"><HELP>Copies the data from an image to a texture asynchronously using a double buffer
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Data" direction="Input" subtype="IObservable&lt;VL.Lib.Basics.Imaging.IImage&gt;" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Timeout" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Texture Out" direction="Output" subtype="Texture -&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="Status" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Drop Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Swap Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "UploadImage (EX9.Texture Async) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="ArtNet (Network Receiver Legacy)" name="ArtNet" category="Network" version="Receiver Legacy" filename="modules\ArtNet (Network Receiver Legacy).v4p" ignore="-1" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>dmx
+</TAGS><HELP>Receives DMX universes from a remote device via Art-Net
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Subnet" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Universe" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Local Port" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Output" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name=" Net" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Output" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "ArtNet (Network Receiver Legacy) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="ArtNet (Network Receiver)" name="ArtNet" category="Network" version="Receiver" filename="modules\ArtNet (Network Receiver).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>dmx
+</TAGS><HELP>Receives DMX universes from a remote device via Art-Net
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Universe" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Local Port" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Universes Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Output" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="ArtNet (Network Sender Legacy)" name="ArtNet" category="Network" version="Sender Legacy" filename="modules\ArtNet (Network Sender Legacy).v4p" ignore="-1" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>dmx
+</TAGS><HELP>Sends a DMX universe to a remote device via Art-Net
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Remote Host" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Remote Port" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Send" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Subnet" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Universe" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Input" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Input Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Net" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Input Bin Size" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "ArtNet (Network Sender Legacy) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="ArtNet (Network Sender)" name="ArtNet" category="Network" version="Sender" filename="modules\ArtNet (Network Sender).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>dmx
+</TAGS><HELP>Sends a DMX universe to a remote device via Art-Net
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Remote Host" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Remote Port" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Send" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Universe" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Input" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Input Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="HTTPGet (Network String)" name="HTTPGet" category="Network" version="String" filename="modules\HTTPGet (Network String).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>rest
+</TAGS><HELP>Reads data from the web using a HTTP GET request and returns the body as string.
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Encoding" direction="Input" subtype="CodePages" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="URL" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Username" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Password" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Refresh" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Names" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Names Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Values" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Values Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Headers" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Headers Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Status" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Header" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Body" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="In Progress" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="On Completed" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="HTTPPost (Network String)" name="HTTPPost" category="Network" version="String" filename="modules\HTTPPost (Network String).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><TAGS>rest
+</TAGS><HELP>Posts data to the web using a HTTP POST command and returns the body as string.
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="URL" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Username" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Password" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Refresh" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Encoding" direction="Input" subtype="CodePages" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Names" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Names Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Values" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Values Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Headers" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="Headers Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="OnlyInspector">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Status" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Header" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Body" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="In Progress" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="On Completed" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Line (EX9 2d)" name="Line" category="EX9" version="2d" filename="modules\Line (EX9 2d).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="VerticesXY" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Width" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Miter Limit" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Render State" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Bin Size" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Transform" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Transform Each Bin" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Closed" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Texture" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Texture Transform" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Template (Value)" name="Template" category="Value" version="" filename="vl\Template.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>vl
+</TAGS><HELP>Basic stateful template with one in/out
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Value" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Template (Value) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Template (Value Stateless)" name="Template" category="Value" version="Stateless" filename="vl\TemplateStateless.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>vl
+</TAGS><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Output" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Template (Value Stateless) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ADSR (Animation FrameBased)" name="ADSR" category="Animation" version="FrameBased" filename="vl\VVVV.Animation.ADSR.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Attack Time" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Decay Time" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Sustain Level" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Slope" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Release Time" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Frame Rate" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Level" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Stage" direction="Output" subtype="VL.Lib.Animation.ADSRStage" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ADSR (Animation TimeBased)" name="ADSR" category="Animation" version="TimeBased" filename="vl\VVVV.Animation.ADSR.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Attack Time" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Decay Time" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Sustain Level" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Slope" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Release Time" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Level" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Stage" direction="Output" subtype="VL.Lib.Animation.ADSRStage" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Levin (Animation 2d)" name="Levin" category="Animation" version="2d" filename="vl\VVVV.Animation.Levin.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>yellowtail
+</TAGS><HELP>Records a motion and extrapolates it further
+</HELP><AUTHOR>vvvv group
+</AUTHOR><CREDITS>Golan Levin, Yellowtail as part of AVES: http://acg.media.mit.edu/people/golan/aves/
+</CREDITS><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PositionXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Insert" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Position Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Levin (Animation 3d)" name="Levin" category="Animation" version="3d" filename="vl\VVVV.Animation.Levin.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>yellowtail
+</TAGS><HELP>Records a motion and extrapolates it further
+</HELP><AUTHOR>vvvv group
+</AUTHOR><CREDITS>Golan Levin, Yellowtail as part of AVES: http://acg.media.mit.edu/people/golan/aves/
+</CREDITS><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PositionXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Insert" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Position Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Wanderer (Animation 2d)" name="Wanderer" category="Animation" version="2d" filename="vl\VVVV.Animation.Wanderer.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Basic template with one in/out
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="StartXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="CenterXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="WidthXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Main Direction" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Main Direction Tendency" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Direction Deviation" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Speed" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Smoothing" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Walk" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Wanderer (Animation 3d)" name="Wanderer" category="Animation" version="3d" filename="vl\VVVV.Animation.Wanderer.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="StartXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="CenterXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="WidthXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Main DirectionXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Main Direction Tendency" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Direction DeviationXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Speed" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Smoothing" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Walk" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierPatch (BezierPatch Join)" name="BezierPatch" category="BezierPatch" version="Join" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Control 1" direction="Input" subtype="BezierSegment_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 2" direction="Input" subtype="BezierSegment_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 3" direction="Input" subtype="BezierSegment_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 4" direction="Input" subtype="BezierSegment_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierPatch" direction="Output" subtype="BezierPatch" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierPatch (BezierPatch Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierPatch (BezierPatch Split)" name="BezierPatch" category="BezierPatch" version="Split" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierPatch" direction="Input" subtype="BezierPatch" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Control 1" direction="Output" subtype="BezierSegment_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 2" direction="Output" subtype="BezierSegment_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 3" direction="Output" subtype="BezierSegment_0" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 4" direction="Output" subtype="BezierSegment_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierPatch (BezierPatch Split) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Sample (BezierPatch)" name="Sample" category="BezierPatch" version="" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierPatch" direction="Input" subtype="BezierPatch" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Scalar" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Position" direction="Output" subtype="BezierSegment_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Sample (BezierPatch) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierPatchSpread (BezierPatch)" name="BezierPatchSpread" category="BezierPatch" version="" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierPatch" direction="Input" subtype="BezierPatch" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionsXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Positions Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierPatchSpread (BezierPatch) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSegment (BezierSegment 2d Join)" name="BezierSegment" category="BezierSegment" version="2d Join" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Control 1XY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 2XY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 3XY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 4XY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierSegment" direction="Output" subtype="BezierSegment_1" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSegmentSpread (BezierSegment 2d)" name="BezierSegmentSpread" category="BezierSegment" version="2d" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierSegment" direction="Input" subtype="BezierSegment_1" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionsXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Positions Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSegmentSpread (BezierSegment 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Sample (BezierSegment 2d)" name="Sample" category="BezierSegment" version="2d" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierSegment" direction="Input" subtype="BezierSegment_1" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Scalar" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Sample (BezierSegment 2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSegment (BezierSegment 2d Split)" name="BezierSegment" category="BezierSegment" version="2d Split" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierSegment" direction="Input" subtype="BezierSegment_1" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Control 1XY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 2XY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 3XY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 4XY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSegment (BezierSegment 2d Split) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSegment (BezierSegment 3d Join)" name="BezierSegment" category="BezierSegment" version="3d Join" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Control 1XYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 2XYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 3XYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Control 4XYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierSegment" direction="Output" subtype="BezierSegment_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSegment (BezierSegment 3d Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSegment (BezierSegment 3d Split)" name="BezierSegment" category="BezierSegment" version="3d Split" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierSegment" direction="Input" subtype="BezierSegment_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Control 1XYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 2XYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 3XYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Control 4XYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSegment (BezierSegment 3d Split) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Sample (BezierSegment 3d)" name="Sample" category="BezierSegment" version="3d" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierSegment" direction="Input" subtype="BezierSegment_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Scalar" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Sample (BezierSegment 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSegmentSpread (BezierSegment 3d)" name="BezierSegmentSpread" category="BezierSegment" version="3d" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="BezierSegment" direction="Input" subtype="BezierSegment_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionsXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Positions Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSegmentSpread (BezierSegment 3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSpread (2d BezierSpline)" name="BezierSpread" category="2d" version="BezierSpline" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="BezierSpline" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Point Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSpline (2d Join)" name="BezierSpline" category="2d" version="Join" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="BezierKnot" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierSpline" direction="Output" subtype="BezierSpline" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSpline (2d Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ArcLength (2d BezierSpline)" name="ArcLength" category="2d" version="BezierSpline" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="BezierSpline" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Resolution" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Point Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Index" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Index Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Total Length" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSpline (2d Split)" name="BezierSpline" category="2d" version="Split" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="BezierSpline" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="BezierKnot" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSpline (2d Split) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSpread (3d BezierSpline)" name="BezierSpread" category="3d" version="BezierSpline" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="BezierSpline_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PositionsXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Positions Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSpline (3d Join)" name="BezierSpline" category="3d" version="Join" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="BezierKnot_1" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="BezierSpline" direction="Output" subtype="BezierSpline_0" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSpline (3d Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ArcLength (3d BezierSpline)" name="ArcLength" category="3d" version="BezierSpline" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="BezierSpline_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Resolution" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Point Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Index" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Index Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Total Length" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="BezierSpline (3d Split)" name="BezierSpline" category="3d" version="Split" filename="vl\VVVV.Bezier.Cubic.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="BezierSpline_0" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="BezierKnot_1" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "BezierSpline (3d Split) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Bjorklund (Collections)" name="Bjorklund" category="Collections" version="" filename="vl\VVVV.Bjorklund.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Number of Pulses" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Sequence Length" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Universe (Network Join)" name="Universe" category="Network" version="Join" filename="vl\VVVV.Network.ArtNet.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>artnet
+</TAGS><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Net" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Subnet" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Universe" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Output" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Universe (Network Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Universe (Network Split)" name="Universe" category="Network" version="Split" filename="vl\VVVV.Network.ArtNet.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>artnet
+</TAGS><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Net" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Subnet" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Universe" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Universe (Network Split) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ArtNet (Network Sender Internal)" name="ArtNet" category="Network" version="Sender Internal" filename="vl\VVVV.Network.ArtNet.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Universe" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Universe Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Remote Host" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Remote Host Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Remote Port" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Remote Port Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Send" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Send Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Channels per Universe" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Channels per Universe Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><TODO>Help patch "ArtNet (Network Sender Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ArtNet (Network Receiver Internal)" name="ArtNet" category="Network" version="Receiver Internal" filename="vl\VVVV.Network.ArtNet.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Local Port" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Universes" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Universes Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "ArtNet (Network Receiver Internal) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="HTTPGet (Network)" name="HTTPGet" category="Network" version="" filename="vl\VVVV.Network.HTTP.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>rest
+</TAGS><HELP>Reads data from the web using a HTTP GET request and returns the body as raw.
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="URL" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Names" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Names Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Values" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Values Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Headers" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Headers Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Username" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Password" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Refresh" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Status" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Header" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Body" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="In Progress" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="On Completed" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="HTTPPost (Network)" name="HTTPPost" category="Network" version="" filename="vl\VVVV.Network.HTTP.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>rest
+</TAGS><HELP>Posts data to the web using a HTTP POST command and returns the body as raw.
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="URL" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Names" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Names Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Values" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Values Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Headers" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Headers Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Username" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Password" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Refresh" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Status" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Header" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Body" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="In Progress" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="On Completed" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ArcLength (2d)" name="ArcLength" category="2d" version="" filename="vl\VVVV.Paths.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Evenly samples a curve.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointsXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position On Curve" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position On Curve Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Point Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Index" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Index Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Total Length" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ArcLength (3d)" name="ArcLength" category="3d" version="" filename="vl\VVVV.Paths.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="PointsXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Points Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position On Curve" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position On Curve Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="PointXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Point Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Index" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Segment Index Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Total Length" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PrefixLength (Raw)" name="PrefixLength" category="Raw" version="" filename="vl\VVVV.Raw.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Big Endian" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Byte Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="PostfixBytes (Raw)" name="PostfixBytes" category="Raw" version="" filename="vl\VVVV.Raw.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Postfix" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="FrameBytes (Raw)" name="FrameBytes" category="Raw" version="" filename="vl\VVVV.Raw.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Prefix" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Postfix" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Tokenizer (Raw LengthPrefix)" name="Tokenizer" category="Raw" version="LengthPrefix" filename="vl\VVVV.Raw.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Data" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Length Byte Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Length Big Endian" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Status" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Tokenizer (Raw Postfix)" name="Tokenizer" category="Raw" version="Postfix" filename="vl\VVVV.Raw.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Data" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Postfix" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Status" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Tokenizer (Raw Frame)" name="Tokenizer" category="Raw" version="Frame" filename="vl\VVVV.Raw.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Data" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Prefix" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Postfix" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Status" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Tokenizer (Raw FixedLength)" name="Tokenizer" category="Raw" version="FixedLength" filename="vl\VVVV.Raw.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Data" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Length" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Status" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Enqueue (Raw)" name="Enqueue" category="Raw" version="" filename="vl\VVVV.Raw.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Data" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Data Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Reset" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Enqueue (Raw) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="RectangleSpread (Spreads 2d)" name="RectangleSpread" category="Spreads" version="2d" filename="vl\VVVV.Spreads.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Generates a rectangle in 2d space.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="CenterXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Subdivision Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="OutputXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Output Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="StarSpread (Spreads 2d)" name="StarSpread" category="Spreads" version="2d" filename="vl\VVVV.Spreads.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Generates a star in 2d space.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="CenterXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Radius 1" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Radius 2" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Phase" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Spike Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="OutputXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Output Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SpiralSpread (Spreads 2d)" name="SpiralSpread" category="Spreads" version="2d" filename="vl\VVVV.Spreads.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Generates a spiral in 2d space.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="CenterXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Factor" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Phase" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Spread Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="OutputXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Output Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="CircleSpread (Spreads 2d)" name="CircleSpread" category="Spreads" version="2d" filename="vl\VVVV.Spreads.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Generates a circle in 2d space.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="CenterXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Factor" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Phase" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Spread Count" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="OutputXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Output Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="HexGridSpread (Spreads 2d)" name="HexGridSpread" category="Spreads" version="2d" filename="vl\VVVV.Spreads.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Generates a hexagonal grid in 2d space.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="CenterXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Radius" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Even Lower" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ResolutionXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="ResultXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Except (String)" name="Except" category="String" version="" filename="vl\VVVV.Spreads.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Returns a spread containing slices from Input 1 except slices from Input 2.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input 1" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input 1 Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input 2" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input 2 Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Output" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Output Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Distinct (String)" name="Distinct" category="String" version="" filename="vl\VVVV.Spreads.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Returns a spread stripped of duplicates.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Case Sensitive" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Output" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Output Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Intersect (String)" name="Intersect" category="String" version="" filename="vl\VVVV.Spreads.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Returns all distinct elements that are found in each of the Input spreads.
+</HELP><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Input 1" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input 1 Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input 2" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Input 2 Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Output" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Output Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Undo (Value)" name="Undo" category="Value" version="" filename="vl\VVVV.Undo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Item" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Item Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Levels" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Push" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Undo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Redo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pointer" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Undo (2d)" name="Undo" category="2d" version="" filename="vl\VVVV.Undo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="ItemXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Item Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Levels" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Push" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Undo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Redo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="ResultXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pointer" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Undo (2d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Undo (3d)" name="Undo" category="3d" version="" filename="vl\VVVV.Undo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="ItemXYZ" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Item Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Levels" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Push" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Undo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Redo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="ResultXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pointer" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Undo (3d) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Undo (String)" name="Undo" category="String" version="" filename="vl\VVVV.Undo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Item" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Item Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Levels" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Push" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Undo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Redo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pointer" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Undo (String) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Undo (Color)" name="Undo" category="Color" version="" filename="vl\VVVV.Undo.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Item" direction="Input" subtype="" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Item Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Clear" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Levels" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Push" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Undo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Redo" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Result" direction="Output" subtype="" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Count" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pointer" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Undo (Color) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Processes (Windows Async)" name="Processes" category="Windows" version="Async" filename="vl\VVVV.Windows.Processes.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Process ID" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Process ID Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Name" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Name Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Filename" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN><PIN name="Filename Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Priority" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Priority Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Processes (Windows Async) help.v4p" not found
+</TODO>
+</NODE>
+</NODELIST>

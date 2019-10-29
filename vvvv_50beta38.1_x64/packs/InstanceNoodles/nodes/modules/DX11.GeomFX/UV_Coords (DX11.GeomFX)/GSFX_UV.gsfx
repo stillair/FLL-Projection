@@ -1,0 +1,101 @@
+#include "..\..\Common\InstanceNoodles.fxh"
+#include "..\..\Common\UV.fxh"
+
+
+StructuredBuffer<float> iidb;
+
+
+
+float4x4 dTransform <string uiname="Space Transform Default";>;
+StructuredBuffer<float4x4> bTransform <string uiname="Space Transform Buffer";>;
+iGeomIndex transformIndexing <string linkclass="Instance,Primitive,Vertex"; string uiname="Space Transform Indexing";>;
+
+float4x4 dTexTransform <string uiname="Texture Transform Default"; bool uvspace=true;>;
+StructuredBuffer<float4x4> bTexTransform <string uiname="Texture Transform Buffer"; bool uvspace=true;>;
+iGeomIndex texTransformIndexing <string linkclass="Instance,Primitive,Vertex"; string uiname="Texture Transform Indexing";>;
+
+struct VS_Passthrough
+{
+	float4 pos : POSITION;
+	float3 norm : NORMAL;
+};
+
+struct VS_OUTPUT
+{
+	float4 pos : POSITION;
+	float3 norm : NORMAL;
+	//float2 uv : TEXCOORD0;
+};
+
+struct GS_OUTPUT
+{
+	float4 pos : POSITION;
+	float3 norm : NORMAL;
+	float2 uv : TEXCOORD0;
+};
+
+
+
+iUVMode uvMode <string linkclass="PlanarXY,PlanarXZ,PlanarZY,Cubic,Spherical,Cylindrical";>;
+
+
+
+
+
+
+
+VS_Passthrough VS(VS_Passthrough input)
+{
+
+    VS_OUTPUT output;
+		
+	output = input;
+	output.norm = input.norm;
+
+	//output.uv = mul(uv, bLoad(bTexTransform, dTexTransform, texTransformIndex));
+	output.pos = input.pos; // return vert pos to orignal 
+	
+    return output;
+}
+
+
+
+[maxvertexcount(3)]
+void GS(triangle VS_OUTPUT input[3], inout TriangleStream<GS_OUTPUT>GSOut, uint pid : SV_PrimitiveID)
+{
+	GS_OUTPUT v = (GS_OUTPUT)0;
+
+	//Compute flat normal
+	float3 f1 = input[1].pos.xyz - input[0].pos.xyz;
+    float3 f2 = input[2].pos.xyz - input[0].pos.xyz;
+    float3 faceNorm = normalize(cross(f1, f2));
+	
+	float2 uv;
+	uint iid = iidb[pid*3]; 
+	float3 newPos;
+	
+	for(uint i=0;i<3;i++)
+	{
+		v.pos=input[i].pos;
+        //v.TexCd=v.TexCd;
+		v.norm = input[i].norm;
+		newPos= mul(float4(input[i].pos.xyz,1), bLoad(bTransform, dTransform, iid)).xyz;
+		uv = uvMode.Map(newPos, faceNorm, 0);
+		v.uv = mul(float4(uv,0,1), bLoad(bTexTransform, dTexTransform, iid)).xy;
+		GSOut.Append(v);
+	}
+}
+
+GeometryShader StreamOutGS = ConstructGSWithSO( CompileShader( gs_5_0, GS() ), "Position.xyz;NORMAL.xyz;TEXCOORD0.xy" );
+
+technique11 UV
+{
+	pass P0
+	{
+		
+		SetVertexShader( CompileShader( vs_5_0, VS() ) );
+		SetGeometryShader( CompileShader( gs_5_0, GS() ) );
+	    SetGeometryShader( StreamOutGS );
+
+	}
+}

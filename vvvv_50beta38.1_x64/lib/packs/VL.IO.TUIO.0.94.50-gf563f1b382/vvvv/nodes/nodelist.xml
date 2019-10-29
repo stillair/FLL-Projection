@@ -1,0 +1,130 @@
+<!DOCTYPE NODELIST ><NODELIST version="50beta38.1"><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="TUIOBlob (Network Split)" name="TUIOBlob" category="Network" version="Split" filename="vl\VVVV.Network.TUIO.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Parses a TUIO Blob message and returns its parameters
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bytes" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Session ID" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Session ID Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="PositionXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Position Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="SizeXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Size Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Area" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Area Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="VelocityXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Velocity Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Velocity" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Velocity Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Acceleration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Acceleration Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Acceleration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Acceleration Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="TUIOBlob (Network Join)" name="TUIOBlob" category="Network" version="Join" filename="vl\VVVV.Network.TUIO.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Creates a TUIO Blob message
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Session ID" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="PositionXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Angle" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="SizeXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Area" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Blob" direction="Output" subtype="TUIOBlob" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "TUIOBlob (Network Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="TUIOBundler (Network)" name="TUIOBundler" category="Network" version="" filename="vl\VVVV.Network.TUIO.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Combines TUIO messages to a bundle and returns its raw bytes
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Cursors" direction="Input" subtype="TUIOCursor" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Cursors Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Objects" direction="Input" subtype="TUIOObject" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Objects Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Blobs" direction="Input" subtype="TUIOBlob" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Blobs Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Application" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Address" direction="Input" subtype="String" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Send Source Message" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Bytes" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="TUIOCursor (Network Split)" name="TUIOCursor" category="Network" version="Split" filename="vl\VVVV.Network.TUIO.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Parses a TUIO Cursor message and returns its parameters
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bytes" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Session ID" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Session ID Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="PositionXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Position Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="VelocityXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Velocity Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Acceleration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Acceleration Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="TUIOCursor (Network Join)" name="TUIOCursor" category="Network" version="Join" filename="vl\VVVV.Network.TUIO.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Creates a TUIO Cursor message
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Session ID" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="PositionXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Cursor" direction="Output" subtype="TUIOCursor" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "TUIOCursor (Network Join) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="TUIOObject (Network Split)" name="TUIOObject" category="Network" version="Split" filename="vl\VVVV.Network.TUIO.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Parses a TUIO Object message and returns its parameters
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bytes" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Session ID" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Session ID Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Object ID" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Object ID Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="PositionXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Position Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="VelocityXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Velocity Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Velocity" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Velocity Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Acceleration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Acceleration Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Acceleration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Angle Acceleration Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="TUIOObject (Network Join)" name="TUIOObject" category="Network" version="Join" filename="vl\VVVV.Network.TUIO.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Creates a TUIO Object message
+</HELP><AUTHOR>vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Session ID" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="PositionXY" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Angle" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Object" direction="Output" subtype="TUIOObject" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "TUIOObject (Network Join) help.v4p" not found
+</TODO>
+</NODE>
+</NODELIST>

@@ -1,0 +1,550 @@
+<!DOCTYPE NODELIST ><NODELIST version="50beta38.1"><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="GesturesView (Leap DX11)" name="GesturesView" category="Leap" version="DX11" filename="modules\GesturesView (Leap DX11).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Gesture" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "GesturesView (Leap DX11) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="GesturesView (Leap DX9)" name="GesturesView" category="Leap" version="DX9" filename="modules\GesturesView (Leap DX9).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Gesture" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "GesturesView (Leap DX9) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="GrabView (Leap DX11)" name="GrabView" category="Leap" version="DX11" filename="modules\GrabView (Leap DX11).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Hand" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Input" subtype="" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Output" subtype="" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "GrabView (Leap DX11) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="GrabView (Leap DX9)" name="GrabView" category="Leap" version="DX9" filename="modules\GrabView (Leap DX9).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Hand" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "GrabView (Leap DX9) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="HandView (Leap DX11)" name="HandView" category="Leap" version="DX11" filename="modules\HandView (Leap DX11).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer Out" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Hand" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "HandView (Leap DX11) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="HandView (Leap DX9)" name="HandView" category="Leap" version="DX9" filename="modules\HandView (Leap DX9).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Hand" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "HandView (Leap DX9) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Image (Leap DX11.Texture)" name="Image" category="Leap" version="DX11.Texture" filename="modules\Image (Leap DX11.Texture).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Image" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Texture Out" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Apply" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Texture Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "Image (Leap DX11.Texture) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="Image (Leap EX9.Texture)" name="Image" category="Leap" version="EX9.Texture" filename="modules\Image (Leap EX9.Texture).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Apply" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Image" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Texture Out" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Help patch "Image (Leap EX9.Texture) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PinchView (Leap DX11)" name="PinchView" category="Leap" version="DX11" filename="modules\PinchView (Leap DX11).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Color" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Layer" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Hand" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Output" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "PinchView (Leap DX11) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.Hosting.Factories.PatchFactory" systemname="PinchView (Leap DX9)" name="PinchView" category="Leap" version="DX9" filename="modules\PinchView (Leap DX9).v4p" ignore="0" autoevaluate="0" type="Module" arguments="" ibs="0,0" iws="0,0" icm="2"><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Hand" direction="Input" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><PIN name="Input" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="merged subtype" slicemode="Spread" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Patch" direction="Output" subtype="Patch" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Layer" direction="Output" subtype="generic" slicemode="Spread" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "PinchView (Leap DX9) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Gestures (Leap Observable)" name="Gestures" category="Leap" version="Observable" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Gets all gestures since the last frame.
+</HELP><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Observable" direction="Input" subtype="IObservable&lt;Leap.Frame&gt;" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Gestures" direction="Output" subtype="Gesture" slicemode="Manual" visibility="True">
+</PIN><PIN name="Gestures Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Keep (Leap)" name="Keep" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Keeps Leap gestures in storage after they disappeared for a given time
+</HELP><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Gesture" direction="Input" subtype="Gesture" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gesture Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Keep Time" direction="Input" subtype="Real" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Gestures" direction="Output" subtype="Gesture" slicemode="Manual" visibility="True">
+</PIN><PIN name="Gestures Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Kept" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Kept Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Keep (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="LastFrame (Leap)" name="LastFrame" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><HELP>Last frame of Leap trackingdata
+</HELP><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Observable" direction="Input" subtype="IObservable&lt;Leap.Frame&gt;" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Frame" direction="Output" subtype="Frame" slicemode="Manual" visibility="True">
+</PIN><PIN name="Hands" direction="Output" subtype="Hand" slicemode="Manual" visibility="True">
+</PIN><PIN name="Hands Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Gestures" direction="Output" subtype="Gesture" slicemode="Manual" visibility="True">
+</PIN><PIN name="Gestures Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Images" direction="Output" subtype="Image" slicemode="Manual" visibility="True">
+</PIN><PIN name="Images Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "LastFrame (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Leap (Devices)" name="Leap" category="Devices" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><TAGS>tracking, hand, finger
+</TAGS><HELP>Leap Handtracking
+</HELP><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Enable Data in Background" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enable Images" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enable Head Mount Optimization" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Swipe Gesture" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Circle Gesture" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Screen Tap Gesture" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Key Tap Gesture" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Enabled" direction="Input" subtype="Boolean" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Frame" direction="Output" subtype="IObservable&lt;Leap.Frame&gt;" slicemode="Manual" visibility="True">
+</PIN><PIN name="Tip PositionsXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Tip Positions Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Tip DirectionsXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Tip Directions Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Palm PositionsXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Palm Positions Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Palm NormalsXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Palm Normals Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Images Enabled" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Data in Background Enabled" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Head Mount Optimization Enabled" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Devices" direction="Output" subtype="Device" slicemode="Manual" visibility="True">
+</PIN><PIN name="Devices Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="IsServiceConnected" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Connected" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SelectHands (Leap)" name="SelectHands" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Hands" direction="Input" subtype="Hand" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Hands Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Side" direction="Input" subtype="LeapVLWrapper.HandSide" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Hands" direction="Output" subtype="Hand" slicemode="Manual" visibility="True">
+</PIN><PIN name="Hands Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SelectFingers (Leap)" name="SelectFingers" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Fingers" direction="Input" subtype="Finger" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Fingers Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="FingerType" direction="Input" subtype="LeapVLWrapper.FingerType" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Fingers" direction="Output" subtype="Finger" slicemode="Manual" visibility="True">
+</PIN><PIN name="Fingers Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SelectBones (Leap)" name="SelectBones" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bones" direction="Input" subtype="Bone" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Bones Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="BoneType" direction="Input" subtype="LeapVLWrapper.BoneType" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Bones" direction="Output" subtype="Bone" slicemode="Manual" visibility="True">
+</PIN><PIN name="Bones Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SelectFingers (Leap Position)" name="SelectFingers" category="Leap" version="Position" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Fingers" direction="Input" subtype="Finger" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Fingers Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position" direction="Input" subtype="LeapVLWrapper.RelativePosition" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Fingers" direction="Output" subtype="Finger" slicemode="Manual" visibility="True">
+</PIN><PIN name="Fingers Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SelectHands (Leap Position)" name="SelectHands" category="Leap" version="Position" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Hands" direction="Input" subtype="Hand" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Hands Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position" direction="Input" subtype="LeapVLWrapper.RelativePosition" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Hands" direction="Output" subtype="Hand" slicemode="Manual" visibility="True">
+</PIN><PIN name="Hands Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "SelectHands (Leap Position) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SelectBones (Leap Position)" name="SelectBones" category="Leap" version="Position" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bones" direction="Input" subtype="Bone" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Bones Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Position" direction="Input" subtype="LeapVLWrapper.RelativePosition" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Bones" direction="Output" subtype="Bone" slicemode="Manual" visibility="True">
+</PIN><PIN name="Bones Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "SelectBones (Leap Position) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="FromRaw (Leap)" name="FromRaw" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Raw" direction="Input" subtype="-&gt; Raw" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Frame" direction="Output" subtype="Frame" slicemode="Manual" visibility="True">
+</PIN><PIN name="Success" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "FromRaw (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="AsRaw (Leap)" name="AsRaw" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Frame" direction="Input" subtype="Frame" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Raw" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "AsRaw (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Arm (Leap)" name="Arm" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Arm" direction="Input" subtype="Arm" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="ElbowPositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="WristPositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Width" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "Arm (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Gestures (Leap)" name="Gestures" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Gesture" direction="Input" subtype="Gesture" slicemode="UpStream" visibility="True">
+</PIN><PIN name="Gesture Bin Size" direction="Input" subtype="Integer" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Swipe" direction="Output" subtype="SwipeGesture" slicemode="Manual" visibility="True">
+</PIN><PIN name="Swipe Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Swipe Former Index" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Swipe Former Index Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Circle" direction="Output" subtype="CircleGesture" slicemode="Manual" visibility="True">
+</PIN><PIN name="Circle Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Circle Former Index" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Circle Former Index Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Screen Tap" direction="Output" subtype="ScreenTapGesture" slicemode="Manual" visibility="True">
+</PIN><PIN name="Screen Tap Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Screen Tap Former Index" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Screen Tap Former Index Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Key Tap" direction="Output" subtype="KeyTapGesture" slicemode="Manual" visibility="True">
+</PIN><PIN name="Key Tap Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Key Tap Former Index" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Key Tap Former Index Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Hand (Leap)" name="Hand" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Hand" direction="Input" subtype="Hand" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Arm" direction="Output" subtype="Arm" slicemode="Manual" visibility="True">
+</PIN><PIN name="Fingers" direction="Output" subtype="Finger" slicemode="Manual" visibility="True">
+</PIN><PIN name="Fingers Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Tools" direction="Output" subtype="Tool" slicemode="Manual" visibility="True">
+</PIN><PIN name="Tools Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pointables" direction="Output" subtype="Pointable" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pointables Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Palm PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Palm NormalXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Palm VelocityXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Palm Width" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Wrist PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Sphere CenterXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Sphere Radius" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Confidence" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Grab Strength" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Pinch Strength" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Left" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Time Visible" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Finger (Leap)" name="Finger" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Finger" direction="Input" subtype="Finger" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Bones" direction="Output" subtype="Bone" slicemode="Manual" visibility="True">
+</PIN><PIN name="Bones Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="FingerType" direction="Output" subtype="LeapVLWrapper.FingerType" slicemode="Manual" visibility="True">
+</PIN><PIN name="TipPositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="TipVelocityXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Width" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Length" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Extended" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Time Visible" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Finger (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Tool (Leap)" name="Tool" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tool" direction="Input" subtype="Tool" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="TipPositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="TipVelocityXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Width" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Length" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Time Visible" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Tool (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Bone (Leap)" name="Bone" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Bone" direction="Input" subtype="Bone" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Type" direction="Output" subtype="LeapVLWrapper.BoneType" slicemode="Manual" visibility="True">
+</PIN><PIN name="StartXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="CenterXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="EndXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Length" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Width" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Valid" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><TODO>Inherited destructor of node  not called
+</TODO><TODO>Pins not properly destroyed in  (missing pingroup.Free in destructor?)
+</TODO><TODO>Help patch "Bone (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="SwipeGesture (Leap)" name="SwipeGesture" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="SwipeGesture" direction="Input" subtype="SwipeGesture" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Start PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Speed" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Duration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "SwipeGesture (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="CircleGesture (Leap)" name="CircleGesture" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="CircleGesture" direction="Input" subtype="CircleGesture" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="CenterXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="NormalXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Progress" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Radius" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Duration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "CircleGesture (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="ScreenTapGesture (Leap)" name="ScreenTapGesture" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="ScreenTapGesture" direction="Input" subtype="ScreenTapGesture" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Progress" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Duration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "ScreenTapGesture (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="KeyTapGesture (Leap)" name="KeyTapGesture" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="KeyTapGesture" direction="Input" subtype="KeyTapGesture" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="PositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Progress" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Duration" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "KeyTapGesture (Leap) help.v4p" not found
+</TODO>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Frame (Leap)" name="Frame" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Frame" direction="Input" subtype="Frame" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Hands" direction="Output" subtype="Hand" slicemode="Manual" visibility="True">
+</PIN><PIN name="Hands Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Gestures" direction="Output" subtype="Gesture" slicemode="Manual" visibility="True">
+</PIN><PIN name="Gestures Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Images" direction="Output" subtype="Image" slicemode="Manual" visibility="True">
+</PIN><PIN name="Images Bin Size" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="DeviceInfo (Leap)" name="DeviceInfo" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Device" direction="Input" subtype="Device" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="View AnglesXY" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Range" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Baseline" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Embedded" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Streaming" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Serial Number" direction="Output" subtype="String" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Image (Leap)" name="Image" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Image" direction="Input" subtype="Image" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="Bytes Per Pixel" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Width" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Height" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><PIN name="Result" direction="Output" subtype="Raw -&gt;" slicemode="Manual" visibility="True">
+</PIN>
+</NODE><NODE factory="VVVV.VL.Factories.NodeFactory" systemname="Pointable (Leap)" name="Pointable" category="Leap" version="" filename="vl\VVVV.Devices.Leap.vl" ignore="0" autoevaluate="0" type="VL" arguments="" ibs="0,0" iws="0,0" icm="0"><AUTHOR>dominikKoller, vvvv group
+</AUTHOR><PIN name="Descriptive Name" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Tag" direction="Configuration" subtype="String" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Evaluate" direction="Input" subtype="Boolean" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Pointable" direction="Input" subtype="Pointable" slicemode="UpStream" visibility="True">
+</PIN><PIN name="ID" direction="Output" subtype="Integer" slicemode="Single" visibility="OnlyInspector">
+</PIN><PIN name="Window Handle" direction="Output" subtype="Integer" slicemode="Single" visibility="False">
+</PIN><PIN name="TipPositionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="DirectionXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="TipVelocityXYZ" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Width" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Length" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Extended" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Is Tool" direction="Output" subtype="Boolean" slicemode="Manual" visibility="True">
+</PIN><PIN name="Time Visible" direction="Output" subtype="Real" slicemode="Manual" visibility="True">
+</PIN><PIN name="Id" direction="Output" subtype="Integer" slicemode="Manual" visibility="True">
+</PIN><TODO>Help patch "Pointable (Leap) help.v4p" not found
+</TODO>
+</NODE>
+</NODELIST>

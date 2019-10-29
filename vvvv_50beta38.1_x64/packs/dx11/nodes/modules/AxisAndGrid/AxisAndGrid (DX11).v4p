@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="C:\Users\stefans\internship\BM\TRIAD_BM_EXPLORATION\vvvv_alpha_x64\packs\dx11\nodes\modules\AxisAndGrid\AxisAndGrid (DX11).v4p" filename="C:\Users\antokhio\Desktop\AxisAndGrid (DX11).v4p" systemname="AxisAndGrid (DX11)" scrollx="2010" scrolly="3900">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Work\dx11-vvvv-girlpower\nodes\modules\AxisAndGrid\AxisAndGrid (DX11).v4p" filename="C:\Users\antokhio\Desktop\AxisAndGrid (DX11).v4p" systemname="AxisAndGrid (DX11)" scrollx="0" scrolly="0">
    <BOUNDS height="8385" left="6645" top="5040" type="Window" width="8895">
    </BOUNDS>
    <NODE componentmode="InABox" id="10" nodename="IOBox (Node)" systemname="IOBox (Node)">
@@ -502,14 +502,14 @@
    </LINK>
    <INFO author="" description="Draws the XZ-plane and the three axis to help your sense of orientation within the virtual world." tags="helper, space, coordinate system, virtual world">
    </INFO>
-   <PACK Name="dx11" Version="1.2">
+   <PACK Name="dx11" Version="33.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="219" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="14310" top="6420" width="480" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="14310" top="6420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -561,7 +561,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9645" top="5355" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -736,6 +736,4 @@
    </NODE>
    <LINK srcnodeid="238" srcpinname="Y Output Value" dstnodeid="157" dstpinname="Y">
    </LINK>
-   <PACK Name="addonpack" Version="38.1.0">
-   </PACK>
    </PATCH>

@@ -15,7 +15,6 @@ SamplerState linearSampler : IMMUTABLE
 cbuffer cbPerDraw : register( b0 )
 {
 	float4x4 tVP : LAYERVIEWPROJECTION;	
-	float layerOpacity : LAYEROPACITY = 1.0f; //Use this to get opacity from layer
 };
 
 cbuffer cbPerObj : register( b1 )
@@ -51,7 +50,6 @@ vs2ps VS(VS_IN input)
 float4 PS(vs2ps In): SV_Target
 {
     float4 col = texture2d.Sample(linearSampler,In.TexCd.xy) * cAmb;
-	col.a *= layerOpacity;
     return col;
 }
 

@@ -49,7 +49,6 @@ cbuffer cbPerDraw : register(b0)
 	float4x4 tV: VIEW;
 	float4x4 tP: PROJECTION;
 	float4x4 tLVP: LAYERVIEWPROJECTION;
-	float layerOpacity : LAYEROPACITY = 1.0f;
 };
 
 cbuffer cbPerObj : register( b1 )
@@ -122,7 +121,7 @@ float4 PS_Textured(psInputTextured input): SV_Target
 {
     float4 col = inputTexture.Sample(linearSampler, input.uv.xy);
     col.rgb *= PhongPoint(input.PosW, input.NormV, input.ViewDirV, input.LightDirV).rgb;
-    col.a *= Alpha*layerOpacity;
+    col.a *= Alpha;
     return mul(col, tColor);
 }
 
@@ -130,7 +129,7 @@ float4 PS(psInput input): SV_Target
 {
     float4 col = 1;
     col.rgb *= PhongPoint(input.PosW, input.NormV, input.ViewDirV, input.LightDirV).rgb;
-    col.a *= Alpha*layerOpacity;
+    col.a *= Alpha;
     return mul(col, tColor);
 }
 

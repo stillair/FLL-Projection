@@ -16,7 +16,6 @@ SamplerState linearSampler : IMMUTABLE
 cbuffer cbPerDraw : register( b0 )
 {
 	float4x4 tVP : LAYERVIEWPROJECTION;
-	float layerOpacity : LAYEROPACITY;
 };
 
 
@@ -52,7 +51,7 @@ psInput VS(vsInput input)
 float4 PS(psInput input): SV_Target
 {
     float4 col = tex.Sample(linearSampler,float3(input.TexCd.xy,slice)) * cAmb;
-	col.a *= Alpha*layerOpacity;
+	col.a *= Alpha;
     return col;
 }
 

@@ -1,0 +1,77 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="420" scrolly="1545">
+   <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2955" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="fll-red">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="fll-red">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="3150" top="1980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="fll-blue">
+   </PIN>
+   </NODE>
+   <NODE systemname="Gradient (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Source\Gradient.tfx" nodename="Gradient (DX11.TextureFX)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2325" top="2475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color1" visible="1">
+   </PIN>
+   <PIN pinname="Color2" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Gamma" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="Linear">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <BOUNDS type="Box" left="1920" top="4545" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1920" top="4545" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Input Value" dstnodeid="4" dstpinname="Color1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Input Value" dstnodeid="4" dstpinname="Color2">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="4750" height="4525">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1935" top="2970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="0" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   </PATCH>

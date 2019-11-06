@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\wave.v4p" systemname="wave" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\wave.v4p" scrollx="0" scrolly="1170">
+   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\wave.v4p" systemname="wave" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\wave.v4p" scrollx="2595" scrolly="1155">
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="945" top="9285" width="100" height="100">
    </BOUNDS>
@@ -181,6 +181,8 @@
    </PIN>
    <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Quad (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Geometry)" componentmode="Hidden" id="12">
    <BOUNDS type="Node" left="1515" top="8100" width="100" height="100">
@@ -347,5 +349,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Simulate">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="6525" top="6600" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6525" top="6600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Enabled">
    </LINK>
    </PATCH>

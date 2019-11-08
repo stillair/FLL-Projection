@@ -1,89 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_MAIN.v4p" scrollx="8595" scrolly="465" systemname="test" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_patches\test.v4p">
-   <BOUNDS type="Window" left="0" top="0" width="23655" height="16500">
+   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\_MAIN.v4p" scrollx="8610" scrolly="4650" systemname="test" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_patches\test.v4p">
+   <BOUNDS type="Window" left="0" top="150" width="21465" height="17310">
    </BOUNDS>
-   <NODE id="36" componentmode="InAWindow" nodename="Renderer (DX11)" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" height="0" left="5340" top="23010" width="0">
-   </BOUNDS>
-   <BOUNDS type="Window" height="7425" left="28740" top="-7995" width="28860">
-   </BOUNDS>
-   <BOUNDS type="Box" height="1800" left="5340" top="23010" width="2400">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1" pintype="Input" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="View" visible="1" pintype="Input" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Viewport" pintype="Input" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1" pintype="Input" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Windowed Depthbuffer Format">
-   </PIN>
-   <PIN pinname="Background Color" slicecount="1" pintype="Input" visible="1" values="|0.52178,0.52178,0.52178,1.00000|">
-   </PIN>
-   <PIN pinname="Aspect Ratio" visible="1" pintype="Input" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Crop" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Transformations Index" pintype="Input" visible="1">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Depth Buffer Mode" pintype="Configuration" slicecount="1" values="Standard">
-   </PIN>
-   <PIN pinname="VSync" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Show Cursor" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="AA Samples per Pixel" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Clear" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Clear Depth" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Fullscreen" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Enable Depth Buffer" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Enabled" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="ViewPort" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Mouse State" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Keyboard State" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Touch Supported" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Touch Data" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Actual BackBuffer SizeXY" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Texture Out" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Present Time" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Query" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Control" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Node Ref" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
-   </PIN>
-   </NODE>
    <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <NODE systemname="Renderer (DX11 TempTarget)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11 TempTarget)" componentmode="Hidden" id="55">
@@ -463,7 +381,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10560" top="3045" width="3000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="28800" top="-615" width="9960" height="8220">
+   <BOUNDS type="Window" left="-9540" top="9180" width="9540" height="8220">
    </BOUNDS>
    <PIN pinname="RegionXML" slicecount="1" values="||">
    </PIN>
@@ -515,8 +433,6 @@
    <LINK srcnodeid="92" srcpinname="Layer Out" dstnodeid="55" dstpinname="Layer">
    </LINK>
    <LINK srcnodeid="105" srcpinname="Layer Out" dstnodeid="61" dstpinname="Layer In">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Layer Out" dstnodeid="36" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="57" srcpinname="Layer" dstnodeid="105" dstpinname="Layer 1">
    </LINK>
@@ -891,7 +807,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4365" top="3270" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="46140" top="-570" width="5415" height="5775">
+   <BOUNDS type="Window" left="21285" top="8985" width="7515" height="4440">
    </BOUNDS>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="610">
@@ -1528,42 +1444,6 @@
    <LINKPOINT x="17095" y="7675">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="GetSlice (Node)" filename="" nodename="GetSlice (Node)" componentmode="Hidden" id="695">
-   <BOUNDS type="Node" left="21645" top="12795" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="21645" top="12795" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GetSlice (Node)" filename="" nodename="GetSlice (Node)" componentmode="Hidden" id="696">
-   <BOUNDS type="Node" left="22500" top="12795" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="22500" top="12780" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   <PIN pinname="Index" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GetSlice (Node)" filename="" nodename="GetSlice (Node)" componentmode="Hidden" id="697">
-   <BOUNDS type="Node" left="23340" top="12795" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="23340" top="12810" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   <PIN pinname="Index" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="697" srcpinname="Output Node" dstnodeid="449" dstpinname="Moderator CAM">
-   </LINK>
    <NODE id="694" systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" hiddenwhenlocked="0" managers="">
    <PIN pinname="Y Input Value" visible="1" slicecount="1" pintype="Input" values="0">
    </PIN>
@@ -2028,14 +1908,10 @@
    <LINKPOINT x="16830" y="6703">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="695" srcpinname="Output Node" dstnodeid="449" dstpinname="Table-1 CAM">
-   </LINK>
-   <LINK srcnodeid="696" srcpinname="Output Node" dstnodeid="449" dstpinname="Table-2 CAM">
-   </LINK>
    <NODE systemname="CAM-receiver" filename="subpatches\CAM-receiver.v4p" nodename="subpatches\CAM-receiver.v4p" componentmode="Hidden" id="659">
-   <BOUNDS type="Node" left="22215" top="12150" width="0" height="0">
+   <BOUNDS type="Node" left="21810" top="12720" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="22215" top="12150" width="9435" height="8740">
+   <BOUNDS type="Box" left="21810" top="12720" width="9435" height="8740">
    </BOUNDS>
    <BOUNDS type="Window" left="6375" top="3135" width="10890" height="9450">
    </BOUNDS>
@@ -2045,13 +1921,13 @@
    </PIN>
    <PIN pinname="On Program" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="CAM-1" visible="1">
+   </PIN>
+   <PIN pinname="CAM-2" visible="1">
+   </PIN>
+   <PIN pinname="CAM-3" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="659" srcpinname="Texture Out" dstnodeid="695" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="659" srcpinname="Texture Out" dstnodeid="696" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="659" srcpinname="Texture Out" dstnodeid="697" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="666" srcpinname="Y Output Value" dstnodeid="689" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="666" srcpinname="Y Output Value" dstnodeid="678" dstpinname="Standby IN">
@@ -2295,5 +2171,23 @@
    <LINK srcnodeid="787" srcpinname="Output" dstnodeid="678" dstpinname="TranslateY-MOD">
    </LINK>
    <LINK srcnodeid="674" srcpinname="Output" dstnodeid="787" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="659" srcpinname="CAM-1" dstnodeid="449" dstpinname="Table-1 CAM">
+   </LINK>
+   <LINK srcnodeid="659" srcpinname="CAM-2" dstnodeid="449" dstpinname="Table-2 CAM">
+   </LINK>
+   <LINK srcnodeid="659" srcpinname="CAM-3" dstnodeid="449" dstpinname="Moderator CAM">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="788">
+   <BOUNDS type="Node" left="6195" top="22965" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6195" top="22965" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-28800" top="0" width="28830" height="7485">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="Layer Out" dstnodeid="788" dstpinname="Layers">
    </LINK>
    </PATCH>

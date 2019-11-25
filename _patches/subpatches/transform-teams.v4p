@@ -1221,7 +1221,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="1" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
@@ -1280,24 +1280,16 @@
    </LINK>
    <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="33" dstpinname="ScaleY">
    </LINK>
-   <NODE systemname="transition-logic" filename="transition-logic.v4p" nodename="transition-logic.v4p" componentmode="Hidden" id="115">
-   <BOUNDS type="Node" left="10170" top="960" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Sift (Value)" nodename="Sift (Value)" componentmode="Hidden" id="116">
    <BOUNDS type="Node" left="10140" top="1680" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="5" values="1,0,0,0,0">
    </PIN>
    <PIN pinname="Filter" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input Index" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="115" srcpinname="Output" dstnodeid="116" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="101" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="114" dstpinname="Input 2">
@@ -1333,5 +1325,13 @@
    <LINK srcnodeid="116" srcpinname="Input Index" dstnodeid="101" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="116" srcpinname="Input Index" dstnodeid="114" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="transition-logic2" filename="transition-logic2.v4p" nodename="transition-logic2.v4p" componentmode="Hidden" id="122">
+   <BOUNDS type="Node" left="10200" top="930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="122" srcpinname="Output" dstnodeid="116" dstpinname="Input">
    </LINK>
    </PATCH>

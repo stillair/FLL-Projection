@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transition-logic.v4p" systemname="transition-logic" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transition-logic.v4p">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transition-logic.v4p" systemname="transition-logic" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transition-logic.v4p" scrollx="0" scrolly="1995">
    <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="3630" top="2310" width="100" height="100">
+   <BOUNDS type="Node" left="4530" top="2310" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3630" top="2310" width="3000" height="3000">
+   <BOUNDS type="Box" left="4530" top="2310" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
    </PIN>
@@ -17,7 +17,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="3630" top="1560" width="100" height="100">
+   <BOUNDS type="Node" left="4530" top="1560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="automata">
    </PIN>
@@ -27,9 +27,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="2" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="4320" top="1965" width="1185" height="240">
+   <BOUNDS type="Box" left="5220" top="1965" width="1185" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4320" top="1965" width="0" height="0">
+   <BOUNDS type="Node" left="5220" top="1965" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="GAME">
    </PIN>
@@ -41,7 +41,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="5760" top="2970" width="100" height="100">
+   <BOUNDS type="Node" left="8160" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -51,9 +51,9 @@
    </PIN>
    </NODE>
    <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="5775" top="2280" width="100" height="100">
+   <BOUNDS type="Node" left="8175" top="2280" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5775" top="2280" width="3000" height="3000">
+   <BOUNDS type="Box" left="8175" top="2280" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
    </PIN>
@@ -67,7 +67,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="5775" top="1530" width="100" height="100">
+   <BOUNDS type="Node" left="8175" top="1530" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="automata">
    </PIN>
@@ -77,9 +77,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="6" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="6465" top="1935" width="1185" height="240">
+   <BOUNDS type="Box" left="8865" top="1935" width="1185" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6465" top="1935" width="0" height="0">
+   <BOUNDS type="Node" left="8865" top="1935" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="STANDBY">
    </PIN>
@@ -131,9 +131,9 @@
    </PIN>
    </NODE>
    <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="7860" top="2250" width="100" height="100">
+   <BOUNDS type="Node" left="11310" top="2250" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7860" top="2250" width="3000" height="3000">
+   <BOUNDS type="Box" left="11310" top="2250" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
    </PIN>
@@ -147,7 +147,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="7860" top="1500" width="100" height="100">
+   <BOUNDS type="Node" left="11310" top="1500" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="automata">
    </PIN>
@@ -157,9 +157,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="12" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="8550" top="1905" width="1185" height="240">
+   <BOUNDS type="Box" left="12150" top="1905" width="1185" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8550" top="1905" width="0" height="0">
+   <BOUNDS type="Node" left="12150" top="1905" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="NEUTRAL">
    </PIN>
@@ -171,9 +171,9 @@
    </PIN>
    </NODE>
    <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="9990" top="2265" width="100" height="100">
+   <BOUNDS type="Node" left="14190" top="2265" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9990" top="2265" width="3000" height="3000">
+   <BOUNDS type="Box" left="14190" top="2265" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
    </PIN>
@@ -187,7 +187,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="9990" top="1515" width="100" height="100">
+   <BOUNDS type="Node" left="14190" top="1515" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="automata">
    </PIN>
@@ -197,9 +197,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="15" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="10680" top="1920" width="1185" height="240">
+   <BOUNDS type="Box" left="14880" top="1920" width="1185" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10680" top="1920" width="0" height="0">
+   <BOUNDS type="Node" left="14880" top="1920" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="PRESENTATION">
    </PIN>
@@ -211,7 +211,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="3930" top="3615" width="100" height="100">
+   <BOUNDS type="Node" left="4830" top="4815" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -221,9 +221,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="4710" top="4590" width="100" height="100">
+   <BOUNDS type="Node" left="7815" top="7335" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4710" top="4590" width="3000" height="3000">
+   <BOUNDS type="Box" left="7815" top="7335" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
@@ -241,7 +241,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="1500" top="3030" width="100" height="100">
+   <BOUNDS type="Node" left="1500" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -251,7 +251,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="1905" top="3600" width="100" height="100">
+   <BOUNDS type="Node" left="1905" top="4815" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -261,7 +261,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="2325" top="3030" width="100" height="100">
+   <BOUNDS type="Node" left="2325" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -271,7 +271,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="3675" top="3000" width="100" height="100">
+   <BOUNDS type="Node" left="4575" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -281,7 +281,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="4350" top="3000" width="100" height="100">
+   <BOUNDS type="Node" left="5250" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -291,7 +291,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="7920" top="3510" width="100" height="100">
+   <BOUNDS type="Node" left="11370" top="4815" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -301,7 +301,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="7665" top="2895" width="100" height="100">
+   <BOUNDS type="Node" left="11115" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -311,7 +311,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="8340" top="2895" width="100" height="100">
+   <BOUNDS type="Node" left="11790" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -321,7 +321,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="9945" top="3525" width="100" height="100">
+   <BOUNDS type="Node" left="14145" top="4815" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -331,7 +331,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="9690" top="2910" width="100" height="100">
+   <BOUNDS type="Node" left="13890" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -341,7 +341,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="28">
-   <BOUNDS type="Node" left="10365" top="2910" width="100" height="100">
+   <BOUNDS type="Node" left="14565" top="4170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -351,7 +351,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="1905" top="4155" width="810" height="270">
+   <BOUNDS type="Node" left="1905" top="5355" width="810" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -361,7 +361,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="3960" top="4095" width="810" height="270">
+   <BOUNDS type="Node" left="4830" top="5355" width="810" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -371,7 +371,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="5745" top="3660" width="540" height="270">
+   <BOUNDS type="Node" left="8160" top="5355" width="540" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -381,7 +381,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="7830" top="3870" width="540" height="270">
+   <BOUNDS type="Node" left="11370" top="5355" width="540" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -391,7 +391,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="10050" top="3870" width="540" height="270">
+   <BOUNDS type="Node" left="14145" top="5355" width="540" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -401,9 +401,9 @@
    </PIN>
    </NODE>
    <NODE id="34" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="4710" top="4950" width="840" height="1950">
+   <BOUNDS type="Box" left="7815" top="7695" width="840" height="1950">
    </BOUNDS>
-   <BOUNDS type="Node" left="4710" top="4950" width="0" height="0">
+   <BOUNDS type="Node" left="7815" top="7695" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="5">
    </PIN>
@@ -480,9 +480,17 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="In" dstnodeid="18" dstpinname="Input 1">
+   <LINK srcnodeid="7" srcpinname="In" dstnodeid="18" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="1935" y="3353">
+   </LINKPOINT>
+   <LINKPOINT x="1530" y="3353">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Out" dstnodeid="18" dstpinname="Input 2">
+   <LINK srcnodeid="4" srcpinname="Out" dstnodeid="18" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="8700" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="1965" y="3345">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="Input Value" dstnodeid="7" dstpinname="AutomataUI">
    </LINK>
@@ -494,19 +502,39 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="Output" dstnodeid="29" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="StateActive" dstnodeid="29" dstpinname="Input 2">
+   <LINK srcnodeid="7" srcpinname="StateActive" dstnodeid="29" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="2295" y="3930">
+   </LINKPOINT>
+   <LINKPOINT x="2670" y="3930">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Out" dstnodeid="20" dstpinname="Input 1">
+   <LINK srcnodeid="7" srcpinname="Out" dstnodeid="20" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="2130" y="3353">
+   </LINKPOINT>
+   <LINKPOINT x="2340" y="3353">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="4" srcpinname="In" dstnodeid="20" dstpinname="Input 2">
+   <LINK srcnodeid="4" srcpinname="In" dstnodeid="20" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="8520" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="2790" y="3345">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1" srcpinname="Input Value" dstnodeid="0" dstpinname="AutomataUI">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="0" dstpinname="State">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Out" dstnodeid="21" dstpinname="Input 1">
+   <LINK srcnodeid="7" srcpinname="Out" dstnodeid="21" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="2160" y="3338">
+   </LINKPOINT>
+   <LINKPOINT x="4560" y="3338">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="0" srcpinname="In" dstnodeid="21" dstpinname="Input 2">
+   <LINK srcnodeid="0" srcpinname="In" dstnodeid="21" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="4905" y="3375">
+   </LINKPOINT>
+   <LINKPOINT x="4995" y="3375">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="21" srcpinname="Output" dstnodeid="16" dstpinname="Input 1">
    </LINK>
@@ -514,11 +542,23 @@
    </LINK>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="30" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="StateActive" dstnodeid="30" dstpinname="Input 2">
+   <LINK srcnodeid="0" srcpinname="StateActive" dstnodeid="30" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="5250" y="3960">
+   </LINKPOINT>
+   <LINKPOINT x="5595" y="3960">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="7" srcpinname="In" dstnodeid="22" dstpinname="Input 1">
+   <LINK srcnodeid="7" srcpinname="In" dstnodeid="22" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="1980" y="3338">
+   </LINKPOINT>
+   <LINKPOINT x="5250" y="3338">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Out" dstnodeid="22" dstpinname="Input 2">
+   <LINK srcnodeid="0" srcpinname="Out" dstnodeid="22" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="5100" y="3368">
+   </LINKPOINT>
+   <LINKPOINT x="5670" y="3368">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="29" srcpinname="Output" dstnodeid="17" dstpinname="Input 1">
    </LINK>
@@ -534,23 +574,47 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="31" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="StateActive" dstnodeid="31" dstpinname="Input 2">
+   <LINK srcnodeid="4" srcpinname="StateActive" dstnodeid="31" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="8880" y="3945">
+   </LINKPOINT>
+   <LINKPOINT x="8670" y="3945">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Out" dstnodeid="3" dstpinname="Input 1">
+   <LINK srcnodeid="0" srcpinname="Out" dstnodeid="3" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="5115" y="3360">
+   </LINKPOINT>
+   <LINKPOINT x="8160" y="3360">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="4" srcpinname="In" dstnodeid="3" dstpinname="Input 2">
+   <LINK srcnodeid="4" srcpinname="In" dstnodeid="3" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="8550" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="8580" y="3345">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="5" srcpinname="Input Value" dstnodeid="4" dstpinname="AutomataUI">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output Enum" dstnodeid="4" dstpinname="State">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Out" dstnodeid="24" dstpinname="Input 1">
+   <LINK srcnodeid="4" srcpinname="Out" dstnodeid="24" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="8760" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="11100" y="3345">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="10" srcpinname="In" dstnodeid="24" dstpinname="Input 2">
+   <LINK srcnodeid="10" srcpinname="In" dstnodeid="24" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="11670" y="3338">
+   </LINKPOINT>
+   <LINKPOINT x="11550" y="3338">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="32" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="StateActive" dstnodeid="32" dstpinname="Input 2">
+   <LINK srcnodeid="10" srcpinname="StateActive" dstnodeid="32" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="12015" y="3938">
+   </LINKPOINT>
+   <LINKPOINT x="11880" y="3938">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="11" srcpinname="Input Value" dstnodeid="10" dstpinname="AutomataUI">
    </LINK>
@@ -560,13 +624,29 @@
    </LINK>
    <LINK srcnodeid="25" srcpinname="Output" dstnodeid="23" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="In" dstnodeid="25" dstpinname="Input 1">
+   <LINK srcnodeid="4" srcpinname="In" dstnodeid="25" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="8580" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="11790" y="3345">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Out" dstnodeid="25" dstpinname="Input 2">
+   <LINK srcnodeid="10" srcpinname="Out" dstnodeid="25" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="11865" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="12210" y="3345">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Out" dstnodeid="27" dstpinname="Input 1">
+   <LINK srcnodeid="4" srcpinname="Out" dstnodeid="27" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="8760" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="13890" y="3345">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="13" srcpinname="In" dstnodeid="27" dstpinname="Input 2">
+   <LINK srcnodeid="13" srcpinname="In" dstnodeid="27" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="14550" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="14325" y="3345">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="26" dstpinname="Input 1">
    </LINK>
@@ -578,22 +658,34 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="33" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="13" srcpinname="StateActive" dstnodeid="33" dstpinname="Input 2">
+   <LINK srcnodeid="13" srcpinname="StateActive" dstnodeid="33" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="14895" y="3945">
+   </LINKPOINT>
+   <LINKPOINT x="14655" y="3945">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="4" srcpinname="In" dstnodeid="28" dstpinname="Input 1">
+   <LINK srcnodeid="4" srcpinname="In" dstnodeid="28" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="8580" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="14565" y="3345">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Out" dstnodeid="28" dstpinname="Input 2">
+   <LINK srcnodeid="13" srcpinname="Out" dstnodeid="28" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="14745" y="3338">
+   </LINKPOINT>
+   <LINKPOINT x="14985" y="3338">
+   </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="11430" top="6360" width="12180" height="8040">
+   <BOUNDS type="Window" left="13140" top="5865" width="17550" height="9585">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="35">
-   <BOUNDS type="Node" left="3375" top="4995" width="390" height="270">
+   <BOUNDS type="Node" left="6480" top="7740" width="390" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3375" top="4995" width="1245" height="240">
+   <BOUNDS type="Box" left="6480" top="7740" width="1245" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="pre">
    </PIN>
@@ -605,9 +697,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="36">
-   <BOUNDS type="Node" left="3375" top="5415" width="390" height="270">
+   <BOUNDS type="Node" left="6480" top="8160" width="390" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3375" top="5415" width="1245" height="240">
+   <BOUNDS type="Box" left="6480" top="8160" width="1245" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="game">
    </PIN>
@@ -619,11 +711,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="37">
-   <BOUNDS type="Node" left="3375" top="5835" width="390" height="270">
+   <BOUNDS type="Node" left="6480" top="8580" width="390" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3375" top="5835" width="1245" height="240">
+   <BOUNDS type="Box" left="6480" top="8580" width="1245" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" visible="-1" slicecount="1" values="game-standby" pintype="Input">
+   <PIN pinname="Input String" visible="-1" slicecount="1" pintype="Input" values="game-standby">
    </PIN>
    <PIN pinname="Output String" visible="0" pintype="Output">
    </PIN>
@@ -635,11 +727,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="38">
-   <BOUNDS type="Node" left="3375" top="6255" width="390" height="270">
+   <BOUNDS type="Node" left="6480" top="9300" width="390" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3375" top="6255" width="1245" height="240">
+   <BOUNDS type="Box" left="6480" top="9300" width="1245" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" visible="-1" slicecount="1" values="neutral" pintype="Input">
+   <PIN pinname="Input String" visible="-1" slicecount="1" pintype="Input" values="neutral">
    </PIN>
    <PIN pinname="Output String" visible="0" pintype="Output">
    </PIN>
@@ -649,9 +741,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="39">
-   <BOUNDS type="Node" left="3375" top="6675" width="390" height="270">
+   <BOUNDS type="Node" left="6480" top="8925" width="390" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3375" top="6675" width="1245" height="240">
+   <BOUNDS type="Box" left="6480" top="8925" width="1245" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="presentat">
    </PIN>

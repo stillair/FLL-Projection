@@ -229,7 +229,7 @@
    </PIN>
    <PIN pinname="Input 2" slicecount="1" visible="1" values="-0.642">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="-1.36" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="-1.36">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
@@ -252,28 +252,16 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Transform Out" dstnodeid="14" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="transition-logic" filename="transition-logic.v4p" nodename="transition-logic.v4p" componentmode="Hidden" id="110">
-   <BOUNDS type="Node" left="4590" top="2760" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4590" top="2760" width="12180" height="6450">
-   </BOUNDS>
-   <BOUNDS type="Window" left="13140" top="6780" width="12180" height="8040">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Sift (Value)" nodename="Sift (Value)" componentmode="Hidden" id="111">
    <BOUNDS type="Node" left="4590" top="3225" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filter" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="5" values="1,0,0,0,0">
    </PIN>
    <PIN pinname="Input Index" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="110" srcpinname="Output" dstnodeid="111" dstpinname="Input">
-   </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="112">
    <BOUNDS type="Node" left="4890" top="6945" width="2550" height="270">
    </BOUNDS>
@@ -283,13 +271,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.01" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.01">
    </PIN>
-   <PIN pinname="Input 3" slicecount="1" values="-0.63" visible="1">
+   <PIN pinname="Input 3" slicecount="1" visible="1" values="-0.63">
    </PIN>
-   <PIN pinname="Input 4" slicecount="1" values="0" visible="1">
+   <PIN pinname="Input 4" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="Input 5" slicecount="1" values="0" visible="1">
+   <PIN pinname="Input 5" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="-1.25">
    </PIN>
@@ -331,11 +319,11 @@
    </PIN>
    <PIN pinname="Input 2" slicecount="1" visible="1" values="0.01">
    </PIN>
-   <PIN pinname="Input 3" slicecount="1" values="2" visible="1">
+   <PIN pinname="Input 3" slicecount="1" visible="1" values="2">
    </PIN>
-   <PIN pinname="Input 4" slicecount="1" values="2" visible="1">
+   <PIN pinname="Input 4" slicecount="1" visible="1" values="2">
    </PIN>
-   <PIN pinname="Input 5" slicecount="1" values="2" visible="1">
+   <PIN pinname="Input 5" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="-1.25">
    </PIN>
@@ -800,150 +788,6 @@
    <LINKPOINT x="10875" y="4035">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="145">
-   <BOUNDS type="Node" left="11550" top="2025" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11550" top="2025" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="State" visible="1">
-   </PIN>
-   <PIN pinname="In" visible="1">
-   </PIN>
-   <PIN pinname="Out" visible="1">
-   </PIN>
-   <PIN pinname="StateActive" visible="1">
-   </PIN>
-   <PIN pinname="FadeInOut" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="144">
-   <BOUNDS type="Node" left="11550" top="1275" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="automata">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="143" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="12240" top="1680" width="1185" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="12240" top="1680" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="PRE">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="Init">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="142">
-   <BOUNDS type="Node" left="7275" top="2085" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7275" top="2085" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="State" visible="1">
-   </PIN>
-   <PIN pinname="In" visible="1">
-   </PIN>
-   <PIN pinname="Out" visible="1">
-   </PIN>
-   <PIN pinname="StateActive" visible="1">
-   </PIN>
-   <PIN pinname="FadeInOut" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="141">
-   <BOUNDS type="Node" left="7275" top="1335" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="automata">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="140" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="7965" top="1740" width="1185" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7965" top="1740" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="NEUTRAL">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="Init">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\packs\AutomataUI\nodes\plugins\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="139">
-   <BOUNDS type="Node" left="9360" top="2175" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9360" top="2175" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="State" visible="1">
-   </PIN>
-   <PIN pinname="In" visible="1">
-   </PIN>
-   <PIN pinname="Out" visible="1">
-   </PIN>
-   <PIN pinname="StateActive" visible="1">
-   </PIN>
-   <PIN pinname="FadeInOut" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="138">
-   <BOUNDS type="Node" left="9360" top="1425" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="automata">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="137" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="10050" top="1830" width="1185" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10050" top="1830" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="PRESENTATION">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="Init">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="144" srcpinname="Input Value" dstnodeid="145" dstpinname="AutomataUI">
-   </LINK>
-   <LINK srcnodeid="143" srcpinname="Output Enum" dstnodeid="145" dstpinname="State">
-   </LINK>
-   <LINK srcnodeid="141" srcpinname="Input Value" dstnodeid="142" dstpinname="AutomataUI">
-   </LINK>
-   <LINK srcnodeid="140" srcpinname="Output Enum" dstnodeid="142" dstpinname="State">
-   </LINK>
-   <LINK srcnodeid="138" srcpinname="Input Value" dstnodeid="139" dstpinname="AutomataUI">
-   </LINK>
-   <LINK srcnodeid="137" srcpinname="Output Enum" dstnodeid="139" dstpinname="State">
-   </LINK>
-   <LINK srcnodeid="145" srcpinname="FadeInOut" dstnodeid="50" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="142" srcpinname="FadeInOut" dstnodeid="135" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="139" srcpinname="FadeInOut" dstnodeid="136" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="127" dstpinname="Input 3">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="152">
@@ -979,5 +823,41 @@
    <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="112" dstpinname="Input 4">
    </LINK>
    <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="112" dstpinname="Input 5">
+   </LINK>
+   <NODE systemname="transition-logic2" filename="transition-logic2.v4p" nodename="transition-logic2.v4p" componentmode="Hidden" id="110">
+   <BOUNDS type="Node" left="4575" top="1530" width="3930" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4575" top="1530" width="12180" height="6450">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13140" top="6780" width="12180" height="8040">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="FadeInOut PRESENT" visible="1">
+   </PIN>
+   <PIN pinname="FadeInOut PRE" visible="1">
+   </PIN>
+   <PIN pinname="FadeInOut NEUTR" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Output" dstnodeid="111" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="FadeInOut PRE" dstnodeid="50" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="5415" y="2265">
+   </LINKPOINT>
+   <LINKPOINT x="11085" y="2265">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="FadeInOut NEUTR" dstnodeid="135" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="7695" y="2273">
+   </LINKPOINT>
+   <LINKPOINT x="7800" y="2273">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="FadeInOut PRESENT" dstnodeid="136" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="8505" y="2265">
+   </LINKPOINT>
+   <LINKPOINT x="9330" y="2265">
+   </LINKPOINT>
    </LINK>
    </PATCH>

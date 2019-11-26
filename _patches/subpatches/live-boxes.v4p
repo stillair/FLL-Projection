@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\live-boxes.v4p" systemname="live-boxes" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\live-boxes.v4p" scrollx="3015" scrolly="0">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\live-boxes.v4p" systemname="live-boxes" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\live-boxes.v4p" scrollx="4935" scrolly="0">
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1965" top="5835" width="100" height="100">
    </BOUNDS>
@@ -203,9 +203,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7125" top="4860" width="795" height="480">
+   <BOUNDS type="Box" left="7650" top="4530" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7125" top="4860" width="0" height="0">
+   <BOUNDS type="Node" left="7650" top="4530" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.41666,1">
    </PIN>
@@ -225,7 +225,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1965" top="6660" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Input Count" slicecount="1" values="3">
+   <PIN pinname="Input Count" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -234,6 +234,8 @@
    <PIN pinname="Layer 3" visible="1">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Render State" dstnodeid="0" dstpinname="Render State">
@@ -312,16 +314,16 @@
    </LINK>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="8" dstpinname="SizeXY">
    </LINK>
-   <BOUNDS type="Window" left="6225" top="2145" width="10845" height="8430">
+   <BOUNDS type="Window" left="10665" top="5490" width="15645" height="8430">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="addonpack" Version="38.1.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11505" top="375" width="480" height="480">
+   <BOUNDS type="Box" left="14475" top="900" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="11505" top="375" width="0" height="0">
+   <BOUNDS type="Node" left="14475" top="900" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -337,29 +339,31 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="11505" y="3338">
+   <LINKPOINT x="13485" y="3688">
    </LINKPOINT>
-   <LINKPOINT x="9675" y="3338">
+   <LINKPOINT x="10665" y="3513">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="11490" y="3330">
+   <LINKPOINT x="13470" y="3680">
    </LINKPOINT>
-   <LINKPOINT x="6885" y="3330">
+   <LINKPOINT x="7875" y="3505">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="11505" y="3330">
+   <LINKPOINT x="13485" y="3680">
    </LINKPOINT>
-   <LINKPOINT x="3765" y="3330">
+   <LINKPOINT x="4755" y="3505">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="34">
-   <BOUNDS type="Box" left="2880" top="3315" width="795" height="240">
+   <BOUNDS type="Box" left="855" top="1500" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2880" top="3315" width="0" height="0">
+   <BOUNDS type="Node" left="855" top="1500" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform LIVE-1|">
    </PIN>
@@ -369,9 +373,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="35">
-   <BOUNDS type="Box" left="4590" top="3405" width="795" height="240">
+   <BOUNDS type="Box" left="2565" top="1590" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4590" top="3405" width="0" height="0">
+   <BOUNDS type="Node" left="2565" top="1590" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform LIVE-2|">
    </PIN>
@@ -381,9 +385,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="36">
-   <BOUNDS type="Box" left="6120" top="3465" width="795" height="240">
+   <BOUNDS type="Box" left="4095" top="1650" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6120" top="3465" width="0" height="0">
+   <BOUNDS type="Node" left="4095" top="1650" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform MOD|">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transform-teams.v4p" systemname="transform-teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\transform-teams.v4p" scrollx="1515" scrolly="0">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transform-teams.v4p" systemname="transform-teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\transform-teams.v4p" scrollx="570" scrolly="2670">
    <NODE id="0" systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="3015" top="10740" width="100" height="100">
    </BOUNDS>
@@ -251,7 +251,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10710" top="9465" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.84">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.83">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -449,7 +449,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15330" top="9480" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.76">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.73">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -487,7 +487,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14175" top="9420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.84">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.82">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

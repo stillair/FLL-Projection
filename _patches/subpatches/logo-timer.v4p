@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\logo-timer.v4p" systemname="logo-timer" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\logo-timer.v4p" scrollx="1500" scrolly="45">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\logo-timer.v4p" systemname="logo-timer" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\logo-timer.v4p" scrollx="1500" scrolly="45">
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1710" top="6525" width="100" height="100">
    </BOUNDS>
@@ -295,5 +295,17 @@
    <LINK srcnodeid="37" srcpinname="Output Node" dstnodeid="6" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Output Node" dstnodeid="16" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="38">
+   <BOUNDS type="Box" left="7935" top="4620" width="1155" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7935" top="4620" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ountdown-timer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Color Output" dstnodeid="14" dstpinname="Input">
    </LINK>
    </PATCH>

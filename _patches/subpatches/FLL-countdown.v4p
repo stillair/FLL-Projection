@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-countdown.v4p" systemname="FLL-countdown" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-countdown.v4p" scrollx="4860" scrolly="3315">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-countdown.v4p" systemname="FLL-countdown" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-countdown.v4p" scrollx="0" scrolly="1185">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3795" top="7965" width="795" height="240">
    </BOUNDS>
@@ -463,7 +463,7 @@
    </BOUNDS>
    <PIN pinname="Audio" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Driver" slicecount="1" values="|Kopfhörer (S8 PLUS-L Stereo)|">
+   <PIN pinname="Driver" slicecount="1" values="|Default WaveOut Device|">
    </PIN>
    <PIN pinname="Volume" slicecount="1" values="-12">
    </PIN>
@@ -473,7 +473,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8115" top="10995" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -483,7 +483,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -537,7 +537,7 @@
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="8115" top="8850" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="5">
+   <PIN pinname="Input" visible="1" slicecount="1" values="4.4">
    </PIN>
    <PIN pinname="OnChange" visible="1">
    </PIN>
@@ -558,8 +558,6 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="29" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="27" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="30">
    <BOUNDS type="Node" left="8115" top="8325" width="630" height="270">
    </BOUNDS>
@@ -576,4 +574,6 @@
    <PIN pinname="Size" slicecount="1" values="14">
    </PIN>
    </NODE>
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="27" dstpinname="Y Input Value">
+   </LINK>
    </PATCH>

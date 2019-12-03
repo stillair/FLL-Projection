@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\teams.v4p" systemname="teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\teams.v4p" scrollx="60" scrolly="0">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\teams.v4p" systemname="teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\teams.v4p" scrollx="0" scrolly="1920">
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="4245" top="14565" width="100" height="100">
    </BOUNDS>
@@ -620,7 +620,7 @@
    <LINKPOINT x="16945" y="9290">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="0" top="0" width="23655" height="18240">
+   <BOUNDS type="Window" left="1020" top="5010" width="23655" height="16500">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -734,6 +734,8 @@
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="font">
    </PIN>
    </NODE>
    <NODE systemname="String2Enum (Enumerations)" nodename="String2Enum (Enumerations)" componentmode="Hidden" id="83">

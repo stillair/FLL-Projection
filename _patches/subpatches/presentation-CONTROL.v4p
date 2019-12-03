@@ -21,7 +21,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2010" top="1500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\_assets\imgs\ppt-tet.jpg">
+   <PIN pinname="Input String" slicecount="3" visible="1" values="..\..\_assets\imgs\ppt-tes1t.jpg,..\..\_assets\imgs\ppt-test.jpg,..\..\_assets\imgs\ppt-test2.jpg">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -134,6 +134,8 @@
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="ratio">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input Node">

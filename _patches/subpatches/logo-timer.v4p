@@ -193,6 +193,8 @@
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="font">
+   </PIN>
    </NODE>
    <NODE systemname="String2Enum (Enumerations)" nodename="String2Enum (Enumerations)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="7020" top="2355" width="100" height="100">

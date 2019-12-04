@@ -1,0 +1,91 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="3660" scrolly="2190" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="0" top="5835" width="23595" height="10740">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="39.0.0">
+   </PACK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE systemname="main" filename="main.v4p" nodename="main.v4p" componentmode="Hidden" id="989">
+   <BOUNDS type="Node" left="14640" top="6300" width="3345" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14640" top="6300" width="36675" height="25585">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2535" top="5385" width="36675" height="24495">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="NEXT PAGE" visible="1">
+   </PIN>
+   <PIN pinname="Start Countdown" visible="1">
+   </PIN>
+   <PIN pinname="Reset Countdown" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="997" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="17910" top="5010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17910" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|NEXT PAGE|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="997" srcpinname="Y Output Value" dstnodeid="989" dstpinname="NEXT PAGE">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="998" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14640" top="5010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14640" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Start Countdown|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="998" srcpinname="Y Output Value" dstnodeid="989" dstpinname="Start Countdown">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="999" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="16275" top="5010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16275" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Reset Countdown|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="999" srcpinname="Y Output Value" dstnodeid="989" dstpinname="Reset Countdown">
+   </LINK>
+   </PATCH>

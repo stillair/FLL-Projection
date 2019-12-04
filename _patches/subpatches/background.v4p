@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="3255" scrolly="2460">
+   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="3045" scrolly="1860">
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="3540" top="7470" width="100" height="100">
    </BOUNDS>
@@ -105,6 +105,8 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="7" dstpinname="X">
    </LINK>
@@ -121,7 +123,7 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="0">
+   <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="6" dstpinname="Transform In">
@@ -697,7 +699,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.1" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.1">
    </PIN>
    <PIN pinname="Input 1" slicecount="1" values="0.5">
    </PIN>
@@ -742,26 +744,6 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Layer Out" dstnodeid="11" dstpinname="Layer 2">
    </LINK>
-   <NODE systemname="background-particle" filename="background-particle.v4p" nodename="background-particle.v4p" componentmode="Hidden" id="78">
-   <BOUNDS type="Node" left="8745" top="8969" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6885" top="5739" width="9840" height="6460">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="5550" width="23760" height="10050">
-   </BOUNDS>
-   <PIN pinname="Alpha" visible="1">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Walk" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="random-position" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="78" srcpinname="Layer Out" dstnodeid="11" dstpinname="Layer 3">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="83">
    <BOUNDS type="Box" left="6960" top="3660" width="795" height="240">
    </BOUNDS>
@@ -780,8 +762,28 @@
    </LINK>
    <LINK srcnodeid="83" srcpinname="Y Output Value" dstnodeid="81" dstpinname="Input 4">
    </LINK>
-   <LINK srcnodeid="81" srcpinname="Output" dstnodeid="78" dstpinname="Alpha">
+   <NODE systemname="background-particle" filename="background-particle.v4p" nodename="background-particle.v4p" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="8745" top="8969" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6885" top="5739" width="9840" height="6460">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="5550" width="23760" height="10050">
+   </BOUNDS>
+   <PIN pinname="Alpha" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Walk" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="random-position" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Layer Out" dstnodeid="11" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Alpha">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Output" dstnodeid="78" dstpinname="Alpha">
    </LINK>
    </PATCH>

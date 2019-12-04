@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="3660" scrolly="2190" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="0" top="5835" width="23595" height="10740">
+   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\_CONTROL.v4p" scrollx="8475" scrolly="1815" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="0" top="5820" width="23625" height="8490">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -21,8 +21,12 @@
    </PIN>
    <PIN pinname="Reset Countdown" visible="1">
    </PIN>
+   <PIN pinname="Timer" visible="1">
+   </PIN>
+   <PIN pinname="asd" visible="1" slicecount="1" values="|0.00000,1.00000,0.00000,1.00000|">
+   </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="997" systemname="IOBox (Value Advanced)">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="997" systemname="IOBox (Value Advanced)" exposed="0">
    <BOUNDS type="Box" left="17910" top="5010" width="480" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="17910" top="5010" width="0" height="0">
@@ -44,29 +48,7 @@
    </NODE>
    <LINK srcnodeid="997" srcpinname="Y Output Value" dstnodeid="989" dstpinname="NEXT PAGE">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="998" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="14640" top="5010" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="14640" top="5010" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Start Countdown|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="998" srcpinname="Y Output Value" dstnodeid="989" dstpinname="Start Countdown">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="999" systemname="IOBox (Value Advanced)">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="999" systemname="IOBox (Value Advanced)" exposed="0">
    <BOUNDS type="Box" left="16275" top="5010" width="480" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="16275" top="5010" width="0" height="0">
@@ -87,5 +69,139 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="999" srcpinname="Y Output Value" dstnodeid="989" dstpinname="Reset Countdown">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1006" exposed="0">
+   <BOUNDS type="Node" left="14625" top="5010" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14625" top="5010" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Start Countdown|">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1032" exposed="0">
+   <BOUNDS type="Box" left="14625" top="6945" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14625" top="6945" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Timer">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="989" srcpinname="Timer" dstnodeid="1032" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="1006" srcpinname="Y Output Value" dstnodeid="989" dstpinname="Start Countdown">
+   </LINK>
+   <NODE systemname="rabbit-webclient (Value)" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\vl\VVVV.Value.rcp.vl" nodename="rcp (Value)" componentmode="Hidden" id="1071">
+   <BOUNDS type="Node" left="14610" top="3465" width="2445" height="270">
+   </BOUNDS>
+   <PIN pinname="Start Countdown" visible="1">
+   </PIN>
+   <PIN pinname="Reset Countdown" visible="1">
+   </PIN>
+   <PIN pinname="Timer" visible="1">
+   </PIN>
+   <PIN pinname="team-enum" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1071" srcpinname="Start Countdown" dstnodeid="1006" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1071" srcpinname="Reset Countdown" dstnodeid="999" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="FrameDelay (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (String)" componentmode="Hidden" id="1072">
+   <BOUNDS type="Node" left="14640" top="7695" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14640" top="7695" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1032" srcpinname="Output String" dstnodeid="1072" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1072" srcpinname="Output 1" dstnodeid="1071" dstpinname="Timer" linkstyle="Bezier">
+   <LINKPOINT x="14145" y="9720">
+   </LINKPOINT>
+   <LINKPOINT x="11670" y="2010">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="CreateEnum (Enumerations)" nodename="CreateEnum (Enumerations)" componentmode="Hidden" id="1073">
+   <BOUNDS type="Node" left="21795" top="4590" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Strings" visible="1">
+   </PIN>
+   <PIN pinname="Enum Name" slicecount="1" values="Teams">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1074">
+   <BOUNDS type="Node" left="21795" top="3300" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="21795" top="3300" width="1035" height="1200">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="4" values="TEAM-1,TEAM-2,TEAM-3,TEAM-4">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1074" srcpinname="Output String" dstnodeid="1073" dstpinname="Strings">
+   </LINK>
+   <NODE systemname="IOBox (Enumerations)" nodename="IOBox (Enumerations)" componentmode="InABox" id="1075" exposed="0">
+   <BOUNDS type="Node" left="23415" top="4185" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="23415" top="4185" width="1200" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" values="TEAM-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="1077" nodename="Enum2String (Enumerations)" systemname="Enum2String (Enumerations Explicit)">
+   <BOUNDS height="0" left="23400" top="4635" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Enum" visible="1" slicecount="1" values="(nil)">
+   </PIN>
+   <PIN pinname="String Value" visible="1">
+   </PIN>
+   <PIN pinname="Enumeration" slicecount="1" values="Teams">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1075" srcpinname="Output Enum" dstnodeid="1077" dstpinname="Enum">
+   </LINK>
+   <LINK srcnodeid="1074" srcpinname="Output String" dstnodeid="1071" dstpinname="team-enum">
+   </LINK>
+   <LINK srcnodeid="1074" srcpinname="Output String" dstnodeid="1071" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1074" srcpinname="Output String" dstnodeid="1071" dstpinname="Value">
+   </LINK>
+   <LINK srcnodeid="1074" srcpinname="Output String" dstnodeid="1071" dstpinname="String">
    </LINK>
    </PATCH>

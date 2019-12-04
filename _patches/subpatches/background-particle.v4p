@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="75">
+   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="795">
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3840" top="11025" width="100" height="100">
    </BOUNDS>
@@ -373,7 +373,7 @@
    </PIN>
    <PIN pinname="Random Seed" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="0.05" visible="1">
+   <PIN pinname="Input" slicecount="1" visible="1" values="0.05">
    </PIN>
    </NODE>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="77">
@@ -429,7 +429,7 @@
    </PIN>
    <PIN pinname="Period" slicecount="14" visible="1" values="20.3784298943356,21.6725802666042,20.2393378061242,22.4020308477338,20.3544075414538,19.5327722665388,22.3666213150136,21.7940893757623,19.2130222870037,18.9180424588267,17.7568842866458,21.0796127223875,22.3849236499518,18.8651833601762">
    </PIN>
-   <PIN pinname="Phase" visible="1" slicecount="14" values="0.495927993557416,0.521159490570426,0.544294996303506,0.638637042371556,0.597541930037551,0.422400006558746,0.295160337933339,0.510320527711883,0.512958086444996,0.635548655875027,0.296614014660008,0.472996530821547,0.487653543124907,0.736989863682538">
+   <PIN pinname="Phase" visible="1" slicecount="1" values="0.22">
    </PIN>
    <PIN pinname="Pause" slicecount="1" values="0">
    </PIN>
@@ -487,7 +487,7 @@
    </PIN>
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
-   <PIN pinname="Random Seed" slicecount="1" values="23" visible="1">
+   <PIN pinname="Random Seed" slicecount="1" visible="1" values="23">
    </PIN>
    </NODE>
    <LINK srcnodeid="98" srcpinname="Output" dstnodeid="100" dstpinname="X">
@@ -501,7 +501,7 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="11">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.5">
+   <PIN pinname="Width" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Random Seed" slicecount="1" visible="1" values="200">
    </PIN>
@@ -512,12 +512,6 @@
    <PIN pinname="Input" slicecount="1" values="0.5">
    </PIN>
    </NODE>
-   <LINK srcnodeid="131" srcpinname="Output" dstnodeid="108" dstpinname="Phase" linkstyle="VHV">
-   <LINKPOINT x="5010" y="6428">
-   </LINKPOINT>
-   <LINKPOINT x="4425" y="6428">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="132">
    <BOUNDS type="Node" left="10530" top="1920" width="100" height="100">
    </BOUNDS>
@@ -535,7 +529,7 @@
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
-   <PIN pinname="Simulate" slicecount="1" values="0" visible="1">
+   <PIN pinname="Simulate" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="133" srcpinname="Bang" dstnodeid="132" dstpinname="Enabled">
@@ -563,7 +557,7 @@
    </PIN>
    <PIN pinname="Period" slicecount="1" visible="1" values="10">
    </PIN>
-   <PIN pinname="Phase" visible="1" slicecount="14" values="0.495927993557416,0.521159490570426,0.544294996303506,0.638637042371556,0.597541930037551,0.422400006558746,0.295160337933339,0.510320527711883,0.512958086444996,0.635548655875027,0.296614014660008,0.472996530821547,0.487653543124907,0.736989863682538">
+   <PIN pinname="Phase" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Pause" slicecount="1" values="0">
    </PIN>
@@ -613,7 +607,7 @@
    </PIN>
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
-   <PIN pinname="Random Seed" slicecount="1" values="23" visible="1">
+   <PIN pinname="Random Seed" slicecount="1" visible="1" values="23">
    </PIN>
    </NODE>
    <LINK srcnodeid="135" srcpinname="Output" dstnodeid="139" dstpinname="X">
@@ -625,7 +619,7 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="11">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.5">
+   <PIN pinname="Width" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Random Seed" slicecount="1" visible="1" values="200">
    </PIN>
@@ -636,12 +630,6 @@
    <PIN pinname="Input" slicecount="1" values="0.5">
    </PIN>
    </NODE>
-   <LINK srcnodeid="134" srcpinname="Output" dstnodeid="137" dstpinname="Phase" linkstyle="VHV">
-   <LINKPOINT x="11535" y="6803">
-   </LINKPOINT>
-   <LINKPOINT x="10950" y="6803">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="139" srcpinname="XY" dstnodeid="29" dstpinname="TranslateXY">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="140">
@@ -711,7 +699,7 @@
    </PIN>
    <PIN pinname="Period" slicecount="1" visible="1" values="10">
    </PIN>
-   <PIN pinname="Phase" visible="1" slicecount="14" values="0.495927993557416,0.521159490570426,0.544294996303506,0.638637042371556,0.597541930037551,0.422400006558746,0.295160337933339,0.510320527711883,0.512958086444996,0.635548655875027,0.296614014660008,0.472996530821547,0.487653543124907,0.736989863682538">
+   <PIN pinname="Phase" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Pause" slicecount="1" values="0">
    </PIN>
@@ -761,7 +749,7 @@
    </PIN>
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
-   <PIN pinname="Random Seed" slicecount="1" values="23" visible="1">
+   <PIN pinname="Random Seed" slicecount="1" visible="1" values="23">
    </PIN>
    </NODE>
    <LINK srcnodeid="144" srcpinname="Output" dstnodeid="148" dstpinname="X">
@@ -773,7 +761,7 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="11">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.5">
+   <PIN pinname="Width" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Random Seed" slicecount="1" visible="1" values="200">
    </PIN>
@@ -784,12 +772,6 @@
    <PIN pinname="Input" slicecount="1" values="0.5">
    </PIN>
    </NODE>
-   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="146" dstpinname="Phase" linkstyle="VHV">
-   <LINKPOINT x="17445" y="6818">
-   </LINKPOINT>
-   <LINKPOINT x="16860" y="6818">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="142">
    <BOUNDS type="Node" left="16470" top="5355" width="100" height="100">
    </BOUNDS>
@@ -1025,5 +1007,11 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="164" srcpinname="Geometry Out" dstnodeid="0" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="131" srcpinname="Output" dstnodeid="108" dstpinname="Phase">
+   </LINK>
+   <LINK srcnodeid="134" srcpinname="Output" dstnodeid="137" dstpinname="Phase">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="146" dstpinname="Phase">
    </LINK>
    </PATCH>

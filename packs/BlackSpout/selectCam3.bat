@@ -1,1 +1,0 @@
-BlackSpout -input 0 -mode 13 -width 100 -height 100 -x 0 -y 240 -name "CAM3" -device 2

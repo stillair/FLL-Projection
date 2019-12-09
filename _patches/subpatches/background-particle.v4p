@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="795">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="5925">
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3840" top="11025" width="100" height="100">
    </BOUNDS>
@@ -18,6 +18,8 @@
    <PIN pinname="Color" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="1">
@@ -163,10 +165,20 @@
    </PIN>
    <PIN pinname="Layer 3" visible="1">
    </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Layer Out" dstnodeid="23" dstpinname="Layer 1">
+   <LINK srcnodeid="1" srcpinname="Layer Out" dstnodeid="23" dstpinname="Layer 1" linkstyle="Bezier">
+   <LINKPOINT x="3345" y="12240">
+   </LINKPOINT>
+   <LINKPOINT x="5385" y="12240">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Layer Out" dstnodeid="23" dstpinname="Layer 2">
+   <LINK srcnodeid="21" srcpinname="Layer Out" dstnodeid="23" dstpinname="Layer 2" linkstyle="Bezier">
+   <LINKPOINT x="7095" y="12255">
+   </LINKPOINT>
+   <LINKPOINT x="6915" y="12255">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="23" srcpinname="Layer Out" dstnodeid="17" dstpinname="Input Node">
    </LINK>
@@ -344,7 +356,11 @@
    </LINK>
    <LINK srcnodeid="56" srcpinname="Texture Out" dstnodeid="64" dstpinname="Texture">
    </LINK>
-   <LINK srcnodeid="63" srcpinname="Layer Out" dstnodeid="23" dstpinname="Layer 3">
+   <LINK srcnodeid="63" srcpinname="Layer Out" dstnodeid="23" dstpinname="Layer 3" linkstyle="Bezier">
+   <LINKPOINT x="12945" y="12225">
+   </LINKPOINT>
+   <LINKPOINT x="8445" y="12225">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Alpha">
    </LINK>
@@ -1013,5 +1029,29 @@
    <LINK srcnodeid="134" srcpinname="Output" dstnodeid="137" dstpinname="Phase">
    </LINK>
    <LINK srcnodeid="143" srcpinname="Output" dstnodeid="146" dstpinname="Phase">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="165">
+   <BOUNDS type="Node" left="20730" top="9030" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="20730" top="9030" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="165" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Enabled" linkstyle="VHV">
+   <LINKPOINT x="20760" y="12510">
+   </LINKPOINT>
+   <LINKPOINT x="9900" y="12510">
+   </LINKPOINT>
    </LINK>
    </PATCH>

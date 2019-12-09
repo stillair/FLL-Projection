@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transform-teams.v4p" systemname="transform-teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\transform-teams.v4p" scrollx="570" scrolly="2670">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transform-teams.v4p" systemname="transform-teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\transform-teams.v4p" scrollx="2535" scrolly="3870">
    <NODE id="0" systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="3015" top="10740" width="100" height="100">
    </BOUNDS>
@@ -213,7 +213,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11865" top="9525" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.62">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -251,7 +251,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10710" top="9465" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.83">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.85">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -487,7 +487,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14175" top="9420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.82">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.85">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1078,11 +1078,11 @@
    </LINK>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Input 1">
    </LINK>
-   <BOUNDS type="Window" left="3180" top="5745" width="28410" height="10155">
+   <BOUNDS type="Window" left="3180" top="7635" width="28410" height="8265">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
-   <PACK Name="addonpack" Version="38.1.0">
+   <PACK Name="addonpack" Version="39.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="75">
    <BOUNDS type="Box" left="9090" top="2805" width="795" height="240">

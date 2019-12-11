@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="8115" scrolly="2505" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="270" top="7110" width="23625" height="8490">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="12420" scrolly="0" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="0" top="7530" width="13620" height="10470">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -29,9 +29,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="999" systemname="IOBox (Value Advanced)" exposed="0">
-   <BOUNDS type="Box" left="16275" top="5010" width="480" height="480">
+   <BOUNDS type="Box" left="18045" top="5055" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="16275" top="5010" width="0" height="0">
+   <BOUNDS type="Node" left="18045" top="5055" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -109,11 +109,11 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Input String">
+   <PIN pinname="Input String" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1085">
-   <BOUNDS type="Box" left="19485" top="3840" width="795" height="240">
+   <BOUNDS type="Box" left="19485" top="3840" width="1545" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="19485" top="3840" width="0" height="0">
    </BOUNDS>
@@ -123,7 +123,7 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Input String">
+   <PIN pinname="Input String" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="1032" srcpinname="Output String" dstnodeid="1072" dstpinname="Input 1">
@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12870" top="15240" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="1035" top="330" width="24570" height="6600">
+   <BOUNDS type="Window" left="0" top="0" width="29820" height="7560">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -379,14 +379,14 @@
    <LINK srcnodeid="1119" srcpinname="Layer Out" dstnodeid="1118" dstpinname="Layers">
    </LINK>
    <NODE id="1081" systemname="ReadTeams (Value)" filename="vl\VVVV.Value.ReadTeams.vl" nodename="ReadTeams (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="15855" top="2040" width="100" height="100">
+   <BOUNDS type="Node" left="17415" top="1095" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="15855" top="2040">
+   <BOUNDS type="Box" left="17415" top="1095">
    </BOUNDS>
    <PIN pinname="TeamNames" visible="1">
    </PIN>
    </NODE>
-   <NODE id="1078" systemname="rcp-webclient (Value)" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\vl\VVVV.Value.rcp1.vl" nodename="rcp (Value)" componentmode="Hidden">
+   <NODE id="1078" systemname="rcp-webclient (Value)" filename="vl\VVVV.Value.rcp1.vl" nodename="rcp-webclient (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="14640" top="3210" width="4875" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="14640" top="3210">
@@ -395,23 +395,19 @@
    </PIN>
    <PIN pinname="Tisch 2" visible="1">
    </PIN>
-   <PIN pinname="Desk1" visible="1">
+   <PIN pinname="Desk1" visible="1" slicecount="17" values="|  1 - AREA52|,|  2 - Bhof-Robos|,|  3 - Einstein|,|  4 - G-Bots|,|  5 - GOBOTS|,|  6 - HFG BOTS|,|  7 - HFG Robokirch|,|  8 - HFG-RoboS|,|  9 - Intelligent Dragons|,10,11,12,13,14,15,16,17">
    </PIN>
-   <PIN pinname="Desk2" visible="1">
+   <PIN pinname="Desk2" visible="1" slicecount="17" values="|  1 - AREA52|,|  2 - Bhof-Robos|,|  3 - Einstein|,|  4 - G-Bots|,|  5 - GOBOTS|,|  6 - HFG BOTS|,|  7 - HFG Robokirch|,|  8 - HFG-RoboS|,|  9 - Intelligent Dragons|,10,11,12,13,14,15,16,17">
    </PIN>
    <PIN pinname="Start" visible="1">
    </PIN>
-   <PIN pinname="Tmer" visible="1">
+   <PIN pinname="Tmer" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Reset" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1081" srcpinname="TeamNames" dstnodeid="1078" dstpinname="Desk1">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="TeamNames" dstnodeid="1078" dstpinname="Desk2">
-   </LINK>
    <LINK srcnodeid="1078" srcpinname="Desk2" dstnodeid="1085" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="1078" srcpinname="Desk1" dstnodeid="1084" dstpinname="Input String">
@@ -426,4 +422,12 @@
    <LINKPOINT x="11475" y="1605">
    </LINKPOINT>
    </LINK>
+   <LINK srcnodeid="1081" srcpinname="TeamNames" dstnodeid="1078" dstpinname="Desk1">
+   </LINK>
+   <LINK srcnodeid="1081" srcpinname="TeamNames" dstnodeid="1078" dstpinname="Desk2">
+   </LINK>
+   <NODE systemname="Team (Value)" filename="C:\Users\avst-labor\FLL-Projection\_patches\vl\VVVV.Value.createTeams.vl" nodename="createTeams (Value)" componentmode="Hidden" id="1126">
+   <BOUNDS type="Node" left="20235" top="2130" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>

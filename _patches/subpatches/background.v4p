@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="3045" scrolly="1860">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="2835" scrolly="1830">
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="3540" top="7470" width="100" height="100">
    </BOUNDS>
@@ -231,7 +231,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="|..\..\_assets\Logos\FLL Logo\FIRSTLego_iconHorz_RGB-white.png|">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="|..\..\_assets\Logos\FLL Logo\FIRSTLego_iconHorz_RGB-white.png|">
    </PIN>
    <PIN pinname="Load In Background" slicecount="1" values="1">
    </PIN>
@@ -762,7 +762,31 @@
    </LINK>
    <LINK srcnodeid="83" srcpinname="Y Output Value" dstnodeid="81" dstpinname="Input 4">
    </LINK>
-   <NODE systemname="background-particle" filename="background-particle.v4p" nodename="background-particle.v4p" componentmode="Hidden" id="78">
+   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Alpha">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="84">
+   <BOUNDS type="Box" left="15150" top="6060" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15150" top="6060" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\_assets\Logos\FLL Logo\FIRSTLego_iconHorz_RGB-white.png|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Output String" dstnodeid="19" dstpinname="Filename">
+   </LINK>
+   <NODE id="78" componentmode="Hidden" systemname="background-particle" filename="background-particle.v4p" nodename="background-particle.v4p">
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
    <BOUNDS type="Node" left="8745" top="8969" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="6885" top="5739" width="9840" height="6460">
@@ -781,8 +805,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="78" srcpinname="Layer Out" dstnodeid="11" dstpinname="Layer 3">
-   </LINK>
-   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Alpha">
    </LINK>
    <LINK srcnodeid="81" srcpinname="Output" dstnodeid="78" dstpinname="Alpha">
    </LINK>

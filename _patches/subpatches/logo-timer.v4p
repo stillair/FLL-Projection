@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\logo-timer.v4p" systemname="logo-timer" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\logo-timer.v4p" scrollx="1500" scrolly="45">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\logo-timer.v4p" systemname="logo-timer" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\logo-timer.v4p" scrollx="1950" scrolly="840">
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1710" top="6525" width="100" height="100">
    </BOUNDS>
@@ -35,7 +35,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="|..\..\_assets\Logos\FLL Logo\FIRSTLego_iconHorz_RGB-white.png|">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="|..\..\_assets\Logos\FLL Logo\FIRSTLego_iconHorz_RGB-white.png|">
    </PIN>
    <PIN pinname="Load In Background" slicecount="1" values="1">
    </PIN>
@@ -78,6 +78,8 @@
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Text (DX11.Layer Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer Advanced)" componentmode="Hidden" id="13">
@@ -309,5 +311,49 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Color Output" dstnodeid="14" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="39">
+   <BOUNDS type="Box" left="2085" top="4440" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2085" top="4440" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\_assets\Logos\FIRSTLego_iconHorz_RGB-white.png">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output String" dstnodeid="2" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="40">
+   <BOUNDS type="Box" left="10230" top="4725" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10230" top="4725" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Enabled" linkstyle="VHV">
+   <LINKPOINT x="10260" y="7215">
+   </LINKPOINT>
+   <LINKPOINT x="3420" y="7215">
+   </LINKPOINT>
    </LINK>
    </PATCH>

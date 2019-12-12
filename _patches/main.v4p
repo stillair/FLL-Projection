@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p" scrollx="1395" scrolly="0" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="1245" scrolly="9270" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="1500" top="3135" width="100" height="100">
    </BOUNDS>
@@ -173,7 +173,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8820" top="15075" width="4750" height="4525">
    </BOUNDS>
-   <BOUNDS type="Window" left="5595" top="5610" width="14580" height="9150">
+   <BOUNDS type="Window" left="7125" top="9225" width="14580" height="9150">
    </BOUNDS>
    <PIN pinname="Alpha wave" slicecount="1" values="0.02">
    </PIN>
@@ -1378,7 +1378,7 @@
    </LINK>
    <LINK srcnodeid="99" srcpinname="Transform team name" dstnodeid="98" dstpinname="Transform Text">
    </LINK>
-   <BOUNDS type="Window" left="2535" top="7500" width="29100" height="14385">
+   <BOUNDS type="Window" left="2625" top="11385" width="29100" height="14385">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -1574,6 +1574,8 @@
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
    <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="FLL-Logo">
    </PIN>
    </NODE>
    <LINK srcnodeid="117" srcpinname="Output String" dstnodeid="33" dstpinname="Filename">

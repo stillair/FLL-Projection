@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="9555" scrolly="6930" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="13050" scrolly="0" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
    <BOUNDS type="Window" left="0" top="7530" width="13620" height="10470">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14640" top="6300" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="2535" top="7500" width="29100" height="14385">
+   <BOUNDS type="Window" left="2625" top="11385" width="29100" height="14385">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -34,6 +34,10 @@
    <PIN pinname="TEAM 1 img" visible="1">
    </PIN>
    <PIN pinname="TEAM 2 img" visible="1">
+   </PIN>
+   <PIN pinname="presentation-team-name" visible="1">
+   </PIN>
+   <PIN pinname="presentation-team-img" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1032" exposed="0">
@@ -199,7 +203,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="1,0.2344" visible="1">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1,0.2344">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -579,5 +583,77 @@
    <LINK srcnodeid="1151" srcpinname="Output" dstnodeid="1152" dstpinname="Y">
    </LINK>
    <LINK srcnodeid="1152" srcpinname="XY" dstnodeid="1108" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="1154">
+   <BOUNDS type="Node" left="17775" top="10095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="window-size">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="window-size">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1105" srcpinname="Y Output Value" dstnodeid="1154" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1156">
+   <BOUNDS type="Node" left="21375" top="5085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1155">
+   <BOUNDS type="Node" left="22290" top="5085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1156" srcpinname="Output" dstnodeid="989" dstpinname="presentation-team-name">
+   </LINK>
+   <LINK srcnodeid="1155" srcpinname="Output" dstnodeid="989" dstpinname="presentation-team-img">
+   </LINK>
+   <LINK srcnodeid="1081" srcpinname="teamImage" dstnodeid="1155" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1081" srcpinname="teamName" dstnodeid="1156" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1157">
+   <BOUNDS type="Node" left="22830" top="3915" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="22830" top="3915" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Presentation-Team">
+   </PIN>
+   </NODE>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="1158">
+   <BOUNDS type="Node" left="22815" top="4455" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1157" srcpinname="Y Output Value" dstnodeid="1158" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1158" srcpinname="Output" dstnodeid="1156" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="1158" srcpinname="Output" dstnodeid="1155" dstpinname="Index">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\wave.v4p" systemname="wave" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\wave.v4p" scrollx="2595" scrolly="1155">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\wave.v4p" systemname="wave" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\wave.v4p" scrollx="885" scrolly="1110">
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="945" top="9285" width="100" height="100">
    </BOUNDS>
@@ -292,7 +292,7 @@
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
-   <PACK Name="addonpack" Version="38.1.0">
+   <PACK Name="addonpack" Version="39.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
    <BOUNDS type="Box" left="1695" top="3885" width="795" height="240">

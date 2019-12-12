@@ -791,7 +791,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6885" top="5739" width="9840" height="6460">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="5550" width="23760" height="10050">
+   <BOUNDS type="Window" left="735" top="8235" width="23760" height="10050">
    </BOUNDS>
    <PIN pinname="Alpha" visible="1" slicecount="1" values="0">
    </PIN>

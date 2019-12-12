@@ -524,26 +524,12 @@
                 <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="UXEGDifYCKkPKDmnEjEkwn" Comment="Base Path" Bounds="1157,1685,301,-6" ShowValueBox="true" isIOBox="true" Value="..\..\\">
-              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Path" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="IBkQssEhnIFPAZazfwB2zw" Comment="" Bounds="1092,1601,410,14" ShowValueBox="true" isIOBox="true" Value="_assets\_TEAMS\team-imgs">
-              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Path" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Node Bounds="1086,1769,80,26" Id="B71PKQb8zwJNRFfogo55JK">
-              <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="MakeAbsolute" />
-              </p:NodeReference>
-              <Pin Id="Gxo5oMhdOtGLhaq9F1p4il" Name="Input" Kind="StateInputPin" />
-              <Pin Id="MbckEcQ7zPvNsHUG0Hl28Y" Name="Base Path" Kind="InputPin" />
-              <Pin Id="JEYnPnvE7qGNNHVVRbEZhC" Name="Output" Kind="StateOutputPin" />
-            </Node>
             <ControlPoint Id="ViAwHAqoUsoOIH3oB5fNZ4" Bounds="1201,2605" />
+            <Pad Id="UFhasX3dPJ7PMeuTADwyHW" Comment="Directory" Bounds="1070,1718,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\_assets\_TEAMS\team-imgs\">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
             <Fragment Id="MRFnVwHDf0WOO7H3jKbCxI" Patch="ESJZDDS0I02LAWDOx9RJVV" Enabled="true" />
@@ -629,16 +615,14 @@
           <Link Id="I0srEJTlLoILOA6gy6mq6R" Ids="QONjzd0NLTFLbZ47MjWFx4,R1bYDVNfhDPOb265VMZRUo" IsHidden="true" />
           <Link Id="AQL0DFrgMBFQZE341qwfcz" Ids="PvpFsTyfUXlPRW93mh29NL,EBwcGNLUpsSPcz3xzxvy9Q" />
           <Link Id="RCMTr2twncYPFzXqn4vhDJ" Ids="EFeFCsaPXJTOOaUVjhwyJw,MPYTH5h3VjINczh8SfqlZj" />
-          <Link Id="OWdz5QYEKMYMqOSztZYjOn" Ids="UXEGDifYCKkPKDmnEjEkwn,MbckEcQ7zPvNsHUG0Hl28Y" />
-          <Link Id="SjtYc8kiflnM0NaYzqnW88" Ids="IBkQssEhnIFPAZazfwB2zw,Gxo5oMhdOtGLhaq9F1p4il" />
           <Link Id="LmLW1LM6htHOuz6DIAAwz1" Ids="UIJJeg6pZOkQGOYRW3HK3o,NEjtLaC4eOHLILkWNj331m" />
           <Link Id="CpKEmA0u2yLM2ZvdejADgt" Ids="NEjtLaC4eOHLILkWNj331m,KI7SCzJDndPNxctjpKHnkH" />
           <Link Id="QrI8XePpkpoLwbzjPTRCt2" Ids="BCPiK1CDroDMOp5QYiCgtg,KKdHQ8kh4JIOwDAlrjRdEX" />
-          <Link Id="BT0iKkdb0nMMigH4F0tWO5" Ids="OyNM2j87BVfQT47P2hU3k1,QKQefghMA9PNTR770XhMXW" />
           <Link Id="TbcTzQsoitcQCTrM7Z5jNm" Ids="KKdHQ8kh4JIOwDAlrjRdEX,ViAwHAqoUsoOIH3oB5fNZ4" />
           <Link Id="GQdeCezU8UwMkY1qPGlUUi" Ids="ViAwHAqoUsoOIH3oB5fNZ4,QBfPSoyW1QkPunLyX2KwEJ" IsHidden="true" />
-          <Link Id="PA0eKt73TQ8M9NKz7O1Vml" Ids="JEYnPnvE7qGNNHVVRbEZhC,KtcHoTgiI2ALWgRHaUkOgO" />
           <Link Id="EZYCkOfnnPXMt7vXDwpqtZ" Ids="Ff4UDm6G99jPMov5vFmgkV,EFeFCsaPXJTOOaUVjhwyJw" />
+          <Link Id="GdHTAk8SN1GMU76XkFwuUs" Ids="OyNM2j87BVfQT47P2hU3k1,QKQefghMA9PNTR770XhMXW" />
+          <Link Id="TWd1L7ny44XPiP2avJILqm" Ids="UFhasX3dPJ7PMeuTADwyHW,KtcHoTgiI2ALWgRHaUkOgO" />
         </Patch>
       </Node>
       <!--

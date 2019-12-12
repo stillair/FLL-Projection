@@ -505,7 +505,7 @@
    </PIN>
    <PIN pinname="TeamNames-webclient" visible="1">
    </PIN>
-   <PIN pinname="read" visible="1" slicecount="1" values="0">
+   <PIN pinname="read" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="teamPoints" visible="1">
    </PIN>

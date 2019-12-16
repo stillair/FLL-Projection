@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="645" scrolly="3150">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="2265" scrolly="2550">
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="2700" top="5190" width="100" height="100">
    </BOUNDS>
@@ -749,7 +749,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6960" top="3660" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.15">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.25">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

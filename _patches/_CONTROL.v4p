@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="9285" scrolly="2925" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="0" top="10050" width="19170" height="10470">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="9030" scrolly="0" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="-150" top="7440" width="19170" height="8160">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14640" top="6300" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="2625" top="11385" width="29100" height="14385">
+   <BOUNDS type="Window" left="9165" top="10245" width="29100" height="14385">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -477,13 +477,9 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9955" top="4827" width="8755" height="8770">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="8755" height="8770">
+   <BOUNDS type="Window" left="12330" top="7185" width="8745" height="8760">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="989" srcpinname="Layer Out" dstnodeid="1168" dstpinname="Layer">
    </LINK>
-   <NODE systemname="OSCEncoder (Network)" nodename="OSCEncoder (Network)" componentmode="Hidden" id="1169">
-   <BOUNDS type="Node" left="16185" top="7200" width="100" height="100">
-   </BOUNDS>
-   </NODE>
    </PATCH>

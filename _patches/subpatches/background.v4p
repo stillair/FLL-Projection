@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="2265" scrolly="2550">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="5550" scrolly="3390">
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="2700" top="5190" width="100" height="100">
    </BOUNDS>
@@ -48,7 +48,7 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Input Value" dstnodeid="4" dstpinname="Color2">
    </LINK>
-   <BOUNDS type="Window" left="7125" top="9225" width="14580" height="9150">
+   <BOUNDS type="Window" left="6915" top="7530" width="14580" height="9150">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -105,7 +105,7 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Y" visible="1" slicecount="1" values="0.07">
+   <PIN pinname="Y" visible="1" slicecount="1" values="0.06">
    </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="7" dstpinname="X">
@@ -148,6 +148,8 @@
    <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 5" visible="1">
+   </PIN>
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Layer Out" dstnodeid="5" dstpinname="Input Node">
@@ -239,6 +241,8 @@
    </PIN>
    <PIN pinname="Reload" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="18">
    <BOUNDS type="Node" left="13215" top="8475" width="885" height="270">
@@ -257,7 +261,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.56">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Scale">
    </PIN>
@@ -273,6 +277,8 @@
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="ScaleY" visible="1" slicecount="1" values="0.23">
+   </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Render State" dstnodeid="21" dstpinname="Render State">
    </LINK>
@@ -283,8 +289,6 @@
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="21" dstpinname="Color">
    </LINK>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="16" dstpinname="ScaleX">
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="16" dstpinname="ScaleY">
    </LINK>
    <NODE systemname="Sift (Value)" nodename="Sift (Value)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="9960" top="2400" width="100" height="100">
@@ -401,7 +405,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10935" top="2940" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.22">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -421,7 +425,7 @@
    </PIN>
    <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|translateX Logo|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="translateXFLL">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -765,11 +769,11 @@
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Alpha">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="84">
-   <BOUNDS type="Box" left="15150" top="6060" width="795" height="240">
+   <BOUNDS type="Box" left="14955" top="6015" width="1440" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="15150" top="6060" width="0" height="0">
+   <BOUNDS type="Node" left="14955" top="6015" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\_assets\Logos\FLL Logo\FIRSTLego_iconHorz_RGB-white.png|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\_assets\Logos\bg-logos.png">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -791,7 +795,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6885" top="5739" width="9840" height="6460">
    </BOUNDS>
-   <BOUNDS type="Window" left="735" top="8235" width="23760" height="10050">
+   <BOUNDS type="Window" left="2505" top="7740" width="23760" height="10050">
    </BOUNDS>
    <PIN pinname="Alpha" visible="1" slicecount="1" values="0">
    </PIN>
@@ -807,8 +811,6 @@
    <LINK srcnodeid="78" srcpinname="Layer Out" dstnodeid="11" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="81" srcpinname="Output" dstnodeid="78" dstpinname="Alpha">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 5">
    </LINK>
    <NODE systemname="sponsor-logos" filename="sponsor-logos.v4p" nodename="sponsor-logos.v4p" componentmode="Hidden" id="86">
    <BOUNDS type="Node" left="10500" top="8985" width="0" height="0">
@@ -1023,5 +1025,29 @@
    <LINK srcnodeid="91" srcpinname="Buffers" dstnodeid="98" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="98" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="110">
+   <BOUNDS type="Node" left="15060" top="6720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="ratio">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 5">
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="112">
+   <BOUNDS type="Node" left="14955" top="7185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="112" srcpinname="Output" dstnodeid="16" dstpinname="ScaleY">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Input Value" dstnodeid="112" dstpinname="Input 1">
    </LINK>
    </PATCH>

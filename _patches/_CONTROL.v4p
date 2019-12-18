@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="14430" scrolly="0" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="8175" scrolly="1890" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
    <BOUNDS type="Window" left="-150" top="7440" width="19170" height="8160">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14640" top="6300" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="9165" top="10245" width="29100" height="14385">
+   <BOUNDS type="Window" left="5070" top="9015" width="29100" height="14385">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -495,7 +495,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="12330" top="7185" width="8745" height="8760">
    </BOUNDS>
-   <PIN pinname="PerfMeter" slicecount="1" values="0">
+   <PIN pinname="PerfMeter" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="989" srcpinname="Layer Out" dstnodeid="1168" dstpinname="Layer">
@@ -521,7 +521,7 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Name" slicecount="5" values="TeamNR,id,Name,Punkte,Schule" visible="1">
+   <PIN pinname="Name" slicecount="5" visible="1" values="TeamNR,id,Name,Punkte,Schule">
    </PIN>
    <PIN pinname="Type" slicecount="5" values="System.Int32,System.Int32,System.String,System.Int32,System.String">
    </PIN>

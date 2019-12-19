@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="1860" scrolly="3240">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\background.v4p" systemname="background" filename="C:\Users\avst\FLL-Projection\_patches\subpatches\background.v4p" scrollx="6525" scrolly="3765">
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="2700" top="5190" width="100" height="100">
    </BOUNDS>
@@ -129,9 +129,9 @@
    <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="6" dstpinname="Transform In">
    </LINK>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="2925" top="9750" width="11715" height="270">
+   <BOUNDS type="Node" left="2925" top="9735" width="11715" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2925" top="9750" width="3000" height="3000">
+   <BOUNDS type="Box" left="2925" top="9735" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -195,9 +195,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Enabled" linkstyle="VHV">
-   <LINKPOINT x="19530" y="9270">
+   <LINKPOINT x="19530" y="9265">
    </LINKPOINT>
-   <LINKPOINT x="12630" y="9270">
+   <LINKPOINT x="12630" y="9260">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="21">
@@ -278,6 +278,8 @@
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="ScaleY" visible="1" slicecount="1" values="0.23">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Render State" dstnodeid="21" dstpinname="Render State">
@@ -1034,8 +1036,6 @@
    <PIN pinname="Receive String" slicecount="1" values="ratio">
    </PIN>
    </NODE>
-   <LINK srcnodeid="21" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 5">
-   </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="112">
    <BOUNDS type="Node" left="14955" top="7185" width="100" height="100">
    </BOUNDS>
@@ -1046,8 +1046,10 @@
    <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
    </NODE>
+   <LINK srcnodeid="110" srcpinname="Input Value" dstnodeid="112" dstpinname="Input 1">
+   </LINK>
    <LINK srcnodeid="112" srcpinname="Output" dstnodeid="16" dstpinname="ScaleY">
    </LINK>
-   <LINK srcnodeid="110" srcpinname="Input Value" dstnodeid="112" dstpinname="Input 1">
+   <LINK srcnodeid="21" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 5">
    </LINK>
    </PATCH>

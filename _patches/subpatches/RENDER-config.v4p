@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" systemname="RENDER-config" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" scrollx="2625" scrolly="0">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" systemname="RENDER-config" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" scrollx="2085" scrolly="4320">
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2385" top="6495" width="100" height="100">
    </BOUNDS>
@@ -10,20 +10,6 @@
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="1">
-   <BOUNDS type="Node" left="2250" top="7170" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2250" top="7170" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-150" top="0" width="29100" height="7470">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="ViewPort" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Crop" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE id="2" systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden">
@@ -67,7 +53,7 @@
    </PIN>
    <PIN pinname="ScaleY" visible="1">
    </PIN>
-   <PIN pinname="TranslateX" slicecount="1" values="-0.31">
+   <PIN pinname="TranslateX" slicecount="1" values="-0.29">
    </PIN>
    <PIN pinname="TranslateY" slicecount="1" values="0.32">
    </PIN>
@@ -113,7 +99,7 @@
    </PIN>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <NODE id="10" systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden">
@@ -278,8 +264,6 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y" dstnodeid="3" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layers">
-   </LINK>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="16" dstpinname="XY">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layer In">
@@ -294,8 +278,6 @@
    </LINK>
    <LINK srcnodeid="18" srcpinname="XY" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Geometry Out" dstnodeid="13" dstpinname="Geometry">
@@ -309,6 +291,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3720" top="500" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Output Node" dstnodeid="15" dstpinname="Layer">
    </LINK>
@@ -326,7 +310,7 @@
    </LINK>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input Value">
    </LINK>
-   <BOUNDS type="Window" left="12330" top="7185" width="8745" height="8760">
+   <BOUNDS type="Window" left="16635" top="12330" width="8745" height="8760">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -351,5 +335,93 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="MultiScreen (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\MultiScreen\MultiScreen (DX11).v4p" nodename="MultiScreen (DX11)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="3690" top="7530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Crop Out" visible="1">
+   </PIN>
+   <PIN pinname="Screen Count X" visible="1">
+   </PIN>
+   <PIN pinname="Calibrate" visible="1">
+   </PIN>
+   <PIN pinname="Overlap X" visible="1" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="Screen Count Y" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Gamma SoftEdge" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Sight" slicecount="1" values="ExtendedSight">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer Out" dstnodeid="24" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
+   <BOUNDS type="Box" left="4890" top="6870" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4890" top="6870" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Screen Count X">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28">
+   <BOUNDS type="Box" left="6540" top="6450" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6540" top="6450" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Calibrate">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="46">
+   <BOUNDS type="Node" left="3540" top="8310" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3540" top="8310" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7920" top="915" width="16710" height="8310">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Crop" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="Refresh Rate" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Flip Sequential" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Do Not Wait" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="VSync" visible="-1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Layer" dstnodeid="46" dstpinname="Layers">
    </LINK>
    </PATCH>

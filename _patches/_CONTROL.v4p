@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="8175" scrolly="1890" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="-150" top="7440" width="19170" height="8160">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="9210" scrolly="4050" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="4440" top="11100" width="19170" height="8160">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -493,7 +493,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9955" top="4827" width="8755" height="8770">
    </BOUNDS>
-   <BOUNDS type="Window" left="12330" top="7185" width="8745" height="8760">
+   <BOUNDS type="Window" left="16635" top="12330" width="8745" height="8760">
    </BOUNDS>
    <PIN pinname="PerfMeter" slicecount="1" values="1">
    </PIN>
@@ -571,7 +571,7 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="18960" top="7515" width="18450" height="8145">
+   <BOUNDS type="Window" left="77550" top="390" width="18450" height="8145">
    </BOUNDS>
    <BOUNDS type="Box" left="26430" top="4320">
    </BOUNDS>

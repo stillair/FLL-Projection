@@ -623,9 +623,9 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="18" visible="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="18">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.68" visible="1">
+   <PIN pinname="Width" slicecount="1" visible="1" values="0.68">
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="Block">
    </PIN>
@@ -675,7 +675,7 @@
    </PIN>
    <PIN pinname="Input" slicecount="1" values="|0.79987,0.79987,0.79987,1.00000|">
    </PIN>
-   <PIN pinname="Bin Size" slicecount="1" values="4" visible="1">
+   <PIN pinname="Bin Size" slicecount="1" visible="1" values="4">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -723,7 +723,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10230" top="9945" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Light">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="(nil)">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="Thin">
    </PIN>
@@ -761,7 +761,7 @@
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Bin Size" slicecount="1" values="4" visible="1">
+   <PIN pinname="Bin Size" slicecount="1" visible="1" values="4">
    </PIN>
    </NODE>
    <LINK srcnodeid="295" srcpinname="Output" dstnodeid="297" dstpinname="Spread">
@@ -771,7 +771,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11100" top="10665" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Bold">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="(nil)">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="Thin">
    </PIN>

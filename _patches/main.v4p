@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="21990" scrolly="7230" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="5700" scrolly="9360" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="1500" top="3135" width="100" height="100">
    </BOUNDS>
@@ -1222,10 +1222,6 @@
    </LINK>
    <LINK srcnodeid="64" srcpinname="Transform MOD" dstnodeid="34" dstpinname="Transform MOD">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="CAM-2" dstnodeid="34" dstpinname="Table-2 CAM">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="CAM-3" dstnodeid="34" dstpinname="Moderator CAM">
-   </LINK>
    <LINK srcnodeid="97" srcpinname="Transform Out" dstnodeid="64" dstpinname="Transform LIVE-1">
    </LINK>
    <LINK srcnodeid="70" srcpinname="Transform Out" dstnodeid="64" dstpinname="Transform LIVE-2">
@@ -1680,8 +1676,6 @@
    </NODE>
    <LINK srcnodeid="125" srcpinname="Output String" dstnodeid="31" dstpinname="TEAM 2 img">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="CAM-1" dstnodeid="34" dstpinname="Table-1 CAM">
-   </LINK>
    <NODE systemname="points3" filename="subpatches\points3.v4p" nodename="subpatches\points3.v4p" componentmode="Hidden" id="126">
    <BOUNDS type="Node" left="34815" top="14745" width="100" height="100">
    </BOUNDS>
@@ -1747,5 +1741,11 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="136" srcpinname="Output String" dstnodeid="126" dstpinname="points">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="CAM-1" dstnodeid="34" dstpinname="Table-1 CAM">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="CAM-2" dstnodeid="34" dstpinname="Table-2 CAM">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="CAM-3" dstnodeid="34" dstpinname="Moderator CAM">
    </LINK>
    </PATCH>

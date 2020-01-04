@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="9210" scrolly="4050" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="4440" top="11100" width="19170" height="8160">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="9645" scrolly="1680" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="195" top="225" width="19170" height="10800">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -415,6 +415,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Start">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="1163" srcpinname="Y Output Value" dstnodeid="1161" dstpinname="Input 1" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="11040" y="4830">
@@ -440,6 +442,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="1164" srcpinname="Y Output Value" dstnodeid="1162" dstpinname="Input 1" linkstyle="Bezier" hiddenwhenlocked="1">
@@ -489,13 +493,15 @@
    <LINK srcnodeid="1156" srcpinname="Output" dstnodeid="1167" dstpinname="Input String">
    </LINK>
    <NODE systemname="RENDER-config" filename="subpatches\RENDER-config.v4p" nodename="subpatches\RENDER-config.v4p" componentmode="Hidden" id="1168">
-   <BOUNDS type="Node" left="14332" top="9212" width="0" height="0">
+   <BOUNDS type="Node" left="13912" top="8687" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9955" top="4827" width="8755" height="8770">
+   <BOUNDS type="Box" left="9535" top="4302" width="8755" height="8770">
    </BOUNDS>
-   <BOUNDS type="Window" left="16635" top="12330" width="8745" height="8760">
+   <BOUNDS type="Window" left="20970" top="8550" width="15615" height="11790">
    </BOUNDS>
    <PIN pinname="PerfMeter" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Buffers" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="989" srcpinname="Layer Out" dstnodeid="1168" dstpinname="Layer">
@@ -571,7 +577,7 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="77550" top="390" width="18450" height="8145">
+   <BOUNDS type="Window" left="24510" top="240" width="11235" height="5850">
    </BOUNDS>
    <BOUNDS type="Box" left="26430" top="4320">
    </BOUNDS>
@@ -803,5 +809,17 @@
    <LINK srcnodeid="1193" srcpinname="Output" dstnodeid="989" dstpinname="points">
    </LINK>
    <LINK srcnodeid="1172" srcpinname="Schule" dstnodeid="989" dstpinname="school">
+   </LINK>
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="1194">
+   <BOUNDS type="Node" left="13755" top="10590" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13755" top="10590" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1725" top="13260" width="14190" height="7725">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1168" srcpinname="Buffers" dstnodeid="1194" dstpinname="Texture In">
    </LINK>
    </PATCH>

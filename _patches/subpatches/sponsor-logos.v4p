@@ -1,16 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\sponsor-logos.v4p" systemname="sponsor-logos" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\sponsor-logos.v4p">
-   <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="2985" top="7215" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Layer In" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="2985" top="7215">
-   </BOUNDS>
-   </NODE>
-   <BOUNDS type="Window" left="8895" top="7950" width="11985" height="11265">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\sponsor-logos.v4p" systemname="sponsor-logos" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\sponsor-logos.v4p">
+   <BOUNDS type="Window" left="8535" top="5580" width="11985" height="11265">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -23,9 +13,9 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="1" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="3615" top="5880" width="100" height="100">
    </BOUNDS>
@@ -70,6 +60,8 @@
    <PIN pinname="TranslateY" slicecount="1" values="-0.203">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Transform Out" dstnodeid="20" dstpinname="Transform">
@@ -152,22 +144,6 @@
    </LINK>
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="22" dstpinname="ScaleY">
    </LINK>
-   <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="2985" top="6660" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2985" top="6660" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Layer In" visible="1">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="20" srcpinname="Layer" dstnodeid="29" dstpinname="Layer In">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layer In">
-   </LINK>
    <LINK srcnodeid="25" srcpinname="Output" dstnodeid="27" dstpinname="Input 1">
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="31">
@@ -221,5 +197,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="Output Node" dstnodeid="22" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Layer" dstnodeid="1" dstpinname="Input Node">
    </LINK>
    </PATCH>

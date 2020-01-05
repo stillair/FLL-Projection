@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transform-teams.v4p" systemname="transform-teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\transform-teams.v4p" scrollx="2535" scrolly="3870">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transform-teams.v4p" systemname="transform-teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\transform-teams.v4p" scrollx="3345" scrolly="3990">
    <NODE id="0" systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="3015" top="10740" width="100" height="100">
    </BOUNDS>
@@ -133,7 +133,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="22155" top="9495" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.354">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.071">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -297,7 +297,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1905" top="9465" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.86">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.194">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -385,7 +385,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5100" top="8640" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.417">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.407">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -413,7 +413,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5250" top="9525" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.86">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.194">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -449,7 +449,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15330" top="9480" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.73">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.7">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -467,7 +467,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14295" top="8820" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.73">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.724">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -487,7 +487,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14175" top="9420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.85">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.838">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -587,7 +587,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="25560" top="8700" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.71">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.698">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -615,7 +615,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="28335" top="8835" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.039">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.004">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1078,7 +1078,7 @@
    </LINK>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Input 1">
    </LINK>
-   <BOUNDS type="Window" left="3180" top="7635" width="28410" height="8265">
+   <BOUNDS type="Window" left="705" top="3045" width="28410" height="8265">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>

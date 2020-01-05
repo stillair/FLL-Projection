@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="9645" scrolly="1680" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="195" top="225" width="19170" height="10800">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="11955" scrolly="5715" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="-15960" top="6855" width="11880" height="7110">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14640" top="6300" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="5070" top="9015" width="29100" height="14385">
+   <BOUNDS type="Window" left="0" top="840" width="29100" height="14385">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -44,6 +44,10 @@
    <PIN pinname="points" visible="1">
    </PIN>
    <PIN pinname="school" visible="1">
+   </PIN>
+   <PIN pinname="StateChange enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="reload-background" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1032" exposed="0">
@@ -215,6 +219,8 @@
    </BOUNDS>
    <PIN pinname="Maximum Foreground FPS" slicecount="1" visible="1" values="60">
    </PIN>
+   <PIN pinname="Maximum Background FPS" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1149" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="11520" top="1185" width="795" height="240">
@@ -228,6 +234,8 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="1149" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
@@ -497,7 +505,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9535" top="4302" width="8755" height="8770">
    </BOUNDS>
-   <BOUNDS type="Window" left="20970" top="8550" width="15615" height="11790">
+   <BOUNDS type="Window" left="9630" top="2850" width="15615" height="11790">
    </BOUNDS>
    <PIN pinname="PerfMeter" slicecount="1" values="1">
    </PIN>
@@ -527,7 +535,7 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Name" slicecount="5" visible="1" values="TeamNR,id,Name,Punkte,Schule">
+   <PIN pinname="Name" slicecount="5" visible="1" values="ID,TeamNR,Name,Punkte,Schule">
    </PIN>
    <PIN pinname="Type" slicecount="5" values="System.Int32,System.Int32,System.String,System.Int32,System.String">
    </PIN>
@@ -577,7 +585,7 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="24510" top="240" width="11235" height="5850">
+   <BOUNDS type="Window" left="-28800" top="7020" width="11235" height="5850">
    </BOUNDS>
    <BOUNDS type="Box" left="26430" top="4320">
    </BOUNDS>
@@ -591,11 +599,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1176">
-   <BOUNDS type="Box" left="27180" top="1230" width="795" height="240">
+   <BOUNDS type="Box" left="27180" top="1230" width="1845" height="300">
    </BOUNDS>
    <BOUNDS type="Node" left="27180" top="1230" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|TeamNR, id, Name, Punkte, Schule|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|ID, TeamNR, Name, Punkte, Schule|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|x,y,z|">
    </PIN>
@@ -671,7 +679,7 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Name" slicecount="5" visible="1" values="TeamNR,id,Name,Punkte,Schule">
+   <PIN pinname="Name" slicecount="5" visible="1" values="ID,TeamNR,Name,Punkte,Schule">
    </PIN>
    <PIN pinname="Type" slicecount="5" values="System.Int32,System.Int32,System.String,System.Int32,System.String">
    </PIN>
@@ -686,6 +694,8 @@
    <PIN pinname="TeamNR" visible="1">
    </PIN>
    <PIN pinname="Schule" visible="1">
+   </PIN>
+   <PIN pinname="ID" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1185" systemname="IOBox (Value Advanced)">
@@ -772,8 +782,6 @@
    </NODE>
    <LINK srcnodeid="1081" srcpinname="TeamNR" dstnodeid="1189" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1189" srcpinname="Output" dstnodeid="1186" dstpinname="TeamNR">
-   </LINK>
    <LINK srcnodeid="1081" srcpinname="teamName" dstnodeid="1186" dstpinname="Name">
    </LINK>
    <LINK srcnodeid="1081" srcpinname="teamID" dstnodeid="1186" dstpinname="id">
@@ -810,16 +818,40 @@
    </LINK>
    <LINK srcnodeid="1172" srcpinname="Schule" dstnodeid="989" dstpinname="school">
    </LINK>
-   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="1194">
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="Hidden" id="1194">
    <BOUNDS type="Node" left="13755" top="10590" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="13755" top="10590" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="1725" top="13260" width="14190" height="7725">
+   <BOUNDS type="Window" left="4230" top="8595" width="14190" height="7725">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="1168" srcpinname="Buffers" dstnodeid="1194" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="1081" srcpinname="teamID" dstnodeid="1186" dstpinname="TeamNR">
+   </LINK>
+   <LINK srcnodeid="1189" srcpinname="Output" dstnodeid="1186" dstpinname="ID">
+   </LINK>
+   <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="1195">
+   <BOUNDS type="Node" left="15630" top="9000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="fps" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1196">
+   <BOUNDS type="Box" left="16950" top="10245" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16950" top="10245" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1195" srcpinname="fps" dstnodeid="1196" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1149" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
    </LINK>
    </PATCH>

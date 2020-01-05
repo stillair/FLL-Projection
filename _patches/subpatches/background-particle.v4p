@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="6540">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="7650">
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="6315" top="12330" width="100" height="100">
    </BOUNDS>
@@ -18,18 +18,6 @@
    <PIN pinname="Color" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="5595" top="13290" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5595" top="13290" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Layer In" visible="1">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
    </PIN>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -62,14 +50,12 @@
    <PIN pinname="Mode" slicecount="1" values="AlphaAdd">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="1" dstpinname="Layer In">
-   </LINK>
    <NODE id="17" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
    </PIN>
-   <BOUNDS type="Box" left="5595" top="13935" width="750" height="240">
+   <BOUNDS type="Box" left="6315" top="13050" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5595" top="13935" width="750" height="240">
+   <BOUNDS type="Node" left="6315" top="13050" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1">
    </PIN>
@@ -576,8 +562,6 @@
    </LINK>
    <LINK srcnodeid="184" srcpinname="Output" dstnodeid="98" dstpinname="Random Seed">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Layer Out" dstnodeid="17" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="77" srcpinname="XY" dstnodeid="5" dstpinname="ScaleXY">
    </LINK>
    <LINK srcnodeid="165" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled" linkstyle="VHV">
@@ -585,5 +569,7 @@
    </LINKPOINT>
    <LINKPOINT x="8085" y="11805">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="17" dstpinname="Input Node">
    </LINK>
    </PATCH>

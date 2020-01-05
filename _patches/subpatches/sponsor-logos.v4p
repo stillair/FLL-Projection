@@ -87,7 +87,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5520" top="2850" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\_assets\Logos\Sponsorenlogos\Artboard 1-80.jpg|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\_assets\Logos\Sponsorenlogos\sponsors.jpg">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

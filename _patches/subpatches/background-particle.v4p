@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="7650">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="165">
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="6315" top="12330" width="100" height="100">
    </BOUNDS>
@@ -481,7 +481,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4095" top="1215" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="4" visible="1" values="..\..\_assets\imgs\bricks\fig1.png,..\..\_assets\imgs\bricks\fig2.png,..\..\_assets\imgs\bricks\fig4.png,..\..\_assets\imgs\bricks\hso-logo-font.png">
+   <PIN pinname="Input String" slicecount="4" visible="1" values="..\..\_assets\imgs\bricks\fig1.png,..\..\_assets\imgs\bricks\fig2.png,..\..\_assets\imgs\bricks\fig3.png,..\..\_assets\imgs\bricks\fig4.png">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

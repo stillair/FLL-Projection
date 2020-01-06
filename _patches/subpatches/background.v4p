@@ -789,15 +789,17 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
    </NODE>
    <LINK srcnodeid="84" srcpinname="Output String" dstnodeid="19" dstpinname="Filename">
    </LINK>
    <NODE id="78" componentmode="Hidden" systemname="background-particle" filename="background-particle.v4p" nodename="background-particle.v4p">
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
-   <BOUNDS type="Node" left="8745" top="8969" width="0" height="0">
+   <BOUNDS type="Node" left="8550" top="8969" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6885" top="5739" width="9840" height="6460">
+   <BOUNDS type="Box" left="6690" top="5739" width="9840" height="6460">
    </BOUNDS>
    <BOUNDS type="Window" left="2505" top="7740" width="23760" height="10050">
    </BOUNDS>

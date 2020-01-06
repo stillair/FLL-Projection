@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\FLL-table.v4p" systemname="FLL-table" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\FLL-table.v4p" scrollx="375" scrolly="5430">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-table.v4p" systemname="FLL-table" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\FLL-table.v4p" scrollx="1365" scrolly="8085">
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="5610" top="16350" width="2355" height="270">
    </BOUNDS>
@@ -187,7 +187,7 @@
    </PIN>
    <PIN pinname="Font" slicecount="1" visible="1" values="|Blogger Sans|">
    </PIN>
-   <PIN pinname="Font Weight" slicecount="28" visible="1" values="Bold,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal,Normal">
+   <PIN pinname="Font Weight" slicecount="54" visible="1" values="Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin">
    </PIN>
    <PIN pinname="Word Wrapping" slicecount="1" values="NoWrap">
    </PIN>
@@ -718,74 +718,6 @@
    </LINK>
    <LINK srcnodeid="291" srcpinname="Output" dstnodeid="114" dstpinname="Color">
    </LINK>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="296" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="10230" top="9945" width="1590" height="270">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10230" top="9945" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="(nil)">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="Thin">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output Enum" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Select (Enumerations Bin)" nodename="Select (Enumerations Bin)" componentmode="Hidden" id="295" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
-   <BOUNDS type="Node" left="10230" top="10920" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Select" visible="1">
-   </PIN>
-   <PIN pinname="Input Bin Size" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="296" srcpinname="Output Enum" dstnodeid="295" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="294" srcpinname="Count" dstnodeid="295" dstpinname="Select">
-   </LINK>
-   <NODE systemname="SetSlice (Enumerations)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="SetSlice (Enumerations)" componentmode="Hidden" id="297">
-   <BOUNDS type="Node" left="10125" top="11580" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10125" top="11580" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Spread" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Bin Size" slicecount="1" visible="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="295" srcpinname="Output" dstnodeid="297" dstpinname="Spread">
-   </LINK>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="298" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="11100" top="10665" width="1590" height="270">
-   </BOUNDS>
-   <BOUNDS type="Node" left="11100" top="10665" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="(nil)">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="Thin">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output Enum" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="298" srcpinname="Output Enum" dstnodeid="297" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="297" srcpinname="Output" dstnodeid="122" dstpinname="Font Weight">
-   </LINK>
    <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="300">
    <BOUNDS type="Node" left="7455" top="9405" width="100" height="100">
    </BOUNDS>
@@ -939,8 +871,6 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="309" srcpinname="Y Output Value" dstnodeid="291" dstpinname="Bin Size">
-   </LINK>
-   <LINK srcnodeid="309" srcpinname="Y Output Value" dstnodeid="297" dstpinname="Bin Size">
    </LINK>
    <NODE systemname="InsertSlice (Spreads)" filename="" nodename="InsertSlice (Spreads)" componentmode="Hidden" id="314">
    <BOUNDS type="Node" left="7380" top="5940" width="100" height="100">
@@ -1199,5 +1129,75 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="320" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled">
+   </LINK>
+   <NODE id="296" nodename="IOBox (Enumerations)" componentmode="InABox" systemname="IOBox (Enumerations)">
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Normal">
+   </PIN>
+   <BOUNDS type="Box" left="10230" top="9945" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10230" top="9945" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="Thin">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE id="298" nodename="IOBox (Enumerations)" componentmode="InABox" systemname="IOBox (Enumerations)">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Bold">
+   </PIN>
+   <BOUNDS type="Box" left="11100" top="10665" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11100" top="10665" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="Thin">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Enumerations Bin)" nodename="Select (Enumerations Bin)" componentmode="Hidden" id="295" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="10230" top="10920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Normal">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input Bin Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="294" srcpinname="Count" dstnodeid="295" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="296" srcpinname="Output Enum" dstnodeid="295" dstpinname="Input">
+   </LINK>
+   <NODE systemname="SetSlice (Enumerations)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="SetSlice (Enumerations)" componentmode="Hidden" id="297">
+   <BOUNDS type="Node" left="10125" top="11580" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10125" top="11580" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Spread" visible="1" slicecount="54" values="Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin,Thin">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="(nil)">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="297" srcpinname="Output" dstnodeid="122" dstpinname="Font Weight">
+   </LINK>
+   <LINK srcnodeid="309" srcpinname="Y Output Value" dstnodeid="297" dstpinname="Bin Size">
+   </LINK>
+   <LINK srcnodeid="298" srcpinname="Output Enum" dstnodeid="297" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="295" srcpinname="Output" dstnodeid="297" dstpinname="Spread">
    </LINK>
    </PATCH>

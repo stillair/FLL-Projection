@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="10290" scrolly="1680" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="-28470" top="6135" width="11880" height="7110">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="6945" scrolly="4275" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="0" top="7215" width="11880" height="11655">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12915" top="7665" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="750" top="1005" width="18825" height="10665">
+   <BOUNDS type="Window" left="18375" top="630" width="18825" height="10665">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -149,7 +149,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="text">
    </PIN>
-   <PIN pinname="Index" visible="1" slicecount="1" values="3">
+   <PIN pinname="Index" visible="1" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -173,7 +173,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="text">
    </PIN>
-   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   <PIN pinname="Index" visible="1" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -501,7 +501,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7810" top="5667" width="8755" height="8770">
    </BOUNDS>
-   <BOUNDS type="Window" left="9630" top="2850" width="15615" height="11790">
+   <BOUNDS type="Window" left="4260" top="5130" width="15615" height="11790">
    </BOUNDS>
    <PIN pinname="PerfMeter" slicecount="1" values="1">
    </PIN>
@@ -855,7 +855,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11985" top="1770" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -867,27 +867,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|StateChange enabled|">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="1197" srcpinname="Y Output Value" dstnodeid="989" dstpinname="StateChange enabled" linkstyle="PolyLine" hiddenwhenlocked="1">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1198">
-   <BOUNDS type="Box" left="18120" top="5010" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="18120" top="5010" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1198" srcpinname="Y Output Value" dstnodeid="1140" dstpinname="Index">
+   <LINK srcnodeid="1148" srcpinname="Output" dstnodeid="1140" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="1198" srcpinname="Y Output Value" dstnodeid="1143" dstpinname="Index">
+   <LINK srcnodeid="1148" srcpinname="Output" dstnodeid="1143" dstpinname="Index">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\RENDER-config.v4p" systemname="RENDER-config" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" scrollx="1335" scrolly="180">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" systemname="RENDER-config" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" scrollx="1335" scrolly="180">
    <NODE id="2" systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden">
    <BOUNDS type="Node" left="1950" top="4350" width="100" height="100">
    </BOUNDS>
@@ -164,7 +164,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="9630" top="2850" width="15615" height="11790">
+   <BOUNDS type="Window" left="4260" top="5130" width="15615" height="11790">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -512,7 +512,7 @@
    </NODE>
    <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="57" dstpinname="Calibration">
    </LINK>
-   <NODE id="46" componentmode="InAWindow" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)">
+   <NODE id="46" componentmode="Hidden" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)">
    <PIN pinname="Flip Sequential" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
@@ -537,7 +537,7 @@
    </BOUNDS>
    <PIN pinname="Crop" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Refresh Rate" slicecount="1" values="50">
+   <PIN pinname="Refresh Rate" slicecount="1" values="60">
    </PIN>
    <PIN pinname="Do Not Wait" slicecount="1" values="0">
    </PIN>
@@ -701,7 +701,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2130" top="7395" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="-28470" top="-1170" width="27840" height="7125">
+   <BOUNDS type="Window" left="0" top="0" width="27150" height="7125">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -710,6 +710,14 @@
    <PIN pinname="Enable Depth Buffer" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="VSync" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Refresh Rate" slicecount="1" values="60">
    </PIN>
    </NODE>
    <LINK srcnodeid="99" srcpinname="Layer Out" dstnodeid="110" dstpinname="Layers">

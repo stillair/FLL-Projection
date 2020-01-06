@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p" scrollx="19035" scrolly="6195" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="9075" scrolly="0" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="1500" top="3135" width="100" height="100">
    </BOUNDS>
@@ -601,6 +601,8 @@
    </PIN>
    <PIN pinname="Y" slicecount="1" visible="1" values="0.8">
    </PIN>
+   <PIN pinname="Z" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="InputMorph (Value)" nodename="InputMorph (Value)" componentmode="Hidden" id="68">
    <BOUNDS type="Node" left="19260" top="9360" width="100" height="100">
@@ -623,7 +625,7 @@
    </PIN>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="0.8">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="70">
@@ -665,7 +667,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="-1.1" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="-1.1">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="0">
    </PIN>
@@ -741,7 +743,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="-1" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="-1">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="0">
    </PIN>
@@ -1063,9 +1065,9 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="FLL-countdown" filename="subpatches\FLL-countdown.v4p" nodename="subpatches\FLL-countdown.v4p" componentmode="Hidden" id="104">
-   <BOUNDS type="Node" left="18450" top="12885" width="1680" height="270">
+   <BOUNDS type="Node" left="14205" top="4500" width="1680" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="18450" top="12885" width="9445" height="9525">
+   <BOUNDS type="Box" left="14205" top="4500" width="9445" height="9525">
    </BOUNDS>
    <BOUNDS type="Window" left="9960" top="6720" width="9435" height="9525">
    </BOUNDS>
@@ -1079,11 +1081,15 @@
    </PIN>
    <PIN pinname="Pre-countdown (s)" slicecount="1" values="3">
    </PIN>
+   <PIN pinname="Running" visible="1">
+   </PIN>
+   <PIN pinname="over" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="105" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="18045" top="12195" width="480" height="480">
+   <BOUNDS type="Box" left="16110" top="3450" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="18045" top="12195" width="0" height="0">
+   <BOUNDS type="Node" left="16110" top="3450" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1097,11 +1103,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Start Countdown|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="106" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="19575" top="12195" width="480" height="480">
+   <BOUNDS type="Box" left="17685" top="3450" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="19575" top="12195" width="0" height="0">
+   <BOUNDS type="Node" left="17685" top="3450" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1114,6 +1122,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Reset Countdown|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="7" dstpinname="Color Input">
@@ -1152,18 +1162,18 @@
    </LINK>
    <LINK srcnodeid="65" srcpinname="Transform Out" dstnodeid="33" dstpinname="Transform TIMER">
    </LINK>
-   <LINK srcnodeid="104" srcpinname="Timer" dstnodeid="33" dstpinname="Timer" linkstyle="Bezier">
-   <LINKPOINT x="19905" y="13880">
+   <LINK srcnodeid="104" srcpinname="Timer" dstnodeid="33" dstpinname="Timer" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14775" y="9698">
    </LINKPOINT>
-   <LINKPOINT x="17460" y="13885">
+   <LINKPOINT x="16455" y="9698">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="87" srcpinname="Output" dstnodeid="67" dstpinname="Y">
    </LINK>
-   <LINK srcnodeid="104" srcpinname="Text-size" dstnodeid="65" dstpinname="ScaleXY" linkstyle="Bezier">
-   <LINKPOINT x="18410" y="13438">
+   <LINK srcnodeid="104" srcpinname="Text-size" dstnodeid="65" dstpinname="ScaleXY" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14250" y="9248">
    </LINKPOINT>
-   <LINKPOINT x="18010" y="13443">
+   <LINKPOINT x="17925" y="9248">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Switch" linkstyle="VHV">
@@ -1196,9 +1206,17 @@
    </LINK>
    <LINK srcnodeid="88" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Start">
+   <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Start" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="16110" y="4200">
+   </LINKPOINT>
+   <LINKPOINT x="14265" y="4200">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Reset" linkstyle="PolyLine">
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Reset" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="17685" y="4200">
+   </LINKPOINT>
+   <LINKPOINT x="14670" y="4200">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Switch" linkstyle="VHV">
    <LINKPOINT x="27120" y="5145">
@@ -1360,7 +1378,7 @@
    </LINK>
    <LINK srcnodeid="99" srcpinname="Transform team name" dstnodeid="98" dstpinname="Transform Text">
    </LINK>
-   <BOUNDS type="Window" left="750" top="1005" width="18825" height="10665">
+   <BOUNDS type="Window" left="18375" top="630" width="18825" height="10665">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -1388,7 +1406,11 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Timer">
    </PIN>
    </NODE>
-   <LINK srcnodeid="104" srcpinname="Timer" dstnodeid="115" dstpinname="Input String">
+   <LINK srcnodeid="104" srcpinname="Timer" dstnodeid="115" dstpinname="Input String" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14775" y="12420">
+   </LINKPOINT>
+   <LINKPOINT x="18555" y="12420">
+   </LINKPOINT>
    </LINK>
    <NODE id="116" nodename="IOBox (Node)" componentmode="InABox" systemname="IOBox (Node)" hiddenwhenlocked="0" managers="">
    <PIN pinname="Input Node" visible="1" slicecount="1" pintype="Input" values="||">
@@ -2321,5 +2343,33 @@
    <LINK srcnodeid="163" srcpinname="Y Output Value" dstnodeid="80" dstpinname="Input 4">
    </LINK>
    <LINK srcnodeid="163" srcpinname="Y Output Value" dstnodeid="80" dstpinname="Input 5">
+   </LINK>
+   <NODE systemname="CasparCG-Trigger" filename="subpatches\CasparCG-Trigger.v4p" nodename="subpatches\CasparCG-Trigger.v4p" componentmode="Hidden" id="183">
+   <BOUNDS type="Node" left="15533" top="5542" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11981" top="1620" width="7105" height="7845">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7530" top="7635" width="12570" height="12615">
+   </BOUNDS>
+   <PIN pinname="state" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="183" dstpinname="start" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="16125" y="4733">
+   </LINKPOINT>
+   <LINKPOINT x="15915" y="4733">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="183" dstpinname="reset" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="17685" y="4718">
+   </LINKPOINT>
+   <LINKPOINT x="15600" y="4718">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Running" dstnodeid="183" dstpinname="running">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="over" dstnodeid="183" dstpinname="over">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="183" dstpinname="states">
    </LINK>
    </PATCH>

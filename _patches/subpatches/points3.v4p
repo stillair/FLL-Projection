@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
    <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\points3.v4p" systemname="points3" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\points3.v4p" scrollx="3600" scrolly="0">
-   <BOUNDS type="Window" left="9840" top="4995" width="15435" height="14040">
+   <BOUNDS type="Window" left="14400" top="9135" width="15435" height="14040">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -129,7 +129,7 @@
    </PIN>
    <PIN pinname="cell-height" slicecount="1" visible="1" values="0.02">
    </PIN>
-   <PIN pinname="window-size" visible="1">
+   <PIN pinname="window-size" visible="1" slicecount="2" values="1088,881">
    </PIN>
    <PIN pinname="length" visible="1" slicecount="1" values="0.1">
    </PIN>
@@ -193,7 +193,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10710" top="6090" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.41">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.409">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -219,7 +219,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9825" top="6060" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.02">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.023">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -238,8 +238,6 @@
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="116" srcpinname="Input Value" dstnodeid="108" dstpinname="window-size">
-   </LINK>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="118">
    <BOUNDS type="Node" left="7620" top="4410" width="100" height="100">
    </BOUNDS>
@@ -251,6 +249,8 @@
    </PIN>
    <PIN pinname="ScaleY" visible="1">
    </PIN>
+   <PIN pinname="TranslateY" slicecount="1" values="0.03">
+   </PIN>
    </NODE>
    <LINK srcnodeid="118" srcpinname="Transform Out" dstnodeid="108" dstpinname="Transform In">
    </LINK>
@@ -259,7 +259,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8835" top="6000" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.003">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.01">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -277,7 +277,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.85">
    </PIN>
    </NODE>
    <LINK srcnodeid="120" srcpinname="Y Output Value" dstnodeid="118" dstpinname="ScaleX">
@@ -302,6 +302,8 @@
    <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="cell-length">
    </PIN>
    </NODE>
    <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="108" dstpinname="cell-length">
@@ -395,7 +397,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="16530" top="7065" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -411,5 +413,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="108" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Input Value" dstnodeid="108" dstpinname="window-size">
    </LINK>
    </PATCH>

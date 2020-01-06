@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="9075" scrolly="0" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="24045" scrolly="7815" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="1500" top="3135" width="100" height="100">
    </BOUNDS>
@@ -1683,7 +1683,7 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9840" top="4995" width="15435" height="14040">
+   <BOUNDS type="Window" left="14400" top="9135" width="15435" height="14040">
    </BOUNDS>
    <PIN pinname="CenterX" slicecount="1" values="0.46">
    </PIN>
@@ -1700,6 +1700,12 @@
    <PIN pinname="team-amount" slicecount="1" values="17">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="col-space" slicecount="1" values="0.01">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.409">
+   </PIN>
+   <PIN pinname="cell-height" slicecount="1" values="0.023">
    </PIN>
    </NODE>
    <LINK srcnodeid="126" srcpinname="Layer Out" dstnodeid="20" dstpinname="Layer 8">

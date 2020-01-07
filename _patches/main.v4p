@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p" scrollx="27195" scrolly="8520" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p" scrollx="8760" scrolly="3990" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="1500" top="3135" width="100" height="100">
    </BOUNDS>
@@ -279,7 +279,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14425" top="10522" width="10845" height="8430">
    </BOUNDS>
-   <BOUNDS type="Window" left="10665" top="5490" width="15645" height="8430">
+   <BOUNDS type="Window" left="12375" top="5325" width="15645" height="8430">
    </BOUNDS>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
@@ -1071,7 +1071,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14205" top="4500" width="9445" height="9525">
    </BOUNDS>
-   <BOUNDS type="Window" left="9960" top="6720" width="9435" height="9525">
+   <BOUNDS type="Window" left="9960" top="4125" width="9435" height="9525">
    </BOUNDS>
    <PIN pinname="Start" visible="1">
    </PIN>
@@ -1086,6 +1086,8 @@
    <PIN pinname="Running" visible="1">
    </PIN>
    <PIN pinname="over" visible="1">
+   </PIN>
+   <PIN pinname="last-seconds" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="105" systemname="IOBox (Value Advanced)">
@@ -1380,7 +1382,7 @@
    </LINK>
    <LINK srcnodeid="99" srcpinname="Transform team name" dstnodeid="98" dstpinname="Transform Text">
    </LINK>
-   <BOUNDS type="Window" left="735" top="810" width="18825" height="10665">
+   <BOUNDS type="Window" left="8160" top="1230" width="18825" height="10665">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -1556,7 +1558,7 @@
    </LINK>
    <LINK srcnodeid="109" srcpinname="AutomataUI" dstnodeid="107" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="CAM-2" dstnodeid="98" dstpinname="presentation-cam">
+   <LINK srcnodeid="76" srcpinname="CAM-1" dstnodeid="98" dstpinname="presentation-cam">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="119">
    <BOUNDS type="Box" left="36930" top="10650" width="795" height="240">
@@ -1760,11 +1762,9 @@
    </NODE>
    <LINK srcnodeid="136" srcpinname="Output String" dstnodeid="126" dstpinname="points">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="CAM-1" dstnodeid="34" dstpinname="Table-1 CAM">
+   <LINK srcnodeid="76" srcpinname="CAM-1" dstnodeid="34" dstpinname="Table-2 CAM">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="CAM-2" dstnodeid="34" dstpinname="Table-2 CAM">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="CAM-3" dstnodeid="34" dstpinname="Moderator CAM">
+   <LINK srcnodeid="76" srcpinname="CAM-2" dstnodeid="34" dstpinname="Moderator CAM">
    </LINK>
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="137">
    <BOUNDS type="Node" left="6615" top="18390" width="100" height="100">
@@ -2431,5 +2431,25 @@
    <LINK srcnodeid="86" srcpinname="FadeInOut POINTS" dstnodeid="186" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="126" dstpinname="fadeINOUT">
+   </LINK>
+   <NODE systemname="countdown-sound" filename="subpatches\countdown-sound.v4p" nodename="subpatches\countdown-sound.v4p" componentmode="Hidden" id="208">
+   <BOUNDS type="Node" left="12660" top="6463" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9480" top="3923" width="6360" height="5080">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1695" top="1005" width="6360" height="5070">
+   </BOUNDS>
+   <PIN pinname="start-countdown" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="reset" visible="1">
+   </PIN>
+   <PIN pinname="last-seconds" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="208" dstpinname="start-countdown">
+   </LINK>
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="208" dstpinname="reset">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="last-seconds" dstnodeid="208" dstpinname="last-seconds">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="8100" scrolly="105" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="7770" scrolly="1305" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
    <BOUNDS type="Window" left="-28200" top="6120" width="11880" height="7875">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12915" top="7665" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="735" top="810" width="18825" height="10665">
+   <BOUNDS type="Window" left="8160" top="1230" width="18825" height="10665">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -870,4 +870,18 @@
    </LINK>
    <LINK srcnodeid="1172" srcpinname="Schule" dstnodeid="989" dstpinname="schule">
    </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="1198">
+   <BOUNDS type="Node" left="0" top="0" width="435" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="435" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="play">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

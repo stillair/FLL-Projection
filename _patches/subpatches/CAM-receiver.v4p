@@ -6,44 +6,6 @@
    </PACK>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
-   <NODE systemname="Spout (DX11.Texture Receiver)" filename="%VVVV%\packs\dx11-Spout\nodes\modules\Spout (DX11.Texture Receiver).v4p" nodename="Spout (DX11.Texture Receiver)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="3225" top="3150" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Share Name" visible="1">
-   </PIN>
-   <PIN pinname="Texture" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="3225" top="3150">
-   </BOUNDS>
-   <PIN pinname="Force Update" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="21">
-   <BOUNDS type="Box" left="3225" top="2580" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3225" top="2580" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 0|">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="#vvvv">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="20" dstpinname="Share Name">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="22">
-   <BOUNDS type="Box" left="3225" top="4215" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3225" top="4215" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="CAM-1">
-   </PIN>
-   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
    <NODE systemname="Spout (DX11.Texture Receiver)" filename="%VVVV%\packs\dx11-Spout\nodes\modules\Spout (DX11.Texture Receiver).v4p" nodename="Spout (DX11.Texture Receiver)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="4320" top="3165" width="100" height="100">
    </BOUNDS>
@@ -57,11 +19,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="24">
-   <BOUNDS type="Box" left="4320" top="2595" width="795" height="240">
+   <BOUNDS type="Box" left="4320" top="2595" width="1035" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="4320" top="2595" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 2|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 1|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="#vvvv">
    </PIN>
@@ -77,7 +39,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4320" top="4215" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="CAM-2">
+   <PIN pinname="Descriptive Name" slicecount="1" values="CAM-1">
    </PIN>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -95,11 +57,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="27">
-   <BOUNDS type="Box" left="5415" top="2610" width="795" height="240">
+   <BOUNDS type="Box" left="5415" top="2610" width="1035" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="5415" top="2610" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 3|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 2|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="#vvvv">
    </PIN>
@@ -115,7 +77,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5415" top="4215" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="CAM-3">
+   <PIN pinname="Descriptive Name" slicecount="1" values="CAM-2">
    </PIN>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -146,21 +108,7 @@
    <BOUNDS type="Box" left="4320" top="3840">
    </BOUNDS>
    </NODE>
-   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="3225" top="3840" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Default" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="3225" top="3840">
-   </BOUNDS>
-   </NODE>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="23" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="22" dstpinname="Input Node">
    </LINK>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="53">
    <BOUNDS type="Node" left="5025" top="990" width="100" height="100">
@@ -175,10 +123,6 @@
    <LINK srcnodeid="28" srcpinname="Texture" dstnodeid="29" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Texture" dstnodeid="34" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="Texture" dstnodeid="38" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="53" srcpinname="Texture Out" dstnodeid="38" dstpinname="Default">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Texture Out" dstnodeid="34" dstpinname="Default">
    </LINK>

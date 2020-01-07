@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="165">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" systemname="background-particle" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\background-particle.v4p" scrollx="0" scrolly="3180">
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="6315" top="12330" width="100" height="100">
    </BOUNDS>
@@ -185,7 +185,7 @@
    </PIN>
    <PIN pinname="Source Maximum" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="-0.25">
+   <PIN pinname="Destination Minimum" slicecount="1" values="-0.36">
    </PIN>
    <PIN pinname="Destination Maximum" slicecount="1" values="0.38">
    </PIN>
@@ -231,7 +231,7 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="11">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="1">
+   <PIN pinname="Width" slicecount="1" values="1.25">
    </PIN>
    <PIN pinname="Random Seed" slicecount="1" visible="1" values="200">
    </PIN>
@@ -297,13 +297,13 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Source Maximum" visible="1">
+   <PIN pinname="Source Maximum" visible="1" slicecount="1" values="0.166185506614856">
    </PIN>
-   <PIN pinname="Source Minimum" visible="1">
+   <PIN pinname="Source Minimum" visible="1" slicecount="1" values="0.0836414344329387">
    </PIN>
    <PIN pinname="Destination Minimum" slicecount="1" visible="1" values="20">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" visible="1" values="10">
+   <PIN pinname="Destination Maximum" slicecount="1" visible="1" values="29.67">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -336,10 +336,6 @@
    </LINK>
    <LINK srcnodeid="154" srcpinname="Output" dstnodeid="155" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="155" srcpinname="Last Slice" dstnodeid="153" dstpinname="Source Maximum">
-   </LINK>
-   <LINK srcnodeid="156" srcpinname="First Slice" dstnodeid="153" dstpinname="Source Minimum">
-   </LINK>
    <LINK srcnodeid="75" srcpinname="Output" dstnodeid="154" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="75" srcpinname="Output" dstnodeid="153" dstpinname="Input">
@@ -349,7 +345,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9195" top="5250" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="30">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="40">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -373,8 +369,6 @@
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="158" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="158" srcpinname="Output" dstnodeid="153" dstpinname="Destination Minimum">
-   </LINK>
-   <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="153" dstpinname="Destination Maximum">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="161">
    <BOUNDS type="Box" left="13080" top="1215" width="480" height="480">
@@ -500,12 +494,6 @@
    </NODE>
    <LINK srcnodeid="179" srcpinname="Output String" dstnodeid="68" dstpinname="Filename">
    </LINK>
-   <LINK srcnodeid="99" srcpinname="Y Output Value" dstnodeid="140" dstpinname="Y Input Value" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="8865" y="5648">
-   </LINKPOINT>
-   <LINKPOINT x="8130" y="5648">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="180">
    <BOUNDS type="Node" left="4455" top="1800" width="100" height="100">
    </BOUNDS>
@@ -571,5 +559,17 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="17" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="153" dstpinname="Destination Maximum">
+   </LINK>
+   <LINK srcnodeid="156" srcpinname="First Slice" dstnodeid="153" dstpinname="Source Minimum">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Y Output Value" dstnodeid="140" dstpinname="Y Input Value" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8865" y="5648">
+   </LINKPOINT>
+   <LINKPOINT x="8130" y="5648">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Last Slice" dstnodeid="153" dstpinname="Source Maximum">
    </LINK>
    </PATCH>

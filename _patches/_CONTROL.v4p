@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="7770" scrolly="1305" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="-28200" top="6120" width="11880" height="7875">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="8520" scrolly="2520" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="795" top="8205" width="11880" height="7875">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12915" top="7665" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="8160" top="1230" width="18825" height="10665">
+   <BOUNDS type="Window" left="10290" top="7590" width="18825" height="10665">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -585,7 +585,7 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="-13080" top="6675" width="11235" height="5850">
+   <BOUNDS type="Window" left="16230" top="8475" width="11235" height="5850">
    </BOUNDS>
    <BOUNDS type="Box" left="24705" top="5685">
    </BOUNDS>
@@ -847,7 +847,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11985" top="1770" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -859,7 +859,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|StateChange enabled|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="1197" srcpinname="Y Output Value" dstnodeid="989" dstpinname="StateChange enabled" linkstyle="PolyLine" hiddenwhenlocked="1">

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\countdown-sound.v4p" systemname="countdown-sound" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\countdown-sound.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\countdown-sound.v4p" systemname="countdown-sound" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\countdown-sound.v4p">
    <NODE systemname="FileStream (DShow9)" nodename="FileStream (DShow9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1560" top="2505" width="100" height="100">
    </BOUNDS>
@@ -89,7 +89,7 @@
    </PIN>
    <PIN pinname="Audio" visible="1">
    </PIN>
-   <PIN pinname="Do Seek" slicecount="1" values="0" visible="1">
+   <PIN pinname="Do Seek" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Seek Time" slicecount="1" visible="1" values="0">
    </PIN>
@@ -163,9 +163,9 @@
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
-   <BOUNDS type="Node" left="2355" top="675" width="100" height="100">
+   <BOUNDS type="Node" left="3810" top="690" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2355" top="675" width="480" height="480">
+   <BOUNDS type="Box" left="3810" top="690" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -183,9 +183,9 @@
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Do Seek">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
-   <BOUNDS type="Box" left="4170" top="660" width="480" height="480">
+   <BOUNDS type="Box" left="2715" top="690" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4170" top="660" width="0" height="0">
+   <BOUNDS type="Node" left="2715" top="690" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>

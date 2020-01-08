@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-countdown.v4p" systemname="FLL-countdown" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-countdown.v4p" scrollx="1965" scrolly="3090">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\FLL-countdown.v4p" systemname="FLL-countdown" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-countdown.v4p" scrollx="1965" scrolly="3090">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3795" top="7965" width="795" height="240">
    </BOUNDS>
@@ -685,7 +685,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6435" top="8955" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

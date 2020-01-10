@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="13455" scrolly="3225" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="8745" scrolly="1590" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="1500" top="3135" width="100" height="100">
    </BOUNDS>
@@ -531,7 +531,7 @@
    </PIN>
    <PIN pinname="Transform MOD" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="4785" top="3285" width="17055" height="12150">
+   <BOUNDS type="Window" left="10725" top="7740" width="17055" height="12150">
    </BOUNDS>
    <PIN pinname="GAME active" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1053,7 +1053,7 @@
    </PIN>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="7380" top="1005" width="16950" height="13260">
+   <BOUNDS type="Window" left="9765" top="9885" width="16950" height="8640">
    </BOUNDS>
    <PIN pinname="ratio" visible="1" slicecount="1" values="0.39">
    </PIN>
@@ -1382,7 +1382,7 @@
    </LINK>
    <LINK srcnodeid="99" srcpinname="Transform team name" dstnodeid="98" dstpinname="Transform Text">
    </LINK>
-   <BOUNDS type="Window" left="10290" top="7590" width="18825" height="10665">
+   <BOUNDS type="Window" left="10260" top="7950" width="18825" height="10665">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -1839,7 +1839,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="31740" top="12900" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.409">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.431">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1882,6 +1882,8 @@
    <BOUNDS type="Node" left="16590" top="12615" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="ratio">
    </PIN>
    </NODE>
    <LINK srcnodeid="67" srcpinname="Transform Out" dstnodeid="66" dstpinname="Transform Logo-Line">
@@ -2432,10 +2434,10 @@
    </LINK>
    <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="126" dstpinname="fadeINOUT">
    </LINK>
-   <NODE systemname="light-trigger" filename="subpatches\light-trigger.v4p" nodename="subpatches\light-trigger.v4p" componentmode="Hidden" id="209">
+   <NODE systemname="light-trigger" filename="subpatches\light-trigger.v4p" nodename="subpatches\light-trigger.v4p" componentmode="InAWindow" id="209">
    <BOUNDS type="Node" left="18255" top="5475" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="512" visible="1" slicecount="1" values="0">
+   <PIN pinname="512" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="510" visible="1" slicecount="1" values="0">
    </PIN>
@@ -2460,13 +2462,9 @@
    <PIN pinname="last-seconds" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="104" srcpinname="last-seconds" dstnodeid="208" dstpinname="last-seconds">
-   </LINK>
    <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="208" dstpinname="reset">
    </LINK>
    <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="208" dstpinname="start-countdown">
-   </LINK>
-   <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="209" dstpinname="512">
    </LINK>
    <LINK srcnodeid="104" srcpinname="last-seconds" dstnodeid="209" dstpinname="510">
    </LINK>
@@ -2485,5 +2483,23 @@
    <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="210" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="210" srcpinname="Output" dstnodeid="209" dstpinname="511">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="211">
+   <BOUNDS type="Node" left="14745" top="4995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="104" srcpinname="Running" dstnodeid="211" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="Down Edge" dstnodeid="208" dstpinname="timer over">
+   </LINK>
+   <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="209" dstpinname="512" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="16170" y="4680">
+   </LINKPOINT>
+   <LINKPOINT x="18240" y="4680">
+   </LINKPOINT>
    </LINK>
    </PATCH>

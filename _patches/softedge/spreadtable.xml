@@ -1,0 +1,123 @@
+<?xml version="1.0" standalone="yes"?>
+<spreadtable>
+  <xs:schema id="spreadtable" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="spreadtable" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="FLL_x0020_Teams">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="TeamNR" type="xs:int" default="0" />
+                <xs:element name="Name" type="xs:string" default="abc" />
+                <xs:element name="Punkte" type="xs:int" default="0" />
+                <xs:element name="Schule" type="xs:string" default="abc" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <FLL_x0020_Teams>
+    <TeamNR>13</TeamNR>
+    <Name>Tableb</Name>
+    <Punkte>0</Punkte>
+    <Schule>Schiller-Gymnasium Offenburg</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>9</TeamNR>
+    <Name>SuperRobby</Name>
+    <Punkte>0</Punkte>
+    <Schule>Bildungszentrum Haslach</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>4</TeamNR>
+    <Name>Scheffel-Seniors</Name>
+    <Punkte>0</Punkte>
+    <Schule>Scheffel-Gymnasium Lahr</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>1</TeamNR>
+    <Name>Scheffel-Juniors</Name>
+    <Punkte>0</Punkte>
+    <Schule>Scheffel-Gymnasium Lahr</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>11</TeamNR>
+    <Name>RSObots</Name>
+    <Punkte>0</Punkte>
+    <Schule>Realschule Oberkirch</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>12</TeamNR>
+    <Name>ROBOKEN</Name>
+    <Punkte>0</Punkte>
+    <Schule>Oken-Gymnasium Offenburg</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>14</TeamNR>
+    <Name>Robbiz</Name>
+    <Punkte>0</Punkte>
+    <Schule>August Ruf Bildungszentrum Ettenheim</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>15</TeamNR>
+    <Name>Pythagorge</Name>
+    <Punkte>0</Punkte>
+    <Schule>Espla NDS</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>3</TeamNR>
+    <Name>Intelligent Dragons</Name>
+    <Punkte>0</Punkte>
+    <Schule>Thomas Strittmatter Gymnasium St. Georgen</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>6</TeamNR>
+    <Name>HFG-RoboS</Name>
+    <Punkte>0</Punkte>
+    <Schule>Hans-Furler-Gymnasium Oberkirch</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>16</TeamNR>
+    <Name>HFG Robokirch</Name>
+    <Punkte>0</Punkte>
+    <Schule>Hans-Furler-Gymnasium Oberkirch</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>8</TeamNR>
+    <Name>HFG BOTS</Name>
+    <Punkte>0</Punkte>
+    <Schule>Hans-Furler-Gymnasium Oberkirch</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>7</TeamNR>
+    <Name>GOBOTS</Name>
+    <Punkte>0</Punkte>
+    <Schule>Hochschule Offenburg</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>17</TeamNR>
+    <Name>G-Bots</Name>
+    <Punkte>0</Punkte>
+    <Schule>Goethe-Gymnasium Freiburg</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>10</TeamNR>
+    <Name>Einstein</Name>
+    <Punkte>0</Punkte>
+    <Schule>Einstein-Gymnasium Kehl</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>5</TeamNR>
+    <Name>Bhof-Robos</Name>
+    <Punkte>0</Punkte>
+    <Schule>Schule Birklehof Hinterzarten</Schule>
+  </FLL_x0020_Teams>
+  <FLL_x0020_Teams>
+    <TeamNR>2</TeamNR>
+    <Name>AREA52</Name>
+    <Punkte>0</Punkte>
+    <Schule>Schule Birklehof Hinterzarten</Schule>
+  </FLL_x0020_Teams>
+</spreadtable>

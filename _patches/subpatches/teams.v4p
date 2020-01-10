@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\teams.v4p" systemname="teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\teams.v4p" scrollx="585" scrolly="4725">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\teams.v4p" systemname="teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\teams.v4p" scrollx="0" scrolly="7065">
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="4245" top="14565" width="100" height="100">
    </BOUNDS>
@@ -634,14 +634,6 @@
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 5">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 6">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="69">
    <BOUNDS type="Box" left="1530" top="18690" width="795" height="240">
    </BOUNDS>
@@ -651,10 +643,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="68" srcpinname="Layer Out" dstnodeid="69" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Layer Out" dstnodeid="68" dstpinname="Layer 4">
-   </LINK>
-   <LINK srcnodeid="41" srcpinname="Layer Out" dstnodeid="68" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="21" srcpinname="Render State" dstnodeid="19" dstpinname="Render State">
    </LINK>
@@ -979,5 +967,17 @@
    <LINK srcnodeid="168" srcpinname="Y Output Value" dstnodeid="1" dstpinname="SizeXY">
    </LINK>
    <LINK srcnodeid="168" srcpinname="Y Output Value" dstnodeid="7" dstpinname="SizeXY">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Layer Out" dstnodeid="68" dstpinname="Layer 5">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Layer Out" dstnodeid="68" dstpinname="Layer 6">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="8520" scrolly="2520" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="795" top="8205" width="11880" height="7875">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="6285" scrolly="390" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="1575" top="8100" width="13725" height="10725">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12915" top="7665" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="10290" top="7590" width="18825" height="10665">
+   <BOUNDS type="Window" left="10260" top="7950" width="18825" height="10665">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -39,7 +39,7 @@
    </PIN>
    <PIN pinname="presentation-team-img" visible="1">
    </PIN>
-   <PIN pinname="team name" visible="1">
+   <PIN pinname="team name" visible="1" slicecount="17" values="Tableb,SuperRobby,Scheffel-Seniors,Scheffel-Juniors,RSObots,ROBOKEN,Robbiz,Pythagorge,|Intelligent Dragons|,HFG-RoboS,|HFG Robokirch|,|HFG BOTS|,GOBOTS,G-Bots,Einstein,Bhof-Robos,AREA52">
    </PIN>
    <PIN pinname="points" visible="1">
    </PIN>
@@ -49,7 +49,7 @@
    </PIN>
    <PIN pinname="reload-background" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="schule" visible="1">
+   <PIN pinname="schule" visible="1" slicecount="17" values=",,,,,,,,,,,,,,,,">
    </PIN>
    <PIN pinname="set-points" visible="1" slicecount="1" values="0">
    </PIN>
@@ -165,7 +165,7 @@
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1144">
    <BOUNDS type="Node" left="17325" top="6495" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Index" visible="1" slicecount="1" values="0">
    </PIN>
@@ -175,7 +175,7 @@
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1143">
    <BOUNDS type="Node" left="18240" top="6495" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Index" visible="1" slicecount="1" values="4">
    </PIN>
@@ -241,9 +241,9 @@
    <LINK srcnodeid="1149" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
    </LINK>
    <NODE id="1128" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="15690" top="1680" width="480" height="480">
+   <BOUNDS type="Box" left="15345" top="465" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="15690" top="1680" width="0" height="0">
+   <BOUNDS type="Node" left="15345" top="465" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -259,49 +259,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|load teams|">
    </PIN>
-   </NODE>
-   <NODE id="1081" systemname="ReadTeams (Value)" filename="vl\VVVV.Value.ReadTeams.vl" nodename="ReadTeams (Value)" componentmode="Hidden">
-   <BOUNDS type="Node" left="15690" top="2460" width="4455" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15690" top="2460">
-   </BOUNDS>
-   <PIN pinname="TeamNames" visible="1">
-   </PIN>
-   <PIN pinname="TeamNames-webclient" visible="1">
-   </PIN>
-   <PIN pinname="read" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="teamPoints" visible="1">
-   </PIN>
-   <PIN pinname="teamName" visible="1">
-   </PIN>
-   <PIN pinname="teamImage" visible="1">
-   </PIN>
-   <PIN pinname="TeamNR" visible="1">
-   </PIN>
-   <PIN pinname="teamID" visible="1">
-   </PIN>
-   <PIN pinname="School" visible="1">
-   </PIN>
-   <PIN pinname="TeamNR Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="teamName Bin Size" visible="1">
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1081" srcpinname="teamImage" dstnodeid="1143" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="teamImage" dstnodeid="1144" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="teamName" dstnodeid="1140" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="teamName" dstnodeid="1139" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1128" srcpinname="Y Output Value" dstnodeid="1081" dstpinname="read">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="TeamNames-webclient" dstnodeid="1078" dstpinname="Desk2">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="TeamNames-webclient" dstnodeid="1078" dstpinname="Desk1">
-   </LINK>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1156">
    <BOUNDS type="Node" left="19650" top="6450" width="100" height="100">
    </BOUNDS>
@@ -315,7 +275,7 @@
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1155">
    <BOUNDS type="Node" left="20565" top="6450" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Index" visible="1" slicecount="1" values="0">
    </PIN>
@@ -326,10 +286,6 @@
    </LINK>
    <LINK srcnodeid="1155" srcpinname="Output" dstnodeid="989" dstpinname="presentation-team-img">
    </LINK>
-   <LINK srcnodeid="1081" srcpinname="teamImage" dstnodeid="1155" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="teamName" dstnodeid="1156" dstpinname="Input">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1157">
    <BOUNDS type="Node" left="21105" top="5280" width="100" height="100">
    </BOUNDS>
@@ -339,7 +295,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Presentation-Team">
    </PIN>
@@ -481,9 +437,9 @@
    <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1166" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1167">
-   <BOUNDS type="Box" left="22725" top="8730" width="2775" height="555">
+   <BOUNDS type="Box" left="22380" top="9060" width="2775" height="555">
    </BOUNDS>
-   <BOUNDS type="Node" left="22725" top="8730" width="0" height="0">
+   <BOUNDS type="Node" left="22380" top="9060" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -501,15 +457,17 @@
    <LINK srcnodeid="1156" srcpinname="Output" dstnodeid="1167" dstpinname="Input String">
    </LINK>
    <NODE systemname="RENDER-config" filename="subpatches\RENDER-config.v4p" nodename="subpatches\RENDER-config.v4p" componentmode="Hidden" id="1168">
-   <BOUNDS type="Node" left="12187" top="10052" width="0" height="0">
+   <BOUNDS type="Node" left="12937" top="9767" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7810" top="5667" width="8755" height="8770">
+   <BOUNDS type="Box" left="8560" top="5382" width="8755" height="8770">
    </BOUNDS>
-   <BOUNDS type="Window" left="4260" top="5130" width="15615" height="11790">
+   <BOUNDS type="Window" left="10035" top="5595" width="15615" height="11790">
    </BOUNDS>
    <PIN pinname="PerfMeter" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Buffers" visible="1">
+   </PIN>
+   <PIN pinname="Calibration" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="989" srcpinname="Layer Out" dstnodeid="1168" dstpinname="Layer">
@@ -535,15 +493,17 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Name" slicecount="5" visible="1" values="ID,TeamNR,Name,Punkte,Schule">
+   <PIN pinname="Name" slicecount="4" visible="1" values="TeamNR,Name,Punkte,Schule">
    </PIN>
-   <PIN pinname="Type" slicecount="5" values="System.Int32,System.Int32,System.String,System.Int32,System.String">
+   <PIN pinname="Type" slicecount="4" values="System.Int32,System.String,System.Int32,System.String">
    </PIN>
    <PIN pinname="Index" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Punkte" visible="1">
    </PIN>
    <PIN pinname="Schule" visible="1">
+   </PIN>
+   <PIN pinname="TeamNR" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Table (DataTable)" filename="plugins\Table.dll" nodename="Table (DataTable)" componentmode="Hidden" id="1173">
@@ -559,6 +519,12 @@
    </PIN>
    <BOUNDS type="Box" left="24825" top="4590">
    </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Save" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Auto Save" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="1171" srcpinname="Commands" dstnodeid="1173" dstpinname="Commands">
    </LINK>
@@ -585,7 +551,7 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="16230" top="8475" width="11235" height="5850">
+   <BOUNDS type="Window" left="20730" top="8445" width="14580" height="9360">
    </BOUNDS>
    <BOUNDS type="Box" left="24705" top="5685">
    </BOUNDS>
@@ -603,7 +569,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="25455" top="2595" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|ID, TeamNR, Name, Punkte, Schule|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|TeamNR, Name, Punkte, Schule|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|x,y,z|">
    </PIN>
@@ -621,7 +587,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="26160" top="3165" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|i, i, s, i, s|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|i, s, i, s|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|d,d,d|">
    </PIN>
@@ -679,9 +645,9 @@
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Name" slicecount="5" visible="1" values="ID,TeamNR,Name,Punkte,Schule">
+   <PIN pinname="Name" visible="1" slicecount="4" values="TeamNR,Name,Punkte,Schule">
    </PIN>
-   <PIN pinname="Type" slicecount="5" values="System.Int32,System.Int32,System.String,System.Int32,System.String">
+   <PIN pinname="Type" slicecount="4" values="System.Int32,System.String,System.Int32,System.String">
    </PIN>
    <PIN pinname="Insert" visible="1">
    </PIN>
@@ -691,9 +657,9 @@
    </PIN>
    <PIN pinname="value" visible="1">
    </PIN>
-   <PIN pinname="TeamNR" visible="1">
+   <PIN pinname="TeamNR" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Schule" visible="1">
+   <PIN pinname="Schule" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="ID" visible="1">
    </PIN>
@@ -772,58 +738,32 @@
    </LINK>
    <LINK srcnodeid="1188" srcpinname="Commands" dstnodeid="1171" dstpinname="Commands">
    </LINK>
-   <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="1189">
-   <BOUNDS type="Node" left="19770" top="3045" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1081" srcpinname="TeamNR" dstnodeid="1189" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="teamName" dstnodeid="1186" dstpinname="Name">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="teamID" dstnodeid="1186" dstpinname="id">
-   </LINK>
-   <LINK srcnodeid="1081" srcpinname="School" dstnodeid="1186" dstpinname="Schule">
-   </LINK>
    <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="1192">
    <BOUNDS type="Node" left="20100" top="4470" width="100" height="100">
    </BOUNDS>
-   <PIN pinname=".. To [" visible="1">
+   <PIN pinname=".. To [" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1081" srcpinname="teamName Bin Size" dstnodeid="1192" dstpinname=".. To [">
-   </LINK>
    <LINK srcnodeid="1192" srcpinname="Output" dstnodeid="1172" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="1172" srcpinname="Name" dstnodeid="989" dstpinname="team name">
-   </LINK>
    <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="1193">
-   <BOUNDS type="Node" left="24045" top="6630" width="100" height="100">
+   <BOUNDS type="Node" left="24075" top="6930" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="17" values="0,0,0,0,0,0,0,0,115,0,0,0,0,230,0,0,226">
    </PIN>
    <PIN pinname="SubType" slicecount="1" values="|Integer (0 .. MaxInt)|">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1172" srcpinname="Punkte" dstnodeid="1193" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="1193" srcpinname="Output" dstnodeid="989" dstpinname="points">
    </LINK>
    <LINK srcnodeid="1172" srcpinname="Schule" dstnodeid="989" dstpinname="school">
    </LINK>
-   <LINK srcnodeid="1081" srcpinname="teamID" dstnodeid="1186" dstpinname="TeamNR">
-   </LINK>
-   <LINK srcnodeid="1189" srcpinname="Output" dstnodeid="1186" dstpinname="ID">
-   </LINK>
    <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="1195">
-   <BOUNDS type="Node" left="13905" top="10365" width="100" height="100">
+   <BOUNDS type="Node" left="14460" top="10890" width="100" height="100">
    </BOUNDS>
    <PIN pinname="fps" visible="1">
    </PIN>
@@ -847,7 +787,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11985" top="1770" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -859,7 +799,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|StateChange enabled|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="1197" srcpinname="Y Output Value" dstnodeid="989" dstpinname="StateChange enabled" linkstyle="PolyLine" hiddenwhenlocked="1">
@@ -867,8 +807,6 @@
    <LINK srcnodeid="1148" srcpinname="Output" dstnodeid="1140" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="1148" srcpinname="Output" dstnodeid="1143" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="1172" srcpinname="Schule" dstnodeid="989" dstpinname="schule">
    </LINK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="1198">
    <BOUNDS type="Node" left="0" top="0" width="435" height="270">
@@ -884,4 +822,148 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1204">
+   <BOUNDS type="Box" left="26550" top="4305" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="26550" top="4305" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="softedge\spreadtable.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="spreadtable.xml">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|XML File (*.xml)||*.xml|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1204" srcpinname="Output String" dstnodeid="1173" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="1172" srcpinname="Name" dstnodeid="989" dstpinname="team name">
+   </LINK>
+   <LINK srcnodeid="1172" srcpinname="Schule" dstnodeid="989" dstpinname="schule">
+   </LINK>
+   <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="1210">
+   <BOUNDS type="Node" left="15705" top="1755" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="17" values="01,01,02,02,03,03,04,04,05,05,06,06,07,07,08,08,08">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="readTeams (Value)" filename="vl\VVVV.Value.readTeams1.vl" nodename="readTeams (Value)" componentmode="Hidden" id="1211">
+   <BOUNDS type="Node" left="15330" top="1215" width="1620" height="270">
+   </BOUNDS>
+   <PIN pinname="read" visible="1">
+   </PIN>
+   <PIN pinname="teamNR" visible="1">
+   </PIN>
+   <PIN pinname="school" visible="1">
+   </PIN>
+   <PIN pinname="teamName" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1128" srcpinname="Y Output Value" dstnodeid="1211" dstpinname="read">
+   </LINK>
+   <LINK srcnodeid="1211" srcpinname="teamNR" dstnodeid="1210" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1211" srcpinname="school" dstnodeid="1186" dstpinname="Schule">
+   </LINK>
+   <LINK srcnodeid="1211" srcpinname="teamName" dstnodeid="1186" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="1210" srcpinname="Output" dstnodeid="1186" dstpinname="TeamNR">
+   </LINK>
+   <LINK srcnodeid="1211" srcpinname="teamName" dstnodeid="1139" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1211" srcpinname="teamName" dstnodeid="1140" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1211" srcpinname="teamName" dstnodeid="1156" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="1212">
+   <BOUNDS type="Node" left="15600" top="2865" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="| - |">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1211" srcpinname="teamNR" dstnodeid="1212" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1211" srcpinname="teamName" dstnodeid="1212" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="1212" srcpinname="Output" dstnodeid="1078" dstpinname="Desk1">
+   </LINK>
+   <LINK srcnodeid="1212" srcpinname="Output" dstnodeid="1078" dstpinname="Desk2">
+   </LINK>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="1213">
+   <BOUNDS type="Node" left="17970" top="3300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" visible="1">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1214">
+   <BOUNDS type="Box" left="18150" top="2310" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18150" top="2310" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\_assets\_TEAMS\team-imgs">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|image directory|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1214" srcpinname="Output String" dstnodeid="1213" dstpinname="Directory">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1215">
+   <BOUNDS type="Node" left="17925" top="3720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|image directory|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1213" srcpinname="Filenames" dstnodeid="1215" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="1217">
+   <BOUNDS type="Node" left="15030" top="2340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1210" srcpinname="Output" dstnodeid="1217" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1217" srcpinname="Output" dstnodeid="1215" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="1215" srcpinname="Output" dstnodeid="1144" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1215" srcpinname="Output" dstnodeid="1143" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1215" srcpinname="Output" dstnodeid="1155" dstpinname="Input">
+   </LINK>
    </PATCH>

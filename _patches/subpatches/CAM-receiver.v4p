@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\CAM-receiver.v4p" systemname="CAM-receiver" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\CAM-receiver.v4p" scrollx="1080" scrolly="0">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\CAM-receiver.v4p" systemname="CAM-receiver" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\CAM-receiver.v4p" scrollx="1080" scrolly="0">
    <BOUNDS type="Window" left="6375" top="3135" width="10890" height="9450">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4320" top="2595" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 1|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 0|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="#vvvv">
    </PIN>
@@ -61,7 +61,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5415" top="2610" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 2|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Black Spout 1|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="#vvvv">
    </PIN>

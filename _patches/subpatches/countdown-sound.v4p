@@ -19,7 +19,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2850" top="2085" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\_assets\sound\test-sound2.mp3">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\_assets\sound\timersound_start.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.avi">
    </PIN>
@@ -103,7 +103,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4860" top="2055" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\_assets\sound\test-sound.mp3">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\_assets\sound\timersound_over.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.avi">
    </PIN>
@@ -197,7 +197,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="last-seconds">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|timer over|">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\RENDER-config.v4p" systemname="RENDER-config" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" scrollx="690" scrolly="2385">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" systemname="RENDER-config" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" scrollx="690" scrolly="315">
    <NODE id="2" systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden">
    <BOUNDS type="Node" left="1950" top="4350" width="100" height="100">
    </BOUNDS>
@@ -164,7 +164,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4260" top="5130" width="15615" height="11790">
+   <BOUNDS type="Window" left="10035" top="5595" width="15615" height="11790">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -185,6 +185,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Projector Cols|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59">
    <BOUNDS type="Box" left="6570" top="7545" width="795" height="240">
@@ -201,11 +203,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Projector Rows|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
-   <BOUNDS type="Box" left="7065" top="7935" width="795" height="480">
+   <BOUNDS type="Box" left="7230" top="7935" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7065" top="7935" width="0" height="0">
+   <BOUNDS type="Node" left="7230" top="7935" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1920,1080">
    </PIN>
@@ -219,77 +223,9 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="61">
-   <BOUNDS type="Box" left="5415" top="6450" width="1755" height="270">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5415" top="6450" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\softedge-config\2020-01-05.xml">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Project Name|">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE id="57" systemname="LVT (DX11)" filename="%VVVV%\packs\multiscreen-lvt-vvvv-master\MultiScreen LVT (DX11).v4p" nodename="LVT (DX11)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Project Name" visible="1" pintype="Input" slicecount="1" values="DemoProject">
-   </PIN>
-   <PIN pinname="Texture" visible="1" slicecount="1" pintype="Input" values="||">
-   </PIN>
-   <PIN pinname="Calibration" slicecount="1" pintype="Input" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Single Projector Resolution" visible="1" pintype="Input" slicecount="2" values="1024,768">
-   </PIN>
-   <PIN pinname="Projector Rows" visible="1" slicecount="1" pintype="Input" values="1">
-   </PIN>
-   <PIN pinname="Projector Cols" visible="1" pintype="Input" slicecount="1" values="3">
-   </PIN>
-   <BOUNDS type="Node" left="4890" top="8625" width="4650" height="270">
-   </BOUNDS>
-   <PIN pinname="Layer Out" visible="1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Box" left="15" top="0" width="4800" height="4800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="17730" top="5550" width="15300" height="11310">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Reload" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Reset" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Save" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Patch" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Render Resolution" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Content Resolution" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="61" srcpinname="Output String" dstnodeid="57" dstpinname="Project Name">
-   </LINK>
-   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="57" dstpinname="Single Projector Resolution">
-   </LINK>
-   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="57" dstpinname="Projector Rows">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Y Output Value" dstnodeid="57" dstpinname="Projector Cols">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
    <BOUNDS type="Node" left="10530" top="1875" width="750" height="270">
    </BOUNDS>
@@ -493,9 +429,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="82">
-   <BOUNDS type="Box" left="9525" top="5505" width="480" height="480">
+   <BOUNDS type="Box" left="9345" top="5820" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9525" top="5505" width="0" height="0">
+   <BOUNDS type="Node" left="9345" top="5820" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -509,57 +445,15 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   </NODE>
-   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="57" dstpinname="Calibration">
-   </LINK>
-   <NODE id="46" componentmode="Hidden" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)">
-   <PIN pinname="Flip Sequential" slicecount="1" values="0">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Calibration">
    </PIN>
-   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
-   </PIN>
-   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
-   </PIN>
-   <PIN pinname="VSync" slicecount="1" visible="-1" pintype="Input" values="1">
-   </PIN>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enable Depth Buffer" slicecount="1" values="1">
-   </PIN>
-   <BOUNDS type="Node" left="4665" top="9690" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4665" top="9690" width="6000" height="4500">
-   </BOUNDS>
-   <PIN pinname="Fullscreen" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   <BOUNDS type="Window" left="-28470" top="5850" width="27810" height="7125">
-   </BOUNDS>
-   <PIN pinname="Crop" visible="1" pintype="Input" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Refresh Rate" slicecount="1" values="60">
-   </PIN>
-   <PIN pinname="Do Not Wait" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="ViewPort" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Aspect Ratio" visible="1" pintype="Input" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Clear" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Clear Depth" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="87">
-   <BOUNDS type="Box" left="8790" top="7275" width="480" height="480">
+   <BOUNDS type="Box" left="8550" top="6960" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8790" top="7275" width="0" height="0">
+   <BOUNDS type="Node" left="8550" top="6960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -578,8 +472,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Save">
    </PIN>
    </NODE>
-   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="57" dstpinname="Save">
-   </LINK>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="2" dstpinname="XY">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="90">
@@ -593,25 +485,15 @@
    <LINK srcnodeid="15" srcpinname="Buffers" dstnodeid="90" dstpinname="Input Node">
    </LINK>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="97">
-   <BOUNDS type="Node" left="5070" top="5115" width="100" height="100">
+   <BOUNDS type="Node" left="4905" top="5175" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5070" top="5115" width="3000" height="3000">
+   <BOUNDS type="Box" left="4905" top="5175" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\..\vvvv\vvvv_beta_39_x64\packs\multiscreen-lvt-vvvv-master\nodes\modules\MSD_Assets\FLL-testpattern_6.png">
+   <PIN pinname="Filename" slicecount="1" values="..\softedge\MSD_Assets\FLL-testpattern_6.png">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="57" srcpinname="Content Resolution" dstnodeid="14" dstpinname="Y Input Value">
-   <LINKPOINT x="9735" y="9720">
-   </LINKPOINT>
-   <LINKPOINT x="12015" y="8850">
-   </LINKPOINT>
-   <LINKPOINT x="8550" y="1005">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="57" srcpinname="Layer Out" dstnodeid="46" dstpinname="Layers">
-   </LINK>
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="99">
    <BOUNDS type="Node" left="1905" top="6960" width="100" height="100">
    </BOUNDS>
@@ -697,11 +579,11 @@
    <LINK srcnodeid="21" srcpinname="Output Node" dstnodeid="15" dstpinname="Layer">
    </LINK>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="110">
-   <BOUNDS type="Node" left="2130" top="7395" width="100" height="100">
+   <BOUNDS type="Node" left="2100" top="29460" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2130" top="7395" width="6000" height="4500">
+   <BOUNDS type="Box" left="2100" top="29460" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="-29025" top="-1455" width="27150" height="7125">
+   <BOUNDS type="Window" left="3150" top="510" width="27150" height="7305">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -728,6 +610,118 @@
    </LINK>
    <LINK srcnodeid="104" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="110" srcpinname="Texture Out" dstnodeid="57" dstpinname="Texture">
+   <NODE systemname="LVT (DX11)" filename="..\softedge\MultiScreen LVT (DX11).v4p" nodename="LVT (DX11)" componentmode="Hidden" id="111">
+   <BOUNDS type="Node" left="4725" top="8955" width="3825" height="270">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Calibration" visible="1">
+   </PIN>
+   <PIN pinname="Project Name" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Projector Cols" visible="1">
+   </PIN>
+   <PIN pinname="Projector Rows" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Single Projector Resolution" visible="1">
+   </PIN>
+   <PIN pinname="Save" visible="1">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Window" left="2895" top="1395" width="15300" height="11310">
+   </BOUNDS>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Content Resolution" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Switch (DX11.Texture 2d)" componentmode="Hidden" id="112">
+   <BOUNDS type="Node" left="4695" top="8115" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4695" top="8115" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Texture Out" dstnodeid="112" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="Output" dstnodeid="111" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="112" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="111" dstpinname="Calibration">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Y Output Value" dstnodeid="111" dstpinname="Projector Cols">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="111" dstpinname="Projector Rows">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="111" dstpinname="Single Projector Resolution">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="111" dstpinname="Save">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="113">
+   <BOUNDS type="Box" left="5430" top="6330" width="1185" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5430" top="6330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="2020-01-10">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Project Name|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="113" srcpinname="Output String" dstnodeid="111" dstpinname="Project Name">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="115">
+   <BOUNDS type="Node" left="5310" top="9660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5310" top="9660" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="42525" top="8895" width="15975" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="VSync" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Do Not Wait" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Cursor" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Disable Shortcuts" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Clear Depth Value" visible="0" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="111" srcpinname="Layer Out" dstnodeid="115" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="111" srcpinname="Content Resolution" dstnodeid="104" dstpinname="Y Input Value">
+   <LINKPOINT x="10035" y="10185">
+   </LINKPOINT>
+   <LINKPOINT x="12555" y="8535">
+   </LINKPOINT>
+   <LINKPOINT x="12255" y="6150">
+   </LINKPOINT>
+   <LINKPOINT x="8805" y="975">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Texture Out" dstnodeid="112" dstpinname="Input 2">
    </LINK>
    </PATCH>

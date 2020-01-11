@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\FLL-table2.v4p" systemname="FLL-table2" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-table2.v4p" scrollx="6675" scrolly="0">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\FLL-table2.v4p" systemname="FLL-table2" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\FLL-table2.v4p" scrollx="5880" scrolly="2235">
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="5715" top="23160" width="2355" height="270">
    </BOUNDS>
@@ -1444,12 +1444,10 @@
    <PIN pinname="Input 2" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="388" srcpinname="Y Output Value" dstnodeid="454" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="454" srcpinname="Output" dstnodeid="422" dstpinname="Set">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="455">
-   <BOUNDS type="Node" left="15390" top="6465" width="100" height="100">
+   <BOUNDS type="Node" left="15570" top="6585" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1459,8 +1457,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="438" srcpinname="Output" dstnodeid="455" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="455" srcpinname="Output" dstnodeid="410" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="MonoFlop (Animation Framebased)" filename="%VVVV%\addonpack\lib\nodes\plugins\MonoFlop.dll" nodename="MonoFlop (Animation Framebased)" componentmode="Hidden" id="456">
    <BOUNDS type="Node" left="20370" top="3540" width="100" height="100">
@@ -1479,5 +1475,9 @@
    <LINK srcnodeid="456" srcpinname="Output" dstnodeid="454" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="456" srcpinname="Output" dstnodeid="455" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="388" srcpinname="Y Output Value" dstnodeid="454" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="455" srcpinname="Output" dstnodeid="410" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

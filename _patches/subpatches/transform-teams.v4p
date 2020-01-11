@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\transform-teams.v4p" systemname="transform-teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\transform-teams.v4p" scrollx="0" scrolly="5265">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\transform-teams.v4p" systemname="transform-teams" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\transform-teams.v4p" scrollx="0" scrolly="0">
    <NODE id="0" systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="3015" top="10740" width="100" height="100">
    </BOUNDS>
@@ -1331,7 +1331,19 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="TransitionAcc" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="122" srcpinname="Output" dstnodeid="116" dstpinname="Input">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="123">
+   <BOUNDS type="Node" left="9330" top="420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="transitionACC">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="123" srcpinname="Input Value" dstnodeid="122" dstpinname="TransitionAcc">
    </LINK>
    </PATCH>

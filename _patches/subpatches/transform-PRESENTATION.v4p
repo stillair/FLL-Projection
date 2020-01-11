@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\transform-PRESENTATION.v4p" systemname="transform-PRESENTATION" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transform-PRESENTATION.v4p" scrollx="0" scrolly="3435">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\transform-PRESENTATION.v4p" systemname="transform-PRESENTATION" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\subpatches\transform-PRESENTATION.v4p" scrollx="390" scrolly="2400">
    <NODE id="1" systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="CenterX" slicecount="1" visible="1" pintype="Input" values="-0.5">
    </PIN>
@@ -170,7 +170,7 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input 5">
    </LINK>
-   <BOUNDS type="Window" left="9765" top="9885" width="16950" height="8640">
+   <BOUNDS type="Window" left="15705" top="12030" width="16950" height="8640">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -185,6 +185,8 @@
    </PIN>
    <BOUNDS type="Box" left="1665" top="630">
    </BOUNDS>
+   <PIN pinname="TransitionAcc" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Sift (Value)" nodename="Sift (Value)" componentmode="Hidden" id="18">
    <BOUNDS type="Node" left="1635" top="1350" width="100" height="100">
@@ -533,5 +535,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="95" srcpinname="Y Output Value" dstnodeid="24" dstpinname="TranslateX">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="97">
+   <BOUNDS type="Node" left="450" top="150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="transitionACC">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="97" srcpinname="Input Value" dstnodeid="17" dstpinname="TransitionAcc">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" systemname="RENDER-config" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" scrollx="690" scrolly="315">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" systemname="RENDER-config" filename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\RENDER-config.v4p" scrollx="150" scrolly="5025">
    <NODE id="2" systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden">
    <BOUNDS type="Node" left="1950" top="4350" width="100" height="100">
    </BOUNDS>
@@ -583,7 +583,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2100" top="29460" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="3150" top="510" width="27150" height="7305">
+   <BOUNDS type="Window" left="0" top="0" width="27150" height="7305">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -687,9 +687,9 @@
    <LINK srcnodeid="113" srcpinname="Output String" dstnodeid="111" dstpinname="Project Name">
    </LINK>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="115">
-   <BOUNDS type="Node" left="5310" top="9660" width="100" height="100">
+   <BOUNDS type="Node" left="5475" top="10005" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5310" top="9660" width="6000" height="4500">
+   <BOUNDS type="Box" left="5475" top="10005" width="6000" height="4500">
    </BOUNDS>
    <BOUNDS type="Window" left="42525" top="8895" width="15975" height="5085">
    </BOUNDS>

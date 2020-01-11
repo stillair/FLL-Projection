@@ -1,0 +1,1 @@
+BlackSpout -input 1 -mode 15 -width 640 -height 360 -x 50 -y 50 -name "BS HDMI"

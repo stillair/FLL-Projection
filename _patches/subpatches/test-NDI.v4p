@@ -1,0 +1,9 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\subpatches\test-NDI.v4p" systemname="wave" filename="C:\Users\avst\FLL-Projection_VVVV\_patches\subpatches\wave.v4p" scrollx="330" scrolly="1380">
+   <BOUNDS type="Window" left="7875" top="5070" width="6165" height="10605">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="39.0.0">
+   </PACK>
+   </PATCH>

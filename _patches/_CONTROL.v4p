@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="5640" scrolly="0" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="9270" scrolly="8445" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
    <BOUNDS type="Window" left="0" top="7320" width="13725" height="6780">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
@@ -417,7 +417,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8560" top="5382" width="8755" height="8770">
    </BOUNDS>
-   <BOUNDS type="Window" left="10035" top="5595" width="15615" height="11790">
+   <BOUNDS type="Window" left="17685" top="6450" width="15615" height="11790">
    </BOUNDS>
    <PIN pinname="PerfMeter" slicecount="1" values="1">
    </PIN>
@@ -986,4 +986,32 @@
    </LINK>
    <LINK srcnodeid="1224" srcpinname="Input Index" dstnodeid="1144" dstpinname="Index">
    </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="1225">
+   <BOUNDS type="Node" left="0" top="0" width="315" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="315" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="sp">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="1226">
+   <BOUNDS type="Node" left="0" top="0" width="465" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="465" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="prev">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

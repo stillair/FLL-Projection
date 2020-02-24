@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\_CONTROL.v4p" scrollx="9270" scrolly="8445" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
-   <BOUNDS type="Window" left="0" top="7320" width="13725" height="6780">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p" scrollx="9000" scrolly="30" systemname="_CONTROL" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\_CONTROL.v4p">
+   <BOUNDS type="Window" left="-28800" top="3735" width="18495" height="10155">
    </BOUNDS>
    <PACK Name="addonpack" Version="39.0.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12915" top="7665" width="36675" height="25585">
    </BOUNDS>
-   <BOUNDS type="Window" left="7320" top="8895" width="18825" height="10665">
+   <BOUNDS type="Window" left="5955" top="6390" width="18825" height="10665">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -121,7 +121,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1139">
-   <BOUNDS type="Node" left="15390" top="6495" width="100" height="100">
+   <BOUNDS type="Node" left="15090" top="6300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="17" values="AREA52,Bhof-Robos,Einstein,G-Bots,GOBOTS,|HFG BOTS|,|HFG Robokirch|,HFG-RoboS,|Intelligent Dragons|,Pythagorge,Robbiz,ROBOKEN,RSObots,Scheffel-Juniors,Scheffel-Seniors,SuperRobby,Tableb">
    </PIN>
@@ -131,7 +131,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1140">
-   <BOUNDS type="Node" left="16305" top="6495" width="100" height="100">
+   <BOUNDS type="Node" left="16155" top="6300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="text">
    </PIN>
@@ -140,12 +140,8 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1139" srcpinname="Output" dstnodeid="989" dstpinname="TEAM 1 name">
-   </LINK>
-   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="989" dstpinname="TEAM 2 name">
-   </LINK>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1144">
-   <BOUNDS type="Node" left="17325" top="6495" width="100" height="100">
+   <BOUNDS type="Node" left="17325" top="6300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -155,7 +151,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1143">
-   <BOUNDS type="Node" left="18240" top="6495" width="100" height="100">
+   <BOUNDS type="Node" left="18435" top="6270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -164,10 +160,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1144" srcpinname="Output" dstnodeid="989" dstpinname="TEAM 1 img">
-   </LINK>
-   <LINK srcnodeid="1143" srcpinname="Output" dstnodeid="989" dstpinname="TEAM 2 img">
-   </LINK>
    <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
    <BOUNDS type="Node" left="17580" top="1275" width="100" height="100">
    </BOUNDS>
@@ -504,12 +496,12 @@
    </NODE>
    <LINK srcnodeid="1174" srcpinname="Output String" dstnodeid="1171" dstpinname="Table Name" linkstyle="PolyLine">
    </LINK>
-   <NODE systemname="TableView (DataTable)" filename="plugins\Table.dll" nodename="TableView (DataTable)" componentmode="InAWindow" id="1175">
+   <NODE systemname="TableView (DataTable)" filename="plugins\Table.dll" nodename="TableView (DataTable)" componentmode="Hidden" id="1175">
    <BOUNDS type="Node" left="24705" top="5685" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Table" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="13560" top="7290" width="10575" height="6930">
+   <BOUNDS type="Window" left="15990" top="9030" width="10575" height="6930">
    </BOUNDS>
    <BOUNDS type="Box" left="24705" top="5685">
    </BOUNDS>
@@ -789,7 +781,7 @@
    <LINK srcnodeid="1172" srcpinname="Schule" dstnodeid="989" dstpinname="schule">
    </LINK>
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="1210">
-   <BOUNDS type="Node" left="15705" top="1755" width="100" height="100">
+   <BOUNDS type="Node" left="19545" top="2070" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="17" values="01,01,02,02,03,03,04,04,05,05,06,06,07,07,08,08,08">
    </PIN>
@@ -859,9 +851,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1214">
-   <BOUNDS type="Box" left="18150" top="2310" width="795" height="240">
+   <BOUNDS type="Box" left="18135" top="2835" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="18150" top="2310" width="0" height="0">
+   <BOUNDS type="Node" left="18135" top="2835" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\_assets\_TEAMS\team-imgs">
    </PIN>
@@ -893,7 +885,7 @@
    <LINK srcnodeid="1213" srcpinname="Filenames" dstnodeid="1215" dstpinname="Input">
    </LINK>
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="1217">
-   <BOUNDS type="Node" left="15030" top="2340" width="100" height="100">
+   <BOUNDS type="Node" left="19650" top="3285" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1014,4 +1006,84 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="1227">
+   <BOUNDS type="Node" left="15090" top="6720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|Team 1|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="15090" top="6720">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1139" srcpinname="Output" dstnodeid="1227" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1227" srcpinname="Output" dstnodeid="989" dstpinname="TEAM 1 name">
+   </LINK>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="1228">
+   <BOUNDS type="Node" left="16155" top="6705" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|Team 2|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="16155" top="6705">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1228" srcpinname="Output" dstnodeid="989" dstpinname="TEAM 2 name">
+   </LINK>
+   <LINK srcnodeid="1140" srcpinname="Output" dstnodeid="1228" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="1229">
+   <BOUNDS type="Node" left="17325" top="6690" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" visible="1" values="|Team 2|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="17325" top="6690">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1144" srcpinname="Output" dstnodeid="1229" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1229" srcpinname="Output" dstnodeid="989" dstpinname="TEAM 1 img">
+   </LINK>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="1230">
+   <BOUNDS type="Node" left="18435" top="6705" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" visible="1" values="|Team 2|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="18435" top="6705">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1143" srcpinname="Output" dstnodeid="1230" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1230" srcpinname="Output" dstnodeid="989" dstpinname="TEAM 2 img">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1231">
+   <BOUNDS type="Node" left="18090" top="5250" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18090" top="5250" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="..\_assets\_TEAMS\team-imgs\test-team.png">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1231" srcpinname="Output String" dstnodeid="1229" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="1231" srcpinname="Output String" dstnodeid="1230" dstpinname="Default">
+   </LINK>
    </PATCH>

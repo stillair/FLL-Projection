@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
-   <PATCH nodename="C:\Users\avst-labor\FLL-Projection\_patches\main.v4p" scrollx="19170" scrolly="7890" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
+   <PATCH nodename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p" scrollx="19170" scrolly="7890" systemname="main" filename="C:\Users\sstil\Desktop\WS1920\3D-Lego-League\_PROG\_patches\main.v4p">
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="1500" top="3135" width="100" height="100">
    </BOUNDS>
@@ -1037,7 +1037,7 @@
    </PIN>
    <BOUNDS type="Box" left="29790" top="14745">
    </BOUNDS>
-   <PIN pinname="presentation-cam" visible="1">
+   <PIN pinname="presentation-cam" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="presentation-team-name" visible="1">
    </PIN>
@@ -1382,7 +1382,7 @@
    </LINK>
    <LINK srcnodeid="99" srcpinname="Transform team name" dstnodeid="98" dstpinname="Transform Text">
    </LINK>
-   <BOUNDS type="Window" left="7320" top="8895" width="18825" height="10665">
+   <BOUNDS type="Window" left="5955" top="6390" width="18825" height="10665">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
@@ -1870,6 +1870,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="underbox-size">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
    <LINK srcnodeid="141" srcpinname="Y Output Value" dstnodeid="31" dstpinname="under-box-size">
@@ -2552,62 +2554,6 @@
    <LINKPOINT x="18750" y="5355">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="FileStream (DX11.Texture Vlc)" filename="%VVVV%\packs\dx11\nodes\plugins\vlc\VVVV.DX11.Nodes.Vlc.dll" nodename="FileStream (DX11.Texture Vlc)" componentmode="Hidden" id="233">
-   <BOUNDS type="Node" left="32745" top="12945" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="32745" top="12945" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Filename" visible="1">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Loop" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Play" visible="1">
-   </PIN>
-   <PIN pinname="Volume" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Do Seek" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="234">
-   <BOUNDS type="Box" left="33270" top="11940" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="33270" top="11940" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\_assets\fireworks.mp4">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="234" srcpinname="Output String" dstnodeid="233" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="233" srcpinname="Texture Out" dstnodeid="98" dstpinname="presentation-cam">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="235">
-   <BOUNDS type="Box" left="32310" top="11310" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="32310" top="11310" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="233" dstpinname="Play">
+   <LINK srcnodeid="76" srcpinname="CAM-1" dstnodeid="98" dstpinname="presentation-cam">
    </LINK>
    </PATCH>
